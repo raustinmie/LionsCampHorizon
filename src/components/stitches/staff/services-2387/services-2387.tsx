@@ -19,7 +19,7 @@ export default function Services2387() {
 					<div className="cs-picture">
 						<Image
 							src="/images/staff-seasonal.jpg"
-							alt="people"
+							alt="A camper and staff member with their tongues stuck out"
 							width={402}
 							height={416}
 							loading="lazy"

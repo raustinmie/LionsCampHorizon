@@ -11,7 +11,7 @@ export default function Sbsr2217C() {
 					<div className="cs-picture cs-picture1">
 						<Image
 							src="/images/wwa-history5.jpg"
-							alt="wedding photoshoot"
+							alt="the old radar tower on campus"
 							width={640}
 							height={787}
 							loading="lazy"
@@ -22,7 +22,7 @@ export default function Sbsr2217C() {
 					<div className="cs-picture cs-picture2">
 						<Image
 							src="/images/wwa-history6.jpg"
-							alt="photograph of a woman"
+							alt="a sign for Blaine airforce station"
 							width={640}
 							height={498}
 							loading="lazy"

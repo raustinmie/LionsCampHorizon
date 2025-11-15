@@ -8,6 +8,7 @@ export interface Cta403Props {
 	subtitle: string | ReactNode;
 	buttonText: string;
 	linkHref: string;
+	imageAlt: string;
 }
 export default function Cta403({
 	imageSrc,
@@ -15,6 +16,7 @@ export default function Cta403({
 	subtitle,
 	buttonText,
 	linkHref,
+	imageAlt,
 }: Cta403Props) {
 	return (
 		<section id="cta-403">
@@ -31,7 +33,7 @@ export default function Cta403({
 			<div className="cs-background">
 				<Image
 					src={imageSrc}
-					alt="cleaner"
+					alt={imageAlt}
 					width={1920}
 					height={660}
 					loading="lazy"

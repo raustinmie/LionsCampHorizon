@@ -10,6 +10,8 @@ import {
 } from "@/constants";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
+import { MapPin, Phone } from "lucide-react";
 
 export default function Nav() {
 	const headerRef = useRef<HTMLElement | null>(null);
@@ -55,42 +57,22 @@ export default function Nav() {
 			<div className="cs-top-bar">
 				<div className="cs-top-container">
 					<div className="cs-top-social">
-						<Link href="" className="cs-social-link">
-							<Image
-								src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-dark.svg"
-								alt="logo"
-								width={12}
-								height={12}
-							/>
+						<Link href={facebookUrl} className="cs-social-link">
+							<SiFacebook color="#000" />
 						</Link>
-						<Link href="" className="cs-social-link">
-							<Image
-								src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark.svg"
-								alt="logo"
-								width={12}
-								height={12}
-							/>
+						<Link href={instagramUrl} className="cs-social-link">
+							<SiInstagram color="#000" />
 						</Link>
 					</div>
 					<div className="cs-top-contact">
 						<Link href="" className="cs-top-link">
-							<Image
-								src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-pin-green.svg"
-								alt="logo"
-								width={16}
-								height={16}
-							/>
+							<MapPin />
 							{primaryAddress1}
 							<br />
 							{primaryAddress2}
 						</Link>
 						<Link href="" className="cs-top-link">
-							<Image
-								src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-phone-green.svg"
-								alt="logo"
-								width={16}
-								height={16}
-							/>
+							<Phone />
 							{primaryPhone}
 						</Link>
 					</div>
@@ -174,11 +156,6 @@ export default function Nav() {
 						Donate Now
 					</Link>
 				</div>
-				{/*Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle*/}
-				{/* <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <svg className="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-            <Image src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" alt="moon" width={15} height={15} />
-        </button> */}
 			</div>
 		</header>
 	);

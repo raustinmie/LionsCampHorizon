@@ -610,7 +610,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                 className: "cs-content",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: "https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg",
+                        src: "/images/quote.png",
                         alt: "quote",
                         width: 40,
                         height: 33
@@ -624,7 +624,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                         children: referralText
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 30,
+                        lineNumber: 25,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -637,7 +637,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                                     children: referrerName
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 28,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -645,29 +645,29 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                                     children: referrerTitle
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                                    lineNumber: 34,
+                                    lineNumber: 29,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                            lineNumber: 32,
+                            lineNumber: 27,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 31,
+                        lineNumber: 26,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: "https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg",
+                        src: "/images/quote.png",
                         alt: "quote",
                         className: "cs-watermark",
                         width: 136,
                         height: 120
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 38,
+                        lineNumber: 33,
                         columnNumber: 5
                     }, this)
                 ]
@@ -965,8 +965,8 @@ module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/share
 "[project]/node_modules/next/dist/esm/build/templates/pages.js { INNER_PAGE => \"[project]/src/pages/index.tsx [ssr] (ecmascript)\", INNER_DOCUMENT => \"[project]/src/pages/_document.tsx [ssr] (ecmascript)\", INNER_APP => \"[project]/src/pages/_app.tsx [ssr] (ecmascript)\" } [ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
+var { g: global, __dirname, a: __turbopack_async_module__ } = __turbopack_context__;
+__turbopack_async_module__(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
 __turbopack_context__.s({
     "config": (()=>config),
     "default": (()=>__TURBOPACK__default__export__),
@@ -989,6 +989,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$_document$2e
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$_app$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pages/_app.tsx [ssr] (ecmascript)");
 // Import the userland code.
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$index$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pages/index.tsx [ssr] (ecmascript)");
+var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
+    __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$_app$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__
+]);
+([__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$_app$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__);
 ;
 ;
 ;
@@ -1022,7 +1026,8 @@ const routeModule = new __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
     },
     userland: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$index$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__
 }); //# sourceMappingURL=pages.js.map
-}}),
+__turbopack_async_result__();
+} catch(e) { __turbopack_async_result__(e); } }, false);}),
 
 };
 

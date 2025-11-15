@@ -18,7 +18,7 @@ export default function CustomHero() {
 				<Image
 					src="/images/whoweare-hero1.jpg"
 					className="cs-image1"
-					alt="campers sitting in a circle on the grass"
+					alt="A thank you letter from a camper"
 					width={464 * 0.7}
 					height={618 * 0.7}
 				/>
@@ -37,7 +37,7 @@ export default function CustomHero() {
 				<Image
 					src="/images/whoweare-hero2.jpg"
 					className="cs-image3"
-					alt="campers sitting in a circle on the grass"
+					alt="A thank you letter from a camper"
 					width={464 * 0.7}
 					height={618 * 0.7}
 				/>

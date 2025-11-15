@@ -11,21 +11,21 @@ export default function HeroS2149() {
 					<Image
 						src="/images/staff-hero1.jpg"
 						className="cs-image1"
-						alt="campers sitting in a circle on the grass"
+						alt="A staff show"
 						width={817}
 						height={517}
-					/>{" "}
+					/>
 					<Image
 						src="/images/staff-hero2.jpg"
 						className="cs-image2"
-						alt="campers sitting in a circle on the grass"
+						alt="staff having fun"
 						width={388}
 						height={517}
 					/>
 					<Image
 						src="/images/staff-hero3.jpg"
 						className="cs-image3"
-						alt="campers sitting in a circle on the grass"
+						alt="a camper and a staff member dressed up as a banana"
 						width={529}
 						height={517}
 					/>

@@ -21,12 +21,7 @@ export default function Reviews306({
 				</div>
 			)}
 			<div className="cs-content">
-				<Image
-					src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg"
-					alt="quote"
-					width={40}
-					height={33}
-				/>
+				<Image src="/images/quote.png" alt="quote" width={40} height={33} />
 				<p className="cs-review">{referralText}</p>
 				<div className="cs-info">
 					<div className="cs-flex">
@@ -36,7 +31,7 @@ export default function Reviews306({
 				</div>
 				{/*Bottom watermark quote*/}
 				<Image
-					src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg"
+					src="/images/quote.png"
 					alt="quote"
 					className="cs-watermark"
 					width={136}

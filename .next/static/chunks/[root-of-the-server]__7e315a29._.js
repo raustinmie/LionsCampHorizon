@@ -688,7 +688,7 @@ function HeroS2149() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/images/staff-hero1.jpg",
                             className: "cs-image1",
-                            alt: "campers sitting in a circle on the grass",
+                            alt: "A staff show",
                             width: 817,
                             height: 517
                         }, void 0, false, {
@@ -696,11 +696,10 @@ function HeroS2149() {
                             lineNumber: 11,
                             columnNumber: 6
                         }, this),
-                        " ",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/images/staff-hero2.jpg",
                             className: "cs-image2",
-                            alt: "campers sitting in a circle on the grass",
+                            alt: "staff having fun",
                             width: 388,
                             height: 517
                         }, void 0, false, {
@@ -711,7 +710,7 @@ function HeroS2149() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/images/staff-hero3.jpg",
                             className: "cs-image3",
-                            alt: "campers sitting in a circle on the grass",
+                            alt: "a camper and a staff member dressed up as a banana",
                             width: 529,
                             height: 517
                         }, void 0, false, {
@@ -819,7 +818,7 @@ function Services2387() {
                             className: "cs-picture",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/staff-seasonal.jpg",
-                                alt: "people",
+                                alt: "A camper and staff member with their tongues stuck out",
                                 width: 402,
                                 height: 416,
                                 loading: "lazy",
@@ -1049,7 +1048,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 ;
-function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
+function Cta403({ imageSrc, title, subtitle, buttonText, linkHref, imageAlt }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "cta-403",
         children: [
@@ -1063,7 +1062,7 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                            lineNumber: 23,
+                            lineNumber: 25,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1071,7 +1070,7 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                             children: subtitle
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1080,25 +1079,25 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                             children: buttonText
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                            lineNumber: 25,
+                            lineNumber: 27,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                    lineNumber: 22,
+                    lineNumber: 24,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                lineNumber: 21,
+                lineNumber: 23,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "cs-background",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                     src: imageSrc,
-                    alt: "cleaner",
+                    alt: imageAlt,
                     width: 1920,
                     height: 660,
                     loading: "lazy",
@@ -1106,18 +1105,18 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                     "aria-hidden": "true"
                 }, void 0, false, {
                     fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                    lineNumber: 32,
+                    lineNumber: 34,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                lineNumber: 31,
+                lineNumber: 33,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-        lineNumber: 20,
+        lineNumber: 22,
         columnNumber: 3
     }, this);
 }

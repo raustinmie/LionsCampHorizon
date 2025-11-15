@@ -678,7 +678,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 ;
-function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
+function Cta403({ imageSrc, title, subtitle, buttonText, linkHref, imageAlt }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "cta-403",
         children: [
@@ -692,7 +692,7 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                            lineNumber: 23,
+                            lineNumber: 25,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -700,7 +700,7 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                             children: subtitle
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -709,25 +709,25 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                             children: buttonText
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                            lineNumber: 25,
+                            lineNumber: 27,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                    lineNumber: 22,
+                    lineNumber: 24,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                lineNumber: 21,
+                lineNumber: 23,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "cs-background",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                     src: imageSrc,
-                    alt: "cleaner",
+                    alt: imageAlt,
                     width: 1920,
                     height: 660,
                     loading: "lazy",
@@ -735,18 +735,18 @@ function Cta403({ imageSrc, title, subtitle, buttonText, linkHref }) {
                     "aria-hidden": "true"
                 }, void 0, false, {
                     fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                    lineNumber: 32,
+                    lineNumber: 34,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-                lineNumber: 31,
+                lineNumber: 33,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/stitches/shared/cta-403/cta-403.tsx",
-        lineNumber: 20,
+        lineNumber: 22,
         columnNumber: 3
     }, this);
 }
@@ -1620,7 +1620,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                 className: "cs-content",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg",
+                        src: "/images/quote.png",
                         alt: "quote",
                         width: 40,
                         height: 33
@@ -1634,7 +1634,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                         children: referralText
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 30,
+                        lineNumber: 25,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1647,7 +1647,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                                     children: referrerName
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 28,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1655,29 +1655,29 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                                     children: referrerTitle
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                                    lineNumber: 34,
+                                    lineNumber: 29,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                            lineNumber: 32,
+                            lineNumber: 27,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 31,
+                        lineNumber: 26,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg",
+                        src: "/images/quote.png",
                         alt: "quote",
                         className: "cs-watermark",
                         width: 136,
                         height: 120
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 38,
+                        lineNumber: 33,
                         columnNumber: 5
                     }, this)
                 ]

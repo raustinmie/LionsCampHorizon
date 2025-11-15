@@ -5,8 +5,9 @@ import { FaqQuestionAndAnswer } from "@/components/seo/faq-seo";
 interface Faq2353Props {
 	faqs: FaqQuestionAndAnswer[];
 	imageSrc: string;
+	imageAlt: string;
 }
-export default function Faq2353({ faqs, imageSrc }: Faq2353Props) {
+export default function Faq2353({ faqs, imageSrc, imageAlt }: Faq2353Props) {
 	// Track which FAQ items are open
 	const [activeIndex, setActiveIndex] = useState<number>(0); // first item open by default
 
@@ -44,7 +45,7 @@ export default function Faq2353({ faqs, imageSrc }: Faq2353Props) {
 					</div>
 				</div>
 				<div className="cs-picture">
-					<Image src={imageSrc} alt="Plaid bow" width={606} height={606} />
+					<Image src={imageSrc} alt={imageAlt} width={606} height={606} />
 				</div>
 			</div>
 		</section>

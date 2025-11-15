@@ -17,7 +17,7 @@ export default function MeetTeam1141() {
 						<div className="cs-picture">
 							<Image
 								src="/images/meet-angie.png"
-								alt="person"
+								alt="a headshot of Angie Dixon"
 								width={305}
 								height={407}
 								loading="lazy"
@@ -49,7 +49,7 @@ export default function MeetTeam1141() {
 						<div className="cs-picture">
 							<Image
 								src="/images/meet-nakita.jpg"
-								alt="person"
+								alt="Nakita Zylstra"
 								width={305}
 								height={407}
 								loading="lazy"

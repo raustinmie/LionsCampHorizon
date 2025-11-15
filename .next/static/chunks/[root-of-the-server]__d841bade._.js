@@ -731,7 +731,7 @@ function CustomHero() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                     src: "/images/whoweare-hero1.jpg",
                     className: "cs-image1",
-                    alt: "campers sitting in a circle on the grass",
+                    alt: "A thank you letter from a camper",
                     width: 464 * 0.7,
                     height: 618 * 0.7
                 }, void 0, false, {
@@ -767,7 +767,7 @@ function CustomHero() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                     src: "/images/whoweare-hero2.jpg",
                     className: "cs-image3",
-                    alt: "campers sitting in a circle on the grass",
+                    alt: "A thank you letter from a camper",
                     width: 464 * 0.7,
                     height: 618 * 0.7
                 }, void 0, false, {
@@ -842,7 +842,7 @@ function Services2198() {
                                         className: "cs-picture",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/images/what-were-all-about1.png",
-                                            alt: "wedding photography",
+                                            alt: "a camper flexing his biceps",
                                             width: 550,
                                             height: 377,
                                             loading: "lazy",
@@ -901,7 +901,7 @@ function Services2198() {
                                         className: "cs-picture",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/images/what-were-all-about2.jpg",
-                                            alt: "wedding photography",
+                                            alt: "a camper and counselor hugging",
                                             width: 550,
                                             height: 377,
                                             loading: "lazy",
@@ -961,7 +961,7 @@ function Services2198() {
                                         className: "cs-picture",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/images/what-were-all-about3.jpg",
-                                            alt: "wedding photography",
+                                            alt: "two men arm wrestling",
                                             width: 550,
                                             height: 377,
                                             loading: "lazy",
@@ -1095,7 +1095,7 @@ function MeetTeam1141() {
                                     className: "cs-picture",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/images/meet-angie.png",
-                                        alt: "person",
+                                        alt: "a headshot of Angie Dixon",
                                         width: 305,
                                         height: 407,
                                         loading: "lazy",
@@ -1156,7 +1156,7 @@ function MeetTeam1141() {
                                     className: "cs-picture",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/images/meet-nakita.jpg",
-                                        alt: "person",
+                                        alt: "Nakita Zylstra",
                                         width: 305,
                                         height: 407,
                                         loading: "lazy",
@@ -1586,7 +1586,7 @@ function Sbsr2217() {
                             className: "cs-picture cs-picture1",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/wwa-history1.jpg",
-                                alt: "wedding photoshoot",
+                                alt: "campers and staff on a monster truck",
                                 width: 297,
                                 height: 366,
                                 loading: "lazy",
@@ -1605,7 +1605,7 @@ function Sbsr2217() {
                             className: "cs-picture cs-picture2",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/wwa-history2.jpg",
-                                alt: "photograph of a woman",
+                                alt: "campers on a bleacher",
                                 width: 405,
                                 height: 376,
                                 loading: "lazy",
@@ -1710,7 +1710,7 @@ function Sbsr2217B() {
                             className: "cs-picture cs-picture1",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/wwa-history3.jpg",
-                                alt: "wedding photoshoot",
+                                alt: "a mime performing for campers",
                                 width: 297,
                                 height: 366,
                                 loading: "lazy",
@@ -1729,7 +1729,7 @@ function Sbsr2217B() {
                             className: "cs-picture cs-picture2",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/wwa-history4.jpg",
-                                alt: "photograph of a woman",
+                                alt: "campers in front of a Lions Camp Horizon sign",
                                 width: 405,
                                 height: 376,
                                 loading: "lazy",
@@ -1809,7 +1809,7 @@ function Sbsr2217C() {
                             className: "cs-picture cs-picture1",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/wwa-history5.jpg",
-                                alt: "wedding photoshoot",
+                                alt: "the old radar tower on campus",
                                 width: 640,
                                 height: 787,
                                 loading: "lazy",
@@ -1828,7 +1828,7 @@ function Sbsr2217C() {
                             className: "cs-picture cs-picture2",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/images/wwa-history6.jpg",
-                                alt: "photograph of a woman",
+                                alt: "a sign for Blaine airforce station",
                                 width: 640,
                                 height: 498,
                                 loading: "lazy",
@@ -1937,7 +1937,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                 className: "cs-content",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg",
+                        src: "/images/quote.png",
                         alt: "quote",
                         width: 40,
                         height: 33
@@ -1951,7 +1951,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                         children: referralText
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 30,
+                        lineNumber: 25,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1964,7 +1964,7 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                                     children: referrerName
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 28,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1972,29 +1972,29 @@ function Reviews306({ imageSrc, referralText, referrerName, referrerTitle }) {
                                     children: referrerTitle
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                                    lineNumber: 34,
+                                    lineNumber: 29,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                            lineNumber: 32,
+                            lineNumber: 27,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 31,
+                        lineNumber: 26,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "https://csimg.nyc3.digitaloceanspaces.com/Reviews/top-quote.svg",
+                        src: "/images/quote.png",
                         alt: "quote",
                         className: "cs-watermark",
                         width: 136,
                         height: 120
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/shared/reviews-306/reviews-306.tsx",
-                        lineNumber: 38,
+                        lineNumber: 33,
                         columnNumber: 5
                     }, this)
                 ]

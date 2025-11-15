@@ -15,7 +15,7 @@ export default function Services2198() {
 							<div className="cs-picture">
 								<Image
 									src="/images/what-were-all-about1.png"
-									alt="wedding photography"
+									alt="a camper flexing his biceps"
 									width={550}
 									height={377}
 									loading="lazy"
@@ -37,7 +37,7 @@ export default function Services2198() {
 							<div className="cs-picture">
 								<Image
 									src="/images/what-were-all-about2.jpg"
-									alt="wedding photography"
+									alt="a camper and counselor hugging"
 									width={550}
 									height={377}
 									loading="lazy"
@@ -60,7 +60,7 @@ export default function Services2198() {
 							<div className="cs-picture">
 								<Image
 									src="/images/what-were-all-about3.jpg"
-									alt="wedding photography"
+									alt="two men arm wrestling"
 									width={550}
 									height={377}
 									loading="lazy"

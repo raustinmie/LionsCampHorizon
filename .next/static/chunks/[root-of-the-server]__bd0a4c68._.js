@@ -1706,9 +1706,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/constants.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$icons$2d$pack$2f$react$2d$simple$2d$icons$2f$icons$2f$SiFacebook$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SiFacebook$3e$__ = __turbopack_context__.i("[project]/node_modules/@icons-pack/react-simple-icons/icons/SiFacebook.mjs [client] (ecmascript) <export default as SiFacebook>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$icons$2d$pack$2f$react$2d$simple$2d$icons$2f$icons$2f$SiInstagram$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SiInstagram$3e$__ = __turbopack_context__.i("[project]/node_modules/@icons-pack/react-simple-icons/icons/SiInstagram.mjs [client] (ecmascript) <export default as SiInstagram>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [client] (ecmascript) <export default as Phone>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
+;
 ;
 ;
 ;
@@ -1793,45 +1799,39 @@ function Nav() {
                             className: "cs-top-social",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "",
+                                    href: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["facebookUrl"],
                                     className: "cs-social-link",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-dark.svg",
-                                        alt: "logo",
-                                        width: 12,
-                                        height: 12
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$icons$2d$pack$2f$react$2d$simple$2d$icons$2f$icons$2f$SiFacebook$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SiFacebook$3e$__["SiFacebook"], {
+                                        color: "#000"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 61,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 60,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "",
+                                    href: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["instagramUrl"],
                                     className: "cs-social-link",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark.svg",
-                                        alt: "logo",
-                                        width: 12,
-                                        height: 12
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$icons$2d$pack$2f$react$2d$simple$2d$icons$2f$icons$2f$SiInstagram$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SiInstagram$3e$__["SiInstagram"], {
+                                        color: "#000"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 64,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 63,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                            lineNumber: 57,
+                            lineNumber: 59,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1841,65 +1841,55 @@ function Nav() {
                                     href: "",
                                     className: "cs-top-link",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-pin-green.svg",
-                                            alt: "logo",
-                                            width: 16,
-                                            height: 16
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {}, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 69,
                                             columnNumber: 8
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["primaryAddress1"],
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 71,
                                             columnNumber: 8
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["primaryAddress2"]
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 68,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: "",
                                     className: "cs-top-link",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/charity-phone-green.svg",
-                                            alt: "logo",
-                                            width: 16,
-                                            height: 16
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {}, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 75,
                                             columnNumber: 8
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["primaryPhone"]
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 74,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                            lineNumber: 75,
+                            lineNumber: 67,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                    lineNumber: 56,
+                    lineNumber: 58,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                lineNumber: 55,
+                lineNumber: 57,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1916,12 +1906,12 @@ function Nav() {
                             height: 43
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                            lineNumber: 102,
+                            lineNumber: 84,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                        lineNumber: 101,
+                        lineNumber: 83,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1942,7 +1932,7 @@ function Nav() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 114,
+                                            lineNumber: 96,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1950,7 +1940,7 @@ function Nav() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 97,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1958,18 +1948,18 @@ function Nav() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 98,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 95,
                                     columnNumber: 7
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 107,
+                                lineNumber: 89,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1987,12 +1977,12 @@ function Nav() {
                                                     children: link.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 106,
                                                     columnNumber: 10
                                                 }, this)
                                             }, link.href, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 105,
                                                 columnNumber: 9
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2007,12 +1997,12 @@ function Nav() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 118,
                                                 columnNumber: 9
                                             }, this)
                                         }, "/get-involved", false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 135,
+                                            lineNumber: 117,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2024,29 +2014,29 @@ function Nav() {
                                                 children: "Donate"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 147,
+                                                lineNumber: 129,
                                                 columnNumber: 9
                                             }, this)
                                         }, "/donate", false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 128,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 103,
                                     columnNumber: 7
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 120,
+                                lineNumber: 102,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                        lineNumber: 105,
+                        lineNumber: 87,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2063,7 +2053,7 @@ function Nav() {
                                         height: 56
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 144,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2074,7 +2064,7 @@ function Nav() {
                                                 children: "Join Us Now"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 169,
+                                                lineNumber: 151,
                                                 columnNumber: 8
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2082,19 +2072,19 @@ function Nav() {
                                                 children: "Become a Volunteer"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 170,
+                                                lineNumber: 152,
                                                 columnNumber: 8
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 150,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 161,
+                                lineNumber: 143,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2103,25 +2093,25 @@ function Nav() {
                                 children: "Donate Now"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 173,
+                                lineNumber: 155,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                        lineNumber: 160,
+                        lineNumber: 142,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                lineNumber: 99,
+                lineNumber: 81,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-        lineNumber: 54,
+        lineNumber: 56,
         columnNumber: 3
     }, this);
 }
