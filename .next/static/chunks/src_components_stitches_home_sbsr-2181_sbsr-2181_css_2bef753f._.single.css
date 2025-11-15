@@ -1,0 +1,230 @@
+/* [project]/src/components/stitches/home/sbsr-2181/sbsr-2181.css [client] (css) */
+@media only screen and (width >= 0) {
+  #sbsr-2181 {
+    z-index: 1;
+    background-color: var(--darkBackground);
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sbsr-2181 .cs-container {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    max-width: 80em;
+    margin: auto;
+    display: flex;
+  }
+
+  #sbsr-2181 .cs-content {
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #f9f9f8;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    max-width: 46.125rem;
+    margin: -5rem 1rem 0;
+    padding: clamp(1.5rem, 5vw, 3.75rem);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sbsr-2181 .cs-text {
+    margin-bottom: 1rem;
+  }
+
+  #sbsr-2181 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  #sbsr-2181 .cs-button-transparent {
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 11.25rem;
+    color: var(--headerColor);
+    border: 1px solid var(--headerColor);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    transition: color .3s;
+    display: inline-flex;
+    position: relative;
+  }
+
+  #sbsr-2181 .cs-button-transparent:before {
+    content: "";
+    opacity: 1;
+    z-index: -1;
+    background: #000;
+    width: 0%;
+    height: 100%;
+    transition: width .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #sbsr-2181 .cs-button-transparent:hover {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #sbsr-2181 .cs-button-transparent:hover:before {
+    width: 100%;
+  }
+
+  #sbsr-2181 .cs-button-transparent .cs-button-icon {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+  }
+
+  #sbsr-2181 .cs-button-box {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    display: flex;
+  }
+
+  #sbsr-2181 .cs-button-play {
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
+    color: var(--headerColor);
+    justify-content: flex-start;
+    align-items: center;
+    gap: .625rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .3s;
+    display: flex;
+    position: relative;
+  }
+
+  #sbsr-2181 .cs-wrapper {
+    background-color: var(--primary);
+    border-radius: 50%;
+    order: -1;
+    justify-content: center;
+    align-items: center;
+    width: clamp(2.875rem, 5.5vw, 3.5rem);
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
+    display: flex;
+  }
+
+  #sbsr-2181 .cs-button-icon {
+    width: .875rem;
+    height: auto;
+    display: block;
+  }
+
+  #sbsr-2181 .cs-picture {
+    order: -1;
+    width: 100%;
+    height: 23.75rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sbsr-2181 .cs-picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #sbsr-2181 .cs-floater {
+    z-index: 10;
+    width: 12.5rem;
+    height: auto;
+    position: absolute;
+    bottom: -1.25rem;
+    right: -2.5rem;
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (width >= 48rem) {
+  #sbsr-2181 {
+    padding: var(--sectionPadding);
+  }
+
+  #sbsr-2181 .cs-container {
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #sbsr-2181 .cs-button-play {
+    padding-right: 1.5rem;
+  }
+
+  #sbsr-2181 .cs-button-play:before {
+    content: "";
+    background: var(--primary);
+    opacity: 1;
+    z-index: -2;
+    border-radius: 3.75rem;
+    width: clamp(2.875rem, 5.5vw, 3.5rem);
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
+    transition: width .3s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #sbsr-2181 .cs-button-play:hover {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #sbsr-2181 .cs-button-play:hover:before {
+    width: 100%;
+  }
+
+  #sbsr-2181 .cs-floater {
+    width: 30%;
+    max-width: 18.875rem;
+    bottom: 0;
+    right: 0;
+    transform: none;
+  }
+}
+
+@media only screen and (width >= 64rem) {
+  #sbsr-2181 .cs-content {
+    width: 50%;
+    margin: 0;
+  }
+
+  #sbsr-2181 .cs-picture {
+    width: clamp(25.25rem, 53vw, 46.375rem);
+    height: auto;
+    position: absolute;
+    top: 3.75rem;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (width >= 81.25rem) {
+  #sbsr-2181 .cs-content {
+    margin-bottom: 10.625rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_stitches_home_sbsr-2181_sbsr-2181_css_2bef753f._.single.css.map*/

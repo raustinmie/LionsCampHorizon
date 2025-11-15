@@ -1,0 +1,227 @@
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#faq-2216 {
+		padding: calc(var(--sectionPadding) / 4);
+		overflow: hidden;
+		position: relative;
+		background-color: var(--darkBackground);
+	}
+	#faq-2216 .cs-title {
+		color: var(--bodyTextColorWhite);
+	}
+	#faq-2216 .cs-container {
+		width: 100%;
+		/* changes to 1280px at desktop */
+		max-width: 36.5rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#faq-2216 .cs-topper {
+		color: var(--primary);
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	#faq-2216 .cs-content {
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#faq-2216 .cs-text {
+		max-width: 50%;
+		margin: 0 0 1rem 0;
+	}
+	#faq-2216 .cs-faq-group {
+		margin: 0;
+		padding: 1rem 1rem 5rem 1rem;
+		background-color: #fbf5f1;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1rem;
+		position: relative;
+	}
+	#faq-2216 .cs-faq-item {
+		list-style: none;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 1.25rem;
+		background-color: #ffffff;
+	}
+	#faq-2216 .cs-faq-item.active .cs-button {
+		color: var(--primary);
+	}
+	#faq-2216 .cs-faq-item.active .cs-button:before {
+		background-color: var(--primaryLight);
+		transform: rotate(315deg);
+	}
+	#faq-2216 .cs-faq-item.active .cs-button:after {
+		background-color: var(--primaryLight);
+		transform: rotate(-315deg);
+	}
+	#faq-2216 .cs-faq-item.active .cs-item-p {
+		height: auto;
+		padding-top: 1rem;
+		opacity: 1;
+		white-space: pre-line;
+	}
+	#faq-2216 .cs-button {
+		/* 16px - 20px */
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		font-weight: bold;
+		line-height: 1.2em;
+		text-align: left;
+		width: 100%;
+		padding: 0;
+		background: transparent;
+		color: var(--headerColor);
+		border: none;
+		display: block;
+		position: relative;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	#faq-2216 .cs-button:hover {
+		cursor: pointer;
+	}
+	#faq-2216 .cs-button:before {
+		/* left line */
+		content: "";
+		width: 0.5rem;
+		height: 0.125rem;
+		background-color: var(--headerColor);
+		opacity: 1;
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		top: 45%;
+		right: 0.25rem;
+		transform: rotate(45deg);
+		transition: transform 0.5s;
+		/* animate the transform from the left side of the x axis, and the center of the y */
+		transform-origin: left center;
+	}
+	#faq-2216 .cs-button:after {
+		/* right line */
+		content: "";
+		width: 0.5rem;
+		height: 0.125rem;
+		background-color: var(--headerColor);
+		opacity: 1;
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		top: 45%;
+		right: 0.0625rem;
+		transform: rotate(-45deg);
+		transition: transform 0.5s;
+		/* animate the transform from the right side of the x axis, and the center of the y */
+		transform-origin: right center;
+	}
+	#faq-2216 .cs-button-text {
+		width: 90%;
+		display: block;
+	}
+	#faq-2216 .cs-item-p {
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 1.5vw, 1rem);
+		line-height: 1.5em;
+		text-align: left;
+		width: 90%;
+		max-width: 33.8125rem;
+		height: 0;
+		margin: 0;
+		padding: 0;
+		/* clips the text so it doesn't show up */
+		overflow: hidden;
+		color: var(--bodyTextColor);
+		opacity: 0;
+		transition: opacity 0.3s, padding-bottom 0.3s;
+	}
+	#faq-2216 .cs-wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	#faq-2216 .cs-picture {
+		width: 90%;
+		aspect-ratio: 592/1059;
+		margin-left: auto;
+		margin-top: -3rem;
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+	#faq-2216 .cs-picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#faq-2216 {
+		padding: var(--sectionPadding);
+	}
+	#faq-2216 .cs-container {
+		max-width: 80rem;
+		flex-direction: row;
+	}
+	#faq-2216 .cs-title {
+		max-width: 60%;
+	}
+	#faq-2216 .cs-content {
+		text-align: left;
+		align-items: flex-start;
+	}
+	#faq-2216 .cs-faq-group {
+		width: 60%;
+		max-width: 39.375rem;
+		/* 32px - 80px top, bottom, left */
+		padding: clamp(2rem, 6vw, 5rem);
+		padding-right: 0;
+		background-color: transparent;
+		flex: none;
+	}
+	#faq-2216 .cs-wrapper {
+		flex-direction: row;
+		/* 32px - 58px */
+		gap: clamp(2rem, 4vw, 3.625rem);
+		position: relative;
+		z-index: 1;
+	}
+	#faq-2216 .cs-wrapper::before {
+		content: "";
+		width: 90%;
+		max-width: 54.375rem;
+		height: 100%;
+		background-color: #fbf5f1;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	#faq-2216 .cs-picture {
+		width: 100%;
+		max-width: 37rem;
+		aspect-ratio: 592/1059;
+		max-height: 46.1875rem;
+		margin-top: 0;
+		position: relative;
+		/* 60px - 80px */
+		top: calc(clamp(3.75rem, 7vw, 5rem) * -1);
+	}
+}

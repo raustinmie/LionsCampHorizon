@@ -1,0 +1,254 @@
+/* [project]/src/components/stitches/nav/footer-1391/footer-1391.css [client] (css) */
+@media only screen and (width >= 0) {
+  #cs-footer-1862 {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+    padding-bottom: 2.5rem;
+  }
+
+  #cs-footer-1862 .cs-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90rem;
+    margin: auto;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem clamp(3rem, 4vw, 6.25rem);
+    width: 100%;
+    margin-bottom: clamp(3rem, 6vw, 4rem);
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-about {
+    flex-direction: column;
+    align-self: center;
+    max-width: 14rem;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(2rem, 4vw, 3rem);
+    width: 100%;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-logo {
+    width: 100%;
+    max-width: 12.8125rem;
+    height: auto;
+  }
+
+  #cs-footer-1862 .cs-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  #cs-footer-1862 .cs-social {
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-social-li {
+    list-style: none;
+  }
+
+  #cs-footer-1862 .cs-social-link {
+    background-color: var(--primary);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: auto;
+    padding: .75rem;
+    transition: background-color .3s;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-social-link:hover {
+    background-color: var(--primary);
+  }
+
+  #cs-footer-1862 .cs-social-link:hover .cs-social-icon {
+    filter: grayscale() brightness(1000%);
+  }
+
+  #cs-footer-1862 .cs-social-icon {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+  }
+
+  #cs-footer-1862 .cs-ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-contact-ul {
+    gap: .5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #cs-footer-1862 .cs-li {
+    margin: 0;
+    list-style: none;
+    display: block;
+  }
+
+  #cs-footer-1862 .cs-header {
+    color: var(--headerColor);
+    margin: 0 0 clamp(1rem, 3.5vw, 1.5rem);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    display: block;
+  }
+
+  #cs-footer-1862 .cs-link, #cs-footer-1862 .cs-li {
+    color: var(--bodyTextColor);
+    z-index: 1;
+    align-items: center;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+  }
+
+  #cs-footer-1862 .lucide {
+    position: inline-block;
+    margin-right: .25rem;
+  }
+
+  #cs-footer-1862 .cs-link:hover:before {
+    width: 100%;
+  }
+
+  #cs-footer-1862 .cs-link:before {
+    content: "";
+    opacity: 1;
+    background: currentColor;
+    width: 0%;
+    height: 1px;
+    transition: width .3s;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #cs-footer-1862 .cs-bottom {
+    border-top: 1px solid #ded1bd;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding: clamp(1.25rem, 5vw, 2.5rem) 0 0;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-nav {
+    justify-content: center;
+    align-items: center;
+    column-gap: clamp(1.25rem, 5.3vw, 2.5rem);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  #cs-footer-1862 .cs-nav-li {
+    list-style: none;
+  }
+
+  #cs-footer-1862 .cs-nav-link {
+    color: var(--bodyTextColor);
+    margin: 0;
+    font-size: clamp(.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    position: relative;
+  }
+
+  #cs-footer-1862 .cs-nav-link:hover {
+    color: #8f5b34;
+  }
+
+  #cs-footer-1862 .cs-nav-link:hover:before {
+    width: 100%;
+  }
+
+  #cs-footer-1862 .cs-nav-link:before {
+    content: "";
+    opacity: 1;
+    background: currentColor;
+    width: 0%;
+    height: 1px;
+    transition: width .3s;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #cs-footer-1862 .cs-copyright {
+    text-align: center;
+    color: var(--bodyTextColor);
+    margin: 0;
+    font-size: clamp(.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+  }
+
+  #cs-footer-1862 .cs-copyright-link {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #cs-footer-1862 .cs-copyright-link:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (width >= 48rem) {
+  #cs-footer-1862 .cs-flex {
+    width: auto;
+  }
+
+  #cs-footer-1862 .cs-contact-ul {
+    width: fit-content;
+  }
+}
+
+@media only screen and (width >= 64rem) {
+  #cs-footer-1862 .cs-bottom {
+    flex-direction: row;
+  }
+
+  #cs-footer-1862 .cs-copyright {
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=src_components_stitches_nav_footer-1391_footer-1391_css_2bef753f._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///Users/austinmiedema/code/LionsCampHorizon/src/pages/_document.tsx"],"sourcesContent":["import Document, { Html, Head, Main, NextScript } from \"next/document\";\r\nclass MyDocument extends Document {\r\n\trender() {\r\n\t\treturn (\r\n\t\t\t<Html lang=\"en\">\r\n\t\t\t\t<Head>\r\n\t\t\t\t\t<link rel=\"manifest\" href=\"/manifest.json\" />\r\n\t\t\t\t</Head>\r\n\t\t\t\t<body>\r\n\t\t\t\t\t<Main />\r\n\t\t\t\t\t<NextScript />\r\n\t\t\t\t</body>\r\n\t\t\t</Html>\r\n\t\t);\r\n\t}\r\n}\r\n\r\nexport default MyDocument;\r\n"],"names":[],"mappings":";;;;AAAA;;;AACA,MAAM,mBAAmB,yHAAA,CAAA,UAAQ;IAChC,SAAS;QACR,qBACC,qKAAC,yHAAA,CAAA,OAAI;YAAC,MAAK;;8BACV,qKAAC,yHAAA,CAAA,OAAI;8BACJ,cAAA,qKAAC;wBAAK,KAAI;wBAAW,MAAK;;;;;;;;;;;8BAE3B,qKAAC;;sCACA,qKAAC,yHAAA,CAAA,OAAI;;;;;sCACL,qKAAC,yHAAA,CAAA,aAAU;;;;;;;;;;;;;;;;;IAIf;AACD;uCAEe","debugId":null}}]
+}

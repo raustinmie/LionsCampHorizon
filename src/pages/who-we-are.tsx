@@ -1,0 +1,42 @@
+import AboutSeo from "@/components/seo/about-seo";
+import Image from "next/image";
+import { FaqQuestionAndAnswer } from "@/components/seo/faq-seo";
+import CustomHero from "@/components/stitches/who-we-are/custom-hero/custom-hero";
+import Services2198 from "@/components/stitches/who-we-are/services-2198/services-2198";
+import MeetTeam1141 from "@/components/stitches/who-we-are/meet-team-1141/meet-team-1141";
+import Gallery1152 from "@/components/stitches/who-we-are/gallery-1152/gallery-1152";
+import BoardSection from "@/components/stitches/who-we-are/board-section/board-section";
+import Sbsr2217 from "@/components/stitches/who-we-are/sbsr-2217/sbsr-2217";
+import Sbsr2217B from "@/components/stitches/who-we-are/sbsr-2217b/sbsr-2217b";
+import Sbsr2217C from "@/components/stitches/who-we-are/sbsr-2217c/sbsr-2217c";
+import Reviews306 from "@/components/stitches/shared/reviews-306/reviews-306";
+import Cta697 from "@/components/stitches/shared/cta-697/cta-697";
+export default function About() {
+	return (
+		<div>
+			<AboutSeo
+				description="Learn how Red Barn Market celebrates local creativity with curated vendors, cheerful vibes, and seasonal markets at the NW Washington Fairgrounds."
+				ogDescription="Behind Red Barn Market: a joyful team bringing Whatcom County together for seasonal shopping and holiday cheer at the NW Washington Fairgrounds."
+			/>
+			<CustomHero />
+			<Services2198 />
+			<MeetTeam1141 />
+			<Gallery1152 />
+			<BoardSection />
+			<Sbsr2217 />
+			<Sbsr2217B />
+			<Sbsr2217C />
+			<Reviews306
+				imageSrc="/images/wwa-review.jpg"
+				referralText="Volunteering at Camp Horizon is one of the highlights of my summer.  The campers and staff are so enjoyable to be around.  The smiles and laughs from all are good for the soul."
+				referrerName="Holly L."
+				referrerTitle="Lions Camp Horizon Volunteer"
+			/>
+			<Cta697
+				bannerText="Help us serve our campers!"
+				buttonText="Donate"
+				linkHref="/donate"
+			/>
+		</div>
+	);
+}

@@ -1,0 +1,93 @@
+/* [project]/src/components/stitches/who-we-are/gallery-1152/gallery-1152.css [client] (css) */
+@media only screen and (width >= 0) {
+  #gallery-1152 {
+    padding: var(--sectionPadding);
+    background-color: var(--secondary);
+  }
+
+  #gallery-1152 .cs-container {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    width: 100%;
+    max-width: 59rem;
+    margin: auto;
+    display: flex;
+  }
+
+  #gallery-1152 .cs-content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+
+  #gallery-1152 .cs-topper {
+    color: #767676;
+  }
+
+  #gallery-1152 .cs-title {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  #gallery-1152 .cs-gallery {
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+
+  #gallery-1152 .cs-image {
+    border-radius: 1rem;
+    grid-area: span 1 / span 12;
+    min-height: clamp(16.25rem, 60vw, 20rem);
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #gallery-1152 .cs-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (width >= 43.75rem) {
+  #gallery-1152 .cs-gallery {
+    grid-template-rows: 1fr;
+    max-width: 100%;
+  }
+
+  #gallery-1152 .cs-image {
+    grid-column: span 4;
+  }
+
+  #gallery-1152 .cs-image:nth-of-type(4), #gallery-1152 .cs-image:nth-of-type(5) {
+    grid-column: span 6;
+  }
+}
+
+@media only screen and (width >= 81.25rem) {
+  #gallery-1152 .cs-container {
+    max-width: 80rem;
+  }
+
+  #gallery-1152 .cs-gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #gallery-1152 .cs-image, #gallery-1152 .cs-image:nth-of-type(4), #gallery-1152 .cs-image:nth-of-type(5) {
+    grid-column: span 1;
+  }
+}
+
+/*# sourceMappingURL=src_components_stitches_who-we-are_gallery-1152_gallery-1152_css_2bef753f._.single.css.map*/

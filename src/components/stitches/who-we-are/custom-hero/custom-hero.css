@@ -1,0 +1,92 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#custom-hero {
+		/* 300px - 400px on top - leaving extra space for the navigation */
+		/* 60px - 100px on bottom */
+		/* prevents the topper line from causing an overflow */
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		background-color: var(--secondary);
+	}
+	#custom-hero .cs-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#custom-hero .cs-content {
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#custom-hero .cs-title {
+		/* 39px - 61px */
+		font-size: clamp(1.4375rem, 3vw, 2rem);
+		font-family: var(--fontHeader);
+		font-weight: 900;
+	}
+	#custom-hero .cs-title,
+	#custom-hero .cs-text {
+		color: var(--bodyTextColor);
+		max-width: 80rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	#custom-hero .cs-topper {
+		color: var(--secondary);
+		font-family: var(--fontHeader);
+		font-size: clamp(1.5rem, 2.5vw, 2rem);
+		text-align: center;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#custom-hero .cs-text {
+		/* 16px - 20px */
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		margin-bottom: 2rem;
+		opacity: 0.8;
+	}
+	#custom-hero .cs-picture {
+		position: relative;
+		aspect-ratio: 464/618;
+		height: 100%;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#custom-hero .cs-container {
+		display: flex;
+		flex-direction: row;
+		max-width: 80rem;
+		align-self: center;
+		justify-self: center;
+	}
+	#custom-hero .cs-picture {
+		position: relative;
+		aspect-ratio: 464/618;
+		height: 100%;
+	}
+	/* #custom-hero .cs-picture img {
+		object-fit: contain;
+	} */
+
+	#custom-hero .cs-image1 {
+		display: block;
+	}
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+	#custom-hero .cs-image3 {
+		display: block;
+	}
+}

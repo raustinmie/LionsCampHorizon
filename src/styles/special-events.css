@@ -1,0 +1,51 @@
+@media only screen and (min-width: 0rem) {
+	#special-events-hero {
+		position: relative;
+	}
+
+	#special-events-hero .cs-picture {
+		position: relative;
+		width: 100%;
+		/* 240px - 340px */
+		height: clamp(18rem, 26vw, 30.25rem);
+		display: flex;
+		justify-content: center;
+	}
+	#special-events .cs-picture:before {
+		/* background color overlay */
+		content: "";
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	#special-events-hero .cs-picture img {
+		object-fit: cover;
+	}
+	#special-events-hero .cs-title-section {
+		position: absolute;
+		z-index: 1;
+		color: var(--bodyTextColorWhite);
+		top: 30%;
+	}
+	#special-events-hero .check-back-section {
+		background-color: var(--secondary);
+		padding: 2rem;
+		margin: 2rem;
+		border-radius: 1rem;
+		font-family: var(--fontHeader);
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 48rem) {
+	#special-events-hero .cs-title-section {
+		left: 20%;
+	}
+}

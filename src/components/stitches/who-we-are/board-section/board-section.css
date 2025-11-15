@@ -1,0 +1,123 @@
+/*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#board-section {
+		padding: calc(var(--sectionPadding) / 4);
+		overflow: hidden;
+		background-color: var(--darkBackground);
+	}
+	#board-section .cs-container {
+		width: 100%;
+		/* changes to 1280px at desktop */
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* 48px - 64px */
+		gap: clamp(3rem, 6vw, 4rem);
+	}
+	#board-section .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: center;
+	}
+	#board-section .cs-topper {
+		font-size: var(--topperFontSize);
+		line-height: 1.2em;
+		text-transform: uppercase;
+		text-align: inherit;
+		letter-spacing: 0.1em;
+		font-weight: 700;
+		color: var(--primary);
+		margin-bottom: 0.25rem;
+		display: block;
+	}
+	#board-section .cs-flex {
+		width: 100%;
+	}
+	#board-section .cs-title {
+		font-size: var(--headerFontSize);
+		font-weight: 700;
+		line-height: 1.2em;
+		width: 100%;
+		max-width: 43.75rem;
+		margin: 0 0 1rem 0;
+		color: var(--headerColorWhite);
+		position: relative;
+		text-align: center;
+		border-bottom: var(--primary) 4px solid;
+		justify-self: center;
+	}
+	#board-section .cs-link {
+		color: var(--bodyTextColorWhite);
+		display: inline;
+	}
+	#board-section .cs-text {
+		width: 90%;
+		padding: 1rem;
+		/* prevents padding and border from affecting height and width */
+		box-sizing: border-box;
+		border-radius: 0.75rem;
+		position: relative;
+		z-index: 10;
+		transition: background-color 0.3s;
+		color: var(--bodyTextColorWhite);
+		max-width: unset;
+	}
+	#board-section .cs-name {
+		font-size: 1.25rem;
+		line-height: 1.2em;
+		font-weight: 700;
+		margin: 0 0 0.25rem 0;
+		color: var(--headerColor);
+		display: block;
+		transition: color 0.3s;
+	}
+	#board-section .cs-item {
+		/* 14px - 16px */
+		color: var(--bodyTextColorWhite);
+		text-align: left;
+	}
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+	#board-section {
+		padding: var(--sectionPadding);
+	}
+	#board-section .cs-card-group {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+
+	#board-section .cs-picture {
+		height: 25.4375rem;
+		/* remove the aspect ratio so the height can be squished */
+		aspect-ratio: initial;
+	}
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 56.25rem) {
+	#board-section .cs-container {
+		max-width: 80rem;
+		justify-content: space-between;
+	}
+	#board-section .cs-content {
+		width: 85%;
+		flex-direction: column;
+	}
+	#board-section .cs-card-group {
+		justify-content: center;
+		flex-wrap: nowrap;
+	}
+	#board-section .cs-item {
+		width: 100%;
+	}
+}

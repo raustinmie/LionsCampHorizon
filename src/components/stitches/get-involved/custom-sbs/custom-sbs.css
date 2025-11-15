@@ -1,0 +1,116 @@
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#custom-sbs {
+		padding: var(--sectionPadding);
+		position: relative;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		background: var(--primary);
+	}
+	#custom-sbs .cs-background {
+		width: 100%;
+		height: 100%;
+		background-blend-mode: multiply;
+		display: block;
+		z-index: -1;
+		margin-top: 2rem;
+	}
+	#custom-sbs .cs-background:before {
+		/* background color overlay */
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: var(--darkBackground);
+		opacity: 0.8;
+		z-index: 1;
+	}
+	#custom-sbs .cs-background img {
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		/* Makes img tag act as a background image */
+		object-fit: cover;
+		/* positions the image inside the parent */
+	}
+	#custom-sbs .cs-container {
+		width: 100%;
+		max-width: 80rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* 48px - 64px */
+		gap: clamp(3rem, 6vw, 4rem);
+	}
+	#custom-sbs .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: center;
+		width: 100%;
+		max-width: 32.3125rem;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: center;
+	}
+	#custom-sbs .cs-title {
+		color: var(--bodyTextColor);
+		margin: 1rem;
+	}
+	#custom-sbs .cs-text {
+		color: var(--bodyTextColor);
+		margin-bottom: 1rem;
+	}
+	#custom-sbs .cs-h3 {
+		color: var(--bodyTextColor);
+		margin-bottom: 0;
+		font-weight: semibold;
+	}
+	#custom-sbs .cs-button-solid {
+		font-weight: normal;
+	}
+	#custom-sbs .cs-text:last-of-type {
+		margin-bottom: 2rem;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#custom-sbs .cs-background {
+		/* clips the black slant so it doesnt overflow */
+		overflow: hidden;
+		margin: unset;
+	}
+	#custom-sbs .cs-background:before {
+		width: 40%;
+		opacity: 1;
+	}
+
+	#custom-sbs .cs-background img {
+		position: absolute;
+		top: 0;
+		left: auto;
+		right: 0;
+		height: 100%;
+		width: 50%;
+		/* Makes img tag act as a background image */
+		object-fit: cover;
+		/* positions the image inside the parent */
+	}
+	#custom-sbs .cs-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#custom-sbs .cs-content {
+		text-align: left;
+		align-items: flex-start;
+		width: 50%;
+	}
+	#custom-sbs .cs-text,
+	#custom-sbs .cs-title {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,118 @@
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#cta-403 {
+		/* padding: var(--sectionPadding); */
+		position: relative;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 2rem;
+		background: var(--darkBackground);
+	}
+	#cta-403 .cs-link {
+		color: var(--bodyTextColorWhite);
+	}
+	#cta-403 .cs-background {
+		width: 100%;
+		height: 100%;
+		background-blend-mode: multiply;
+		display: block;
+		z-index: -1;
+		margin-top: 2rem;
+	}
+	#cta-403 .cs-background:before {
+		/* background color overlay */
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: var(--darkBackground);
+		opacity: 0.8;
+		z-index: 1;
+	}
+	#cta-403 .cs-background img {
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		/* Makes img tag act as a background image */
+		object-fit: cover;
+		/* positions the image inside the parent */
+		object-position: 0% 30%;
+	}
+	#cta-403 .cs-container {
+		width: 100%;
+		max-width: 80rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* 48px - 64px */
+		gap: clamp(3rem, 6vw, 4rem);
+	}
+	#cta-403 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: center;
+		width: 100%;
+		max-width: 32.3125rem;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: center;
+	}
+	#cta-403 .cs-title {
+		color: var(--bodyTextColorWhite);
+		margin: 1rem;
+	}
+	#cta-403 .cs-text {
+		opacity: 0.8;
+		color: var(--bodyTextColorWhite);
+		margin-bottom: 1rem;
+	}
+	#cta-403 .cs-button-solid {
+		font-weight: normal;
+	}
+	#cta-403 .cs-text:last-of-type {
+		margin-bottom: 2rem;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#cta-403 .cs-background {
+		/* clips the black slant so it doesnt overflow */
+		overflow: hidden;
+		margin: unset;
+	}
+	#cta-403 .cs-background:before {
+		width: 40%;
+		opacity: 1;
+	}
+
+	#cta-403 .cs-background img {
+		position: absolute;
+		top: 0;
+		left: auto;
+		right: 0;
+		height: 100%;
+		width: 50%;
+		/* Makes img tag act as a background image */
+		object-fit: cover;
+		/* positions the image inside the parent */
+		object-position: 0% 30%;
+	}
+	#cta-403 .cs-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#cta-403 .cs-content {
+		text-align: left;
+		align-items: flex-start;
+		width: 50%;
+	}
+	#cta-403 .cs-text,
+	#cta-403 .cs-title {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,119 @@
+/* [project]/src/components/stitches/shared/cta-403/cta-403.css [client] (css) */
+@media only screen and (width >= 0) {
+  #cta-403 {
+    background: var(--darkBackground);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    position: relative;
+  }
+
+  #cta-403 .cs-link {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #cta-403 .cs-background {
+    background-blend-mode: multiply;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  #cta-403 .cs-background:before {
+    background: var(--darkBackground);
+    opacity: .8;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #cta-403 .cs-background img {
+    object-fit: cover;
+    object-position: 0% 30%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #cta-403 .cs-container {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+  }
+
+  #cta-403 .cs-content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 32.3125rem;
+    display: flex;
+  }
+
+  #cta-403 .cs-title {
+    color: var(--bodyTextColorWhite);
+    margin: 1rem;
+  }
+
+  #cta-403 .cs-text {
+    opacity: .8;
+    color: var(--bodyTextColorWhite);
+    margin-bottom: 1rem;
+  }
+
+  #cta-403 .cs-button-solid {
+    font-weight: normal;
+  }
+
+  #cta-403 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (width >= 48rem) {
+  #cta-403 .cs-background {
+    margin: unset;
+    overflow: hidden;
+  }
+
+  #cta-403 .cs-background:before {
+    opacity: 1;
+    width: 40%;
+  }
+
+  #cta-403 .cs-background img {
+    object-fit: cover;
+    object-position: 0% 30%;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  #cta-403 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #cta-403 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  #cta-403 .cs-text, #cta-403 .cs-title {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=src_components_stitches_shared_cta-403_cta-403_css_2bef753f._.single.css.map*/

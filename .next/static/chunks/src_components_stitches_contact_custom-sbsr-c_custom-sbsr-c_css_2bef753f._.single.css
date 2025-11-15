@@ -1,0 +1,129 @@
+/* [project]/src/components/stitches/contact/custom-sbsr-c/custom-sbsr-c.css [client] (css) */
+@media only screen and (width >= 0) {
+  #custom-sbsr-c {
+    padding: var(--sectionPadding);
+    background: var(--primary);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+
+  #custom-sbsr-c .cs-background {
+    background-blend-mode: multiply;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  #custom-sbsr-c .cs-background:before {
+    background: var(--darkBackground);
+    opacity: .8;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #custom-sbsr-c .cs-background img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #custom-sbsr-c .cs-container {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+  }
+
+  #custom-sbsr-c .cs-content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 32.3125rem;
+    display: flex;
+  }
+
+  #custom-sbsr-c .cs-title {
+    color: var(--bodyTextColor);
+    margin: 1rem;
+  }
+
+  #custom-sbsr-c .cs-text {
+    color: var(--bodyTextColor);
+    margin-bottom: 1rem;
+  }
+
+  #custom-sbsr-c .cs-list {
+    list-style: circle;
+  }
+
+  #custom-sbsr-c .cs-h3 {
+    color: var(--bodyTextColor);
+    font-weight: semibold;
+    margin-bottom: 0;
+  }
+
+  #custom-sbsr-c .cs-button-solid {
+    font-weight: normal;
+  }
+
+  #custom-sbsr-c .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (width >= 48rem) {
+  #custom-sbsr-c .cs-background {
+    margin: unset;
+    overflow: hidden;
+  }
+
+  #custom-sbsr-c .cs-container {
+    min-height: 24rem;
+  }
+
+  #custom-sbsr-c .cs-content {
+    padding-left: 2rem;
+  }
+
+  #custom-sbsr-c .cs-background:before {
+    opacity: 1;
+    width: 40%;
+  }
+
+  #custom-sbsr-c .cs-background img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #custom-sbsr-c .cs-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #custom-sbsr-c .cs-content {
+    text-align: left;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  #custom-sbsr-c .cs-text, #custom-sbsr-c .cs-title {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=src_components_stitches_contact_custom-sbsr-c_custom-sbsr-c_css_2bef753f._.single.css.map*/

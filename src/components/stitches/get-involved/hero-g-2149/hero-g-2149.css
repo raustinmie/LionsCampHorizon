@@ -1,0 +1,100 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#hero-g-2149 {
+		/* 300px - 400px on top - leaving extra space for the navigation */
+		/* 60px - 100px on bottom */
+		padding: 0 0 clamp(3.75rem, 7.5vw, 6.25rem) 0;
+		/* prevents the topper line from causing an overflow */
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		background-color: var(--primary);
+	}
+	#hero-g-2149 .cs-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#hero-g-2149 .cs-content {
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#hero-g-2149 .cs-title {
+		/* 39px - 61px */
+		font-size: clamp(1.4375rem, 3vw, 2rem);
+		font-family: var(--fontHeader);
+		font-weight: 900;
+	}
+	#hero-g-2149 .cs-title,
+	#hero-g-2149 .cs-text {
+		color: var(--bodyTextColor);
+		max-width: 80rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	#hero-g-2149 .cs-topper {
+		color: var(--secondary);
+		font-family: var(--fontHeader);
+		font-size: clamp(1.5rem, 2.5vw, 2rem);
+		text-align: center;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#hero-g-2149 .cs-text {
+		/* 16px - 20px */
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		margin-bottom: 2rem;
+		opacity: 0.8;
+	}
+
+	#hero-g-2149 .cs-background {
+		width: 100%;
+		aspect-ratio: 2040/618;
+		min-height: 15rem;
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		z-index: -2;
+		gap: clamp(1rem, 2vw, 2rem);
+		padding: 1rem;
+	}
+	#hero-g-2149 .cs-background img {
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+	#hero-g-2149 .cs-image1 {
+		flex: 1;
+		display: none;
+	}
+	#hero-g-2149 .cs-image2 {
+		flex: 2;
+	}
+	#hero-g-2149 .cs-image3 {
+		flex: 1;
+		display: none;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#hero-g-2149 .cs-image1 {
+		display: block;
+	}
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+	#hero-g-2149 .cs-image3 {
+		display: block;
+	}
+}

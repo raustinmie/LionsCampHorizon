@@ -1,0 +1,8 @@
+__turbopack_load_page_chunks__("/camp", [
+  "static/chunks/node_modules_next_bb985d6d._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_2a5cf4bb._.js",
+  "static/chunks/[root-of-the-server]__d60a4cb6._.js",
+  "static/chunks/src_pages_camp_5771e187._.js",
+  "static/chunks/src_pages_camp_108cf088._.js"
+])

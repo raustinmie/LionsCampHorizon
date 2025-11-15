@@ -1,0 +1,119 @@
+/* [project]/src/components/stitches/donate/custom-sbs-d/custom-sbs-d.css [client] (css) */
+@media only screen and (width >= 0) {
+  #custom-sbs-d {
+    padding: var(--sectionPadding);
+    background: var(--primary);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+
+  #custom-sbs-d .cs-background {
+    background-blend-mode: multiply;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  #custom-sbs-d .cs-background:before {
+    background: var(--darkBackground);
+    opacity: .8;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  #custom-sbs-d .cs-background img {
+    object-fit: cover;
+    object-position: 0 20%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #custom-sbs-d .cs-container {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+  }
+
+  #custom-sbs-d .cs-content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 32.3125rem;
+    display: flex;
+  }
+
+  #custom-sbs-d .cs-title {
+    color: var(--bodyTextColor);
+    margin: 1rem;
+  }
+
+  #custom-sbs-d .cs-text {
+    color: var(--bodyTextColor);
+    margin-bottom: 1rem;
+  }
+
+  #custom-sbs-d .cs-h3 {
+    color: var(--bodyTextColor);
+    font-weight: semibold;
+    margin-bottom: 0;
+  }
+
+  #custom-sbs-d .cs-button-solid {
+    font-weight: normal;
+  }
+
+  #custom-sbs-d .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (width >= 48rem) {
+  #custom-sbs-d .cs-background {
+    margin: unset;
+    overflow: hidden;
+  }
+
+  #custom-sbs-d .cs-background:before {
+    opacity: 1;
+    width: 40%;
+  }
+
+  #custom-sbs-d .cs-background img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+
+  #custom-sbs-d .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #custom-sbs-d .cs-content {
+    text-align: left;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  #custom-sbs-d .cs-text, #custom-sbs-d .cs-title {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=src_components_stitches_donate_custom-sbs-d_custom-sbs-d_css_2bef753f._.single.css.map*/

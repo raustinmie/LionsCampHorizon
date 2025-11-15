@@ -1,0 +1,154 @@
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#cta-1132 {
+		padding: var(--sectionPadding);
+		/* chnages at tablet */
+		background-color: var(--primary);
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+	}
+	#cta-1132 .cs-container {
+		width: 100%;
+		max-width: 80rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		/* 48px - 64px */
+		gap: clamp(3rem, 6vw, 4rem);
+	}
+	#cta-1132 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: center;
+	}
+	#cta-1132 .cs-topper {
+		color: var(--secondary);
+	}
+
+	#cta-1132 .cs-title {
+		text-transform: capitalize;
+		max-width: 24ch;
+		/* 28px - 40px */
+		margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+
+		color: var(--bodyTextColorWhite);
+	}
+	#cta-1132 .cs-button-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+	}
+	#cta-1132 .cs-button-solid {
+		font-size: 1rem;
+		/* 46px - 56px */
+		line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+		text-decoration: none;
+		font-weight: 700;
+		text-align: center;
+		margin: 0;
+		color: #1a1a1a;
+		min-width: 12.5rem;
+		padding: 0 1.5rem;
+		background-color: var(--secondary);
+		border-radius: 0.5rem;
+		display: inline-block;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		/* prevents padding from adding to the width */
+		box-sizing: border-box;
+		transition: color 0.3s;
+	}
+	#cta-1132 .cs-button-solid:before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 0%;
+		background: #000;
+		border-radius: 0.5rem;
+		opacity: 1;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: width 0.3s;
+	}
+	#cta-1132 .cs-button-solid:hover {
+		color: #fff;
+	}
+	#cta-1132 .cs-button-solid:hover:before {
+		width: 100%;
+	}
+	#cta-1132 .cs-background {
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	#cta-1132 .cs-background:before {
+		/* background color overlay */
+		content: "";
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: var(--primary);
+		opacity: 0.8;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	#cta-1132 .cs-background img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		/* Makes img tag act as a background image */
+		object-fit: cover;
+		object-position: top;
+	}
+	#cta-1132 .cs-graphic {
+		width: 100%;
+		height: auto;
+		display: flex;
+		align-items: flex-end;
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+		z-index: 10;
+	}
+	#cta-1132 .cs-graphic img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	#cta-1132 .cs-dark {
+		display: none;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#cta-1132 {
+		/* changes at desktop */
+	}
+	#cta-1132 .cs-content {
+		width: 50%;
+	}
+}
+/* Desktop - 1024pxpx */
+@media only screen and (min-width: 64rem) {
+}
