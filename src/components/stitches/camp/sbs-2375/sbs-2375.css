@@ -158,10 +158,29 @@
 	}
 
 	#sbs-2375 .cs-picture {
-		width: 70vw;
 		max-width: 33rem;
-		height: auto;
+		/* remove height:auto; give a consistent aspect ratio */
+		height: auto; /* keep for fallback */
+		aspect-ratio: 528 / 491; /* ensures the element has a height on larger screens */
+		min-height: 12rem; /* safety fallback if aspect-ratio unsupported */
 		max-height: 100%;
 		order: 2;
+		overflow: hidden; /* keep cover cropping */
+		position: relative; /* required for Image fill */
+	}
+
+	/* ensure the fill image still covers correctly */
+	#sbs-2375 .cs-picture img,
+	#sbs-2375 .cs-picture .nextImage {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		/* object-position: -10vw 20%; */
+	}
+	.cs-rotator {
+		width: 100%;
+		height: 100%;
 	}
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { camperApplicationLink } from "@/constants";
 
 export default function Sbs2369() {
 	return (
@@ -29,7 +30,7 @@ export default function Sbs2369() {
 					<h2 className="cs-title">What can we help you find?</h2>
 					<ul className="cs-ul">
 						<li className="cs-li">
-							<Link href="" className="cs-li-link">
+							<Link href={camperApplicationLink} className="cs-li-link">
 								<Image
 									src="images/home-spiral.svg"
 									alt="checkmark"
@@ -51,7 +52,7 @@ export default function Sbs2369() {
 							</Link>
 						</li>
 						<li className="cs-li">
-							<Link href="" className="cs-li-link">
+							<Link href="/get-involved" className="cs-li-link">
 								<Image
 									src="images/home-spiral.svg"
 									alt="checkmark"

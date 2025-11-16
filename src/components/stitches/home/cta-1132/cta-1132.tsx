@@ -12,8 +12,8 @@ export default function Cta1132() {
 						Help us prepare for the 2026 Camp Season - Ask how you can volunteer
 						or become a donor today!{" "}
 					</h2>
-					<Link href="" className="cs-button-solid">
-						Get Involved{" "}
+					<Link href="/get-involved" className="cs-button-solid">
+						Get Involved
 					</Link>
 				</div>
 			</div>

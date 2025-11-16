@@ -159,11 +159,27 @@
   }
 
   #sbs-2375 .cs-picture {
+    aspect-ratio: 528 / 491;
     order: 2;
-    width: 70vw;
     max-width: 33rem;
     height: auto;
+    min-height: 12rem;
     max-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sbs-2375 .cs-picture img, #sbs-2375 .cs-picture .nextImage {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  }
+
+  .cs-rotator {
+    width: 100%;
+    height: 100%;
   }
 }
 

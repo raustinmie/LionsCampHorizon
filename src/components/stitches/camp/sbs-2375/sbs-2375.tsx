@@ -1,6 +1,13 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { image } from "framer-motion/client";
+
+const images = [
+	"/images/camp-base-camp.jpg",
+	"/images/camp-base-camp2.jpeg",
+	"/images/camp-base-camp3.jpeg",
+];
 
 export default function Sbs2375() {
 	return (
@@ -71,8 +78,7 @@ export default function Sbs2375() {
 								</li>
 							</ul>
 						</div>
-						<div className="cs-picture">
-							<Image
+						{/* <Image
 								src="/images/camp-base-camp.jpg"
 								alt="campers at base camp"
 								width={528}
@@ -80,8 +86,8 @@ export default function Sbs2375() {
 								loading="lazy"
 								decoding="async"
 								className="cs-position-top"
-							/>
-						</div>
+							/> */}
+						<BaseCampRotator images={images} intervalMs={10000} />
 					</div>
 					{/*SBS Reverse*/}
 					<div className="cs-flex">
@@ -129,5 +135,46 @@ export default function Sbs2375() {
 				</div>
 			</div>
 		</section>
+	);
+}
+
+const baseImages = [
+	"/images/camp-base-camp.jpg",
+	"/images/camp-base-camp2.jpeg",
+	"/images/camp-base-camp3.jpeg",
+];
+
+type Props = {
+	images?: string[];
+	intervalMs?: number;
+	alt?: string;
+};
+
+function BaseCampRotator({
+	images = baseImages,
+	intervalMs = 5000,
+	alt = "base camp photo",
+}: Props) {
+	const [index, setIndex] = useState(0);
+
+	useEffect(() => {
+		const id = window.setInterval(() => {
+			setIndex((i) => (i + 1) % images.length);
+		}, intervalMs);
+
+		return () => window.clearInterval(id);
+	}, [images.length, intervalMs]);
+
+	return (
+		<div className="cs-picture cs-rotator" aria-hidden={false}>
+			<Image
+				src={images[index]}
+				alt={alt}
+				fill
+				sizes="(max-width: 48rem) 100vw, 33rem"
+				style={{ objectFit: "cover" }}
+				priority={false}
+			/>
+		</div>
 	);
 }

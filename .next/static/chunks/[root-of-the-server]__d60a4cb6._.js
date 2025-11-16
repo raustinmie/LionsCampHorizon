@@ -468,6 +468,7 @@ function triggerUpdate(msg) {
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
+    "camperApplicationLink": (()=>camperApplicationLink),
     "canonicalUrl": (()=>canonicalUrl),
     "companyName": (()=>companyName),
     "facebookUrl": (()=>facebookUrl),
@@ -478,6 +479,7 @@ __turbopack_context__.s({
     "primaryAddress2": (()=>primaryAddress2),
     "primaryEmail": (()=>primaryEmail),
     "primaryPhone": (()=>primaryPhone),
+    "rentalApplictaionLink": (()=>rentalApplictaionLink),
     "staffApplicationLink": (()=>staffApplicationLink)
 });
 const canonicalUrl = "https://www.lionscamphorizon.org/";
@@ -502,6 +504,10 @@ const facebookUrl = "https://www.facebook.com/CampHorizonBlaine";
 const instagramUrl = "https://www.instagram.com/lions_camp_horizon/";
 ;
 const staffApplicationLink = "https://form.jotform.com/252855980249167";
+;
+const rentalApplictaionLink = "https://form.jotform.com/252857241323051";
+;
+const camperApplicationLink = "https://form.jotform.com/252884360756063";
 ;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
@@ -866,9 +872,17 @@ __turbopack_context__.s({
     "default": (()=>Sbs2375)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [client] (ecmascript)");
 ;
+var _s = __turbopack_context__.k.signature();
 ;
+;
+const images = [
+    "/images/camp-base-camp.jpg",
+    "/images/camp-base-camp2.jpeg",
+    "/images/camp-base-camp3.jpeg"
+];
 function Sbs2375() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "sbs-2375",
@@ -883,7 +897,7 @@ function Sbs2375() {
                             children: "A Camp For Everyone"
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                            lineNumber: 10,
+                            lineNumber: 17,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -894,7 +908,7 @@ function Sbs2375() {
                                     children: "Base Camp"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 36,
                                     columnNumber: 28
                                 }, this),
                                 " and",
@@ -903,31 +917,31 @@ function Sbs2375() {
                                     children: "Adventure Camp"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 37,
                                     columnNumber: 7
                                 }, this),
                                 " — each running 5 days and 4 nights (Monday–Friday).",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 32,
+                                    lineNumber: 39,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 40,
                                     columnNumber: 7
                                 }, this),
                                 "Please review the eligibility guidelines below and contact us with any questions."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                            lineNumber: 11,
+                            lineNumber: 18,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                    lineNumber: 9,
+                    lineNumber: 16,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -944,7 +958,7 @@ function Sbs2375() {
                                             children: "Base Camp"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 49,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -952,7 +966,7 @@ function Sbs2375() {
                                             children: "Base Camp is the center of the Camp Horizon experience — a full, exciting session filled with activities and adventure right here on campus. While first-time campers begin here, many choose to remain in Base Camp year after year because they love the familiar environment, the strong sense of community, and the variety of on-site fun. Base Camp also provides a higher level of support for campers who benefit from 1:1 or 2:1 care, ensuring that everyone can participate comfortably and confidently. It offers the same joy, energy, and connection as Adventure Camp, just without off-campus travel making it a perfect fit for campers of all ages and support needs"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                            lineNumber: 43,
+                                            lineNumber: 50,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -963,7 +977,7 @@ function Sbs2375() {
                                                     children: "Overnight camp. All onsite. (Monday-Friday)."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 57,
+                                                    lineNumber: 64,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -971,7 +985,7 @@ function Sbs2375() {
                                                     children: "Ages 12 and up "
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 67,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -982,7 +996,7 @@ function Sbs2375() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 68,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -990,7 +1004,7 @@ function Sbs2375() {
                                                     children: "Two sessions offered. (Campers can attend multiple sessions based on availability)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 71,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -998,7 +1012,7 @@ function Sbs2375() {
                                                     children: "Nursing Staff "
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 75,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1009,45 +1023,33 @@ function Sbs2375() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 76,
                                                     columnNumber: 9
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 63,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 48,
                                     columnNumber: 7
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "cs-picture",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/images/camp-base-camp.jpg",
-                                        alt: "campers at base camp",
-                                        width: 528,
-                                        height: 378,
-                                        loading: "lazy",
-                                        decoding: "async",
-                                        className: "cs-position-top"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                        lineNumber: 75,
-                                        columnNumber: 8
-                                    }, this)
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BaseCampRotator, {
+                                    images: images,
+                                    intervalMs: 10000
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 90,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                            lineNumber: 40,
+                            lineNumber: 47,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1061,7 +1063,7 @@ function Sbs2375() {
                                             children: "Adventure Camp"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 95,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1069,7 +1071,7 @@ function Sbs2375() {
                                             children: "Adventure Camp is for campers who are a little more independent and ready to keep the fun going — both on campus and out in the community! It still offers the fun and adventure you know and love from camp, but the excitement doesn’t stop at the camp gates. We offer two offsite field trips including a beach day and an adventure to be announced! To ensure the safety of campers and staff, campers must attend a Base Camp session first or complete a site-visit meeting before joining Adventure Camp. 3:1-4:1 camper to staff ratio is required for Adventure Camp"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 96,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1080,7 +1082,7 @@ function Sbs2375() {
                                                     children: "Overnight camp. (Monday-Friday)."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 108,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1088,7 +1090,7 @@ function Sbs2375() {
                                                     children: "Ages 12 and up "
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 103,
+                                                    lineNumber: 109,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1099,7 +1101,7 @@ function Sbs2375() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 110,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1107,7 +1109,7 @@ function Sbs2375() {
                                                     children: "Two sessions offered. (Campers can attend multiple sessions based on availability)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 113,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1115,7 +1117,7 @@ function Sbs2375() {
                                                     children: "Nursing Staff "
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 111,
+                                                    lineNumber: 117,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1126,7 +1128,7 @@ function Sbs2375() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 112,
+                                                    lineNumber: 118,
                                                     columnNumber: 9
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1134,19 +1136,19 @@ function Sbs2375() {
                                                     children: "Offsite fieldtrips"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 121,
                                                     columnNumber: 9
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                            lineNumber: 101,
+                                            lineNumber: 107,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 94,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1160,41 +1162,92 @@ function Sbs2375() {
                                         decoding: "async"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 125,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 124,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                            lineNumber: 87,
+                            lineNumber: 93,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-                    lineNumber: 38,
+                    lineNumber: 45,
                     columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-            lineNumber: 8,
+            lineNumber: 15,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
-        lineNumber: 7,
+        lineNumber: 14,
         columnNumber: 3
     }, this);
 }
 _c = Sbs2375;
-var _c;
+const baseImages = [
+    "/images/camp-base-camp.jpg",
+    "/images/camp-base-camp2.jpeg",
+    "/images/camp-base-camp3.jpeg"
+];
+function BaseCampRotator({ images = baseImages, intervalMs = 5000, alt = "base camp photo" }) {
+    _s();
+    const [index, setIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "BaseCampRotator.useEffect": ()=>{
+            const id = window.setInterval({
+                "BaseCampRotator.useEffect.id": ()=>{
+                    setIndex({
+                        "BaseCampRotator.useEffect.id": (i)=>(i + 1) % images.length
+                    }["BaseCampRotator.useEffect.id"]);
+                }
+            }["BaseCampRotator.useEffect.id"], intervalMs);
+            return ({
+                "BaseCampRotator.useEffect": ()=>window.clearInterval(id)
+            })["BaseCampRotator.useEffect"];
+        }
+    }["BaseCampRotator.useEffect"], [
+        images.length,
+        intervalMs
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "cs-picture cs-rotator",
+        "aria-hidden": false,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+            src: images[index],
+            alt: alt,
+            fill: true,
+            sizes: "(max-width: 48rem) 100vw, 33rem",
+            style: {
+                objectFit: "cover"
+            },
+            priority: false
+        }, void 0, false, {
+            fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
+            lineNumber: 170,
+            columnNumber: 4
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/components/stitches/camp/sbs-2375/sbs-2375.tsx",
+        lineNumber: 169,
+        columnNumber: 3
+    }, this);
+}
+_s(BaseCampRotator, "c3fuAdVwNN91t4bNS1qBXl5hAWY=");
+_c1 = BaseCampRotator;
+var _c, _c1;
 __turbopack_context__.k.register(_c, "Sbs2375");
+__turbopack_context__.k.register(_c1, "BaseCampRotator");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }

@@ -11,71 +11,65 @@ export default function Services2198() {
 				</div>
 				<ul className="cs-card-group">
 					<li className="cs-item">
-						<Link href="" className="cs-link">
-							<div className="cs-picture">
-								<Image
-									src="/images/what-were-all-about1.png"
-									alt="a camper flexing his biceps"
-									width={550}
-									height={377}
-									loading="lazy"
-									decoding="async"
-								/>
-							</div>
-							<div className="cs-flex">
-								<h3 className="cs-h3">Our Mission</h3>
-							</div>
-							<p className="cs-item-text">
-								To provide recreational activities that encourage independence,
-								build new skills, develop lifelong friendships and create
-								lasting memories of camp.
-							</p>
-						</Link>
+						<div className="cs-picture">
+							<Image
+								src="/images/what-were-all-about1.png"
+								alt="a camper flexing his biceps"
+								width={550}
+								height={377}
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<div className="cs-flex">
+							<h3 className="cs-h3">Our Mission</h3>
+						</div>
+						<p className="cs-item-text">
+							To provide recreational activities that encourage independence,
+							build new skills, develop lifelong friendships and create lasting
+							memories of camp.
+						</p>
 					</li>
 					<li className="cs-item">
-						<Link href="" className="cs-link">
-							<div className="cs-picture">
-								<Image
-									src="/images/what-were-all-about2.jpg"
-									alt="a camper and counselor hugging"
-									width={550}
-									height={377}
-									loading="lazy"
-									decoding="async"
-									className="picture-2"
-								/>
-							</div>
-							<div className="cs-flex">
-								<h3 className="cs-h3">Our Vision</h3>
-							</div>
-							<p className="cs-item-text">
-								To empower people challenged by disabilities through experiences
-								that help develop life skills, foster independence and build
-								self-esteem.
-							</p>
-						</Link>
+						<div className="cs-picture">
+							<Image
+								src="/images/what-were-all-about2.jpg"
+								alt="a camper and counselor hugging"
+								width={550}
+								height={377}
+								loading="lazy"
+								decoding="async"
+								className="picture-2"
+							/>
+						</div>
+						<div className="cs-flex">
+							<h3 className="cs-h3">Our Vision</h3>
+						</div>
+						<p className="cs-item-text">
+							To empower people challenged by disabilities through experiences
+							that help develop life skills, foster independence and build
+							self-esteem.
+						</p>
 					</li>
 					<li className="cs-item">
-						<Link href="" className="cs-link">
-							<div className="cs-picture">
-								<Image
-									src="/images/what-were-all-about3.jpg"
-									alt="two men arm wrestling"
-									width={550}
-									height={377}
-									loading="lazy"
-									decoding="async"
-								/>
-							</div>
-							<div className="cs-flex">
-								<h3 className="cs-h3">Core Values</h3>
-							</div>
-							<p className="cs-item-text">
-								To respect the diversity we represent, create inclusive
-								opportunities for individuals of all abilities, and empower each
-								person to grow, succeed, and shine.
-							</p>
-						</Link>
+						<div className="cs-picture">
+							<Image
+								src="/images/what-were-all-about3.jpg"
+								alt="two men arm wrestling"
+								width={550}
+								height={377}
+								loading="lazy"
+								decoding="async"
+							/>
+						</div>
+						<div className="cs-flex">
+							<h3 className="cs-h3">Core Values</h3>
+						</div>
+						<p className="cs-item-text">
+							To respect the diversity we represent, create inclusive
+							opportunities for individuals of all abilities, and empower each
+							person to grow, succeed, and shine.
+						</p>
 					</li>
 				</ul>
 			</div>

@@ -19,7 +19,7 @@ export default function Sbsr2181() {
 						adventure and endless summer fun. 
 					</p>
 					<div className="cs-button-box">
-						<Link href="" className="cs-button-solid">
+						<Link href="/who-we-are" className="cs-button-solid">
 							{`Learn Our Story >`}
 						</Link>
 					</div>

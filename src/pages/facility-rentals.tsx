@@ -18,6 +18,7 @@ export default function MarketInformation() {
 			<Services961 />
 			<Cta403
 				imageSrc="/images/facilities-application.jpg"
+				imageAlt="Lions Camp Horizon dining hall"
 				title="Rental Application"
 				subtitle="Ready to rent our campus"
 				buttonText="Rental Application"

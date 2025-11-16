@@ -567,6 +567,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
+    "camperApplicationLink": (()=>camperApplicationLink),
     "canonicalUrl": (()=>canonicalUrl),
     "companyName": (()=>companyName),
     "facebookUrl": (()=>facebookUrl),
@@ -577,6 +578,7 @@ __turbopack_context__.s({
     "primaryAddress2": (()=>primaryAddress2),
     "primaryEmail": (()=>primaryEmail),
     "primaryPhone": (()=>primaryPhone),
+    "rentalApplictaionLink": (()=>rentalApplictaionLink),
     "staffApplicationLink": (()=>staffApplicationLink)
 });
 const canonicalUrl = "https://www.lionscamphorizon.org/";
@@ -601,6 +603,10 @@ const facebookUrl = "https://www.facebook.com/CampHorizonBlaine";
 const instagramUrl = "https://www.instagram.com/lions_camp_horizon/";
 ;
 const staffApplicationLink = "https://form.jotform.com/252855980249167";
+;
+const rentalApplictaionLink = "https://form.jotform.com/252857241323051";
+;
+const camperApplicationLink = "https://form.jotform.com/252884360756063";
 ;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
@@ -813,6 +819,8 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/constants.tsx [client] (ecmascript)");
+;
 ;
 ;
 ;
@@ -834,12 +842,12 @@ function Sbs2369() {
                                 height: 814
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 7
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                            lineNumber: 11,
+                            lineNumber: 12,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -850,13 +858,13 @@ function Sbs2369() {
                             height: 697
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                            lineNumber: 19,
+                            lineNumber: 20,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                    lineNumber: 9,
+                    lineNumber: 10,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -867,7 +875,7 @@ function Sbs2369() {
                             children: "Quick Links"
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -875,7 +883,7 @@ function Sbs2369() {
                             children: "What can we help you find?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                            lineNumber: 29,
+                            lineNumber: 30,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -884,7 +892,7 @@ function Sbs2369() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     className: "cs-li",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "",
+                                        href: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["camperApplicationLink"],
                                         className: "cs-li-link",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -894,19 +902,19 @@ function Sbs2369() {
                                                 height: 24
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                                lineNumber: 33,
+                                                lineNumber: 34,
                                                 columnNumber: 9
                                             }, this),
                                             "Camper Registration"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                        lineNumber: 32,
+                                        lineNumber: 33,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 32,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -922,25 +930,25 @@ function Sbs2369() {
                                                 height: 24
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                                lineNumber: 44,
+                                                lineNumber: 45,
                                                 columnNumber: 9
                                             }, this),
                                             "Facility Rentals"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 44,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 43,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     className: "cs-li",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "",
+                                        href: "/get-involved",
                                         className: "cs-li-link",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -950,25 +958,25 @@ function Sbs2369() {
                                                 height: 24
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 56,
                                                 columnNumber: 9
                                             }, this),
                                             "Get Involved"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 55,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 54,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -977,24 +985,24 @@ function Sbs2369() {
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-            lineNumber: 8,
+            lineNumber: 9,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/stitches/home/sbs-2369/sbs-2369.tsx",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 3
     }, this);
 }
@@ -1055,7 +1063,7 @@ function Sbsr2181() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "cs-button-box",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
+                                href: "/who-we-are",
                                 className: "cs-button-solid",
                                 children: `Learn Our Story >`
                             }, void 0, false, {
@@ -1270,13 +1278,10 @@ function Cta1132() {
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "",
+                            href: "/get-involved",
                             className: "cs-button-solid",
-                            children: [
-                                "Get Involved",
-                                " "
-                            ]
-                        }, void 0, true, {
+                            children: "Get Involved"
+                        }, void 0, false, {
                             fileName: "[project]/src/components/stitches/home/cta-1132/cta-1132.tsx",
                             lineNumber: 15,
                             columnNumber: 6

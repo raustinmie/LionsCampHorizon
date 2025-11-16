@@ -468,6 +468,7 @@ function triggerUpdate(msg) {
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
+    "camperApplicationLink": (()=>camperApplicationLink),
     "canonicalUrl": (()=>canonicalUrl),
     "companyName": (()=>companyName),
     "facebookUrl": (()=>facebookUrl),
@@ -478,6 +479,7 @@ __turbopack_context__.s({
     "primaryAddress2": (()=>primaryAddress2),
     "primaryEmail": (()=>primaryEmail),
     "primaryPhone": (()=>primaryPhone),
+    "rentalApplictaionLink": (()=>rentalApplictaionLink),
     "staffApplicationLink": (()=>staffApplicationLink)
 });
 const canonicalUrl = "https://www.lionscamphorizon.org/";
@@ -502,6 +504,10 @@ const facebookUrl = "https://www.facebook.com/CampHorizonBlaine";
 const instagramUrl = "https://www.instagram.com/lions_camp_horizon/";
 ;
 const staffApplicationLink = "https://form.jotform.com/252855980249167";
+;
+const rentalApplictaionLink = "https://form.jotform.com/252857241323051";
+;
+const camperApplicationLink = "https://form.jotform.com/252884360756063";
 ;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
@@ -1023,7 +1029,7 @@ function Footer1391() {
                             className: "cs-flex",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "",
+                                    href: "/",
                                     className: "cs-logo",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/images/logo.png",
@@ -1838,18 +1844,18 @@ function Nav() {
                             className: "cs-top-contact",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "",
+                                    href: "https://www.google.com/maps/place/Lions+Camp+Horizon/@48.9128912,-122.7383547,1351m/data=!3m1!1e3!4m6!3m5!1s0x5485c079683c38a1:0x99a426c59f97749c!8m2!3d48.9136659!4d-122.7347404!16s%2Fg%2F1tdjqv3d?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D",
                                     className: "cs-top-link",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {}, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 72,
                                             columnNumber: 8
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["primaryAddress1"],
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 74,
                                             columnNumber: 8
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["primaryAddress2"]
@@ -1860,19 +1866,19 @@ function Nav() {
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "",
+                                    href: "https://www.google.com/maps/place/Lions+Camp+Horizon/@48.9128912,-122.7383547,1351m/data=!3m1!1e3!4m6!3m5!1s0x5485c079683c38a1:0x99a426c59f97749c!8m2!3d48.9136659!4d-122.7347404!16s%2Fg%2F1tdjqv3d?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D",
                                     className: "cs-top-link",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {}, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 81,
                                             columnNumber: 8
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$constants$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["primaryPhone"]
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 77,
                                     columnNumber: 7
                                 }, this)
                             ]
@@ -1896,7 +1902,7 @@ function Nav() {
                 className: "cs-container",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "",
+                        href: "/",
                         className: "cs-logo",
                         "aria-label": "back to home",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1906,12 +1912,12 @@ function Nav() {
                             height: 43
                         }, void 0, false, {
                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                            lineNumber: 84,
+                            lineNumber: 90,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                        lineNumber: 83,
+                        lineNumber: 89,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1932,7 +1938,7 @@ function Nav() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 102,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1940,7 +1946,7 @@ function Nav() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 103,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1948,18 +1954,18 @@ function Nav() {
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 104,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 95,
+                                    lineNumber: 101,
                                     columnNumber: 7
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 89,
+                                lineNumber: 95,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1977,12 +1983,12 @@ function Nav() {
                                                     children: link.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                    lineNumber: 106,
+                                                    lineNumber: 112,
                                                     columnNumber: 10
                                                 }, this)
                                             }, link.href, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 105,
+                                                lineNumber: 111,
                                                 columnNumber: 9
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1997,12 +2003,12 @@ function Nav() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 118,
+                                                lineNumber: 124,
                                                 columnNumber: 9
                                             }, this)
                                         }, "/get-involved", false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 123,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2014,29 +2020,29 @@ function Nav() {
                                                 children: "Donate"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 129,
+                                                lineNumber: 135,
                                                 columnNumber: 9
                                             }, this)
                                         }, "/donate", false, {
                                             fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 134,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 109,
                                     columnNumber: 7
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 102,
+                                lineNumber: 108,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                        lineNumber: 87,
+                        lineNumber: 93,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2053,7 +2059,7 @@ function Nav() {
                                         height: 56
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 150,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2064,7 +2070,7 @@ function Nav() {
                                                 children: "Join Us Now"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 157,
                                                 columnNumber: 8
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2072,19 +2078,19 @@ function Nav() {
                                                 children: "Become a Volunteer"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 158,
                                                 columnNumber: 8
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 156,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 143,
+                                lineNumber: 149,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2093,19 +2099,19 @@ function Nav() {
                                 children: "Donate Now"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                                lineNumber: 155,
+                                lineNumber: 161,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                        lineNumber: 142,
+                        lineNumber: 148,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/stitches/nav/header/nav/nav.tsx",
-                lineNumber: 81,
+                lineNumber: 87,
                 columnNumber: 4
             }, this)
         ]

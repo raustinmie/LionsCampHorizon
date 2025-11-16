@@ -4,11 +4,6 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/camp": "pages/camp.js",
-  "/contact": "pages/contact.js",
   "/donate": "pages/donate.js",
-  "/facility-rentals": "pages/facility-rentals.js",
-  "/get-involved": "pages/get-involved.js",
-  "/special-events": "pages/special-events.js",
-  "/staff": "pages/staff.js",
   "/who-we-are": "pages/who-we-are.js"
 }

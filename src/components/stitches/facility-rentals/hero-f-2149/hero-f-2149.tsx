@@ -12,7 +12,7 @@ export default function HeroF2149() {
 				<div className="cs-background">
 					<Image
 						src="/images/facilities-hero.jpg"
-						alt="campers sitting in a circle on the grass"
+						alt="rows of camp horizon dorms"
 						fill
 					/>
 				</div>

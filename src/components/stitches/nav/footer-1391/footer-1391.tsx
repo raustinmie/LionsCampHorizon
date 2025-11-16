@@ -19,7 +19,7 @@ export default function Footer1391() {
 				{/*Top Section*/}
 				<div className="cs-top">
 					<div className="cs-flex">
-						<Link href="" className="cs-logo">
+						<Link href="/" className="cs-logo">
 							<Image
 								src="/images/logo.png"
 								alt="logo"

@@ -31,3 +31,9 @@ export { instagramUrl };
 
 const staffApplicationLink = "https://form.jotform.com/252855980249167";
 export { staffApplicationLink };
+
+const rentalApplictaionLink = "https://form.jotform.com/252857241323051";
+export { rentalApplictaionLink };
+
+const camperApplicationLink = "https://form.jotform.com/252884360756063";
+export { camperApplicationLink };

@@ -71,6 +71,7 @@ export default function Donate() {
 			<CustomSbsrD />
 			<Cta403
 				imageSrc="/images/donate-bbq.jpg"
+				imageAlt="A couple in front of a barbecue"
 				title="How to Donate"
 				buttonText="
 			Donate Today"

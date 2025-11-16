@@ -468,6 +468,7 @@ function triggerUpdate(msg) {
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
+    "camperApplicationLink": (()=>camperApplicationLink),
     "canonicalUrl": (()=>canonicalUrl),
     "companyName": (()=>companyName),
     "facebookUrl": (()=>facebookUrl),
@@ -478,6 +479,7 @@ __turbopack_context__.s({
     "primaryAddress2": (()=>primaryAddress2),
     "primaryEmail": (()=>primaryEmail),
     "primaryPhone": (()=>primaryPhone),
+    "rentalApplictaionLink": (()=>rentalApplictaionLink),
     "staffApplicationLink": (()=>staffApplicationLink)
 });
 const canonicalUrl = "https://www.lionscamphorizon.org/";
@@ -502,6 +504,10 @@ const facebookUrl = "https://www.facebook.com/CampHorizonBlaine";
 const instagramUrl = "https://www.instagram.com/lions_camp_horizon/";
 ;
 const staffApplicationLink = "https://form.jotform.com/252855980249167";
+;
+const rentalApplictaionLink = "https://form.jotform.com/252857241323051";
+;
+const camperApplicationLink = "https://form.jotform.com/252884360756063";
 ;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
@@ -803,9 +809,7 @@ __turbopack_context__.s({
     "default": (()=>Services2198)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [client] (ecmascript)");
-;
 ;
 ;
 function Services2198() {
@@ -834,180 +838,156 @@ function Services2198() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             className: "cs-item",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
-                                className: "cs-link",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cs-picture",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/what-were-all-about1.png",
-                                            alt: "a camper flexing his biceps",
-                                            width: 550,
-                                            height: 377,
-                                            loading: "lazy",
-                                            decoding: "async"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                            lineNumber: 16,
-                                            columnNumber: 9
-                                        }, this)
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "cs-picture",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/what-were-all-about1.png",
+                                        alt: "a camper flexing his biceps",
+                                        width: 550,
+                                        height: 377,
+                                        loading: "lazy",
+                                        decoding: "async"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
                                         lineNumber: 15,
                                         columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cs-flex",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "cs-h3",
-                                            children: "Our Mission"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                            lineNumber: 26,
-                                            columnNumber: 9
-                                        }, this)
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 14,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "cs-flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "cs-h3",
+                                        children: "Our Mission"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
                                         lineNumber: 25,
                                         columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "cs-item-text",
-                                        children: "To provide recreational activities that encourage independence, build new skills, develop lifelong friendships and create lasting memories of camp."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 28,
-                                        columnNumber: 8
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                lineNumber: 14,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "cs-item-text",
+                                    children: "To provide recreational activities that encourage independence, build new skills, develop lifelong friendships and create lasting memories of camp."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 27,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
                             lineNumber: 13,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             className: "cs-item",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
-                                className: "cs-link",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cs-picture",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/what-were-all-about2.jpg",
-                                            alt: "a camper and counselor hugging",
-                                            width: 550,
-                                            height: 377,
-                                            loading: "lazy",
-                                            decoding: "async",
-                                            className: "picture-2"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                            lineNumber: 38,
-                                            columnNumber: 9
-                                        }, this)
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "cs-picture",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/what-were-all-about2.jpg",
+                                        alt: "a camper and counselor hugging",
+                                        width: 550,
+                                        height: 377,
+                                        loading: "lazy",
+                                        decoding: "async",
+                                        className: "picture-2"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 37,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cs-flex",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "cs-h3",
-                                            children: "Our Vision"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                            lineNumber: 49,
-                                            columnNumber: 9
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 48,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "cs-item-text",
-                                        children: "To empower people challenged by disabilities through experiences that help develop life skills, foster independence and build self-esteem."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 35,
                                         columnNumber: 8
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                lineNumber: 36,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 34,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "cs-flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "cs-h3",
+                                        children: "Our Vision"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 8
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 45,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "cs-item-text",
+                                    children: "To empower people challenged by disabilities through experiences that help develop life skills, foster independence and build self-esteem."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 48,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                            lineNumber: 35,
+                            lineNumber: 33,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             className: "cs-item",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
-                                className: "cs-link",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cs-picture",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/what-were-all-about3.jpg",
-                                            alt: "two men arm wrestling",
-                                            width: 550,
-                                            height: 377,
-                                            loading: "lazy",
-                                            decoding: "async"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                            lineNumber: 61,
-                                            columnNumber: 9
-                                        }, this)
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "cs-picture",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/what-were-all-about3.jpg",
+                                        alt: "two men arm wrestling",
+                                        width: 550,
+                                        height: 377,
+                                        loading: "lazy",
+                                        decoding: "async"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 60,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cs-flex",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "cs-h3",
-                                            children: "Core Values"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                            lineNumber: 71,
-                                            columnNumber: 9
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "cs-item-text",
-                                        children: "To respect the diversity we represent, create inclusive opportunities for individuals of all abilities, and empower each person to grow, succeed, and shine."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 56,
                                         columnNumber: 8
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                                lineNumber: 59,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 55,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "cs-flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "cs-h3",
+                                        children: "Core Values"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 8
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "cs-item-text",
+                                    children: "To respect the diversity we represent, create inclusive opportunities for individuals of all abilities, and empower each person to grow, succeed, and shine."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
+                                    lineNumber: 68,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/stitches/who-we-are/services-2198/services-2198.tsx",
-                            lineNumber: 58,
+                            lineNumber: 54,
                             columnNumber: 6
                         }, this)
                     ]
@@ -1433,14 +1413,13 @@ function BoardSection() {
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                 className: "cs-link",
-                                href: "",
+                                href: "president@lionscamphorizon.org",
                                 children: "Email our board president"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/stitches/who-we-are/board-section/board-section.tsx",
                                 lineNumber: 19,
                                 columnNumber: 7
                             }, this),
-                            " ",
                             "to start a conversation."
                         ]
                     }, void 0, true, {

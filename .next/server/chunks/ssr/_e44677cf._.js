@@ -232,9 +232,7 @@ __turbopack_context__.s({
     "default": (()=>ServicesD2198)
 });
 var __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/react/jsx-dev-runtime [external] (react/jsx-dev-runtime, cjs)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [ssr] (ecmascript)");
-;
 ;
 ;
 function ServicesD2198() {
@@ -273,180 +271,156 @@ function ServicesD2198() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                             className: "cs-item",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
-                                className: "cs-link",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "cs-picture",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/donate-ways1.jpg",
-                                            alt: "happy campers",
-                                            width: 550,
-                                            height: 377,
-                                            loading: "lazy",
-                                            decoding: "async"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                            lineNumber: 20,
-                                            columnNumber: 9
-                                        }, this)
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "cs-picture",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/donate-ways1.jpg",
+                                        alt: "happy campers",
+                                        width: 550,
+                                        height: 377,
+                                        loading: "lazy",
+                                        decoding: "async"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
                                         lineNumber: 19,
                                         columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "cs-flex",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                            className: "cs-h3",
-                                            children: "General Donation"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                            lineNumber: 30,
-                                            columnNumber: 9
-                                        }, this)
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 18,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "cs-flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
+                                        className: "cs-h3",
+                                        children: "General Donation"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
                                         lineNumber: 29,
                                         columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                        className: "cs-item-text",
-                                        children: "General donations help keep camp running strong by supporting daily supplies, camp expenses, facility maintenance, repairs, and ongoing upgrades to our campus. These gifts ensure Lions Camp Horizon remains safe, welcoming, and ready for every new adventure."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 32,
-                                        columnNumber: 8
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                lineNumber: 18,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                    className: "cs-item-text",
+                                    children: "General donations help keep camp running strong by supporting daily supplies, camp expenses, facility maintenance, repairs, and ongoing upgrades to our campus. These gifts ensure Lions Camp Horizon remains safe, welcoming, and ready for every new adventure."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 31,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
                             lineNumber: 17,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                             className: "cs-item",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
-                                className: "cs-link",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "cs-picture",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/donate-ways2.jpg",
-                                            alt: "happy campers",
-                                            width: 550,
-                                            height: 377,
-                                            loading: "lazy",
-                                            decoding: "async",
-                                            className: "picture-2"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                            lineNumber: 44,
-                                            columnNumber: 9
-                                        }, this)
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "cs-picture",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/donate-ways2.jpg",
+                                        alt: "happy campers",
+                                        width: 550,
+                                        height: 377,
+                                        loading: "lazy",
+                                        decoding: "async",
+                                        className: "picture-2"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 43,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "cs-flex",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                            className: "cs-h3",
-                                            children: "CAMPERship Donation"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                            lineNumber: 55,
-                                            columnNumber: 9
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 54,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                        className: "cs-item-text",
-                                        children: "CAMPership donations act as scholarships that go directly toward covering camp session fees for individuals facing financial hardship. Your gift, big or small, helps make sure cost is never a barrier to a life-changing camp experience."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 41,
                                         columnNumber: 8
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                lineNumber: 42,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 40,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "cs-flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
+                                        className: "cs-h3",
+                                        children: "CAMPERship Donation"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                        lineNumber: 52,
+                                        columnNumber: 8
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 51,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                    className: "cs-item-text",
+                                    children: "CAMPership donations act as scholarships that go directly toward covering camp session fees for individuals facing financial hardship. Your gift, big or small, helps make sure cost is never a barrier to a life-changing camp experience."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 54,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                            lineNumber: 41,
+                            lineNumber: 39,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                             className: "cs-item",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "",
-                                className: "cs-link",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "cs-picture",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/donate-ways3.jpg",
-                                            alt: "a camper doing inflatable axe throwing",
-                                            width: 550,
-                                            height: 377,
-                                            loading: "lazy",
-                                            decoding: "async"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                            lineNumber: 68,
-                                            columnNumber: 9
-                                        }, this)
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "cs-picture",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/donate-ways3.jpg",
+                                        alt: "a camper doing inflatable axe throwing",
+                                        width: 550,
+                                        height: 377,
+                                        loading: "lazy",
+                                        decoding: "async"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 67,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "cs-flex",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                            className: "cs-h3",
-                                            children: "Activity & Meal Sponsorships"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                            lineNumber: 78,
-                                            columnNumber: 9
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 77,
-                                        columnNumber: 8
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                        className: "cs-item-text",
-                                        children: "Activity and meal sponsorships fund the fun, and the fuel behind it!These donations go directly toward covering the cost of meals or specific camp activities, helping us create joyful moments and meaningful memories for every camper."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 63,
                                         columnNumber: 8
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                                lineNumber: 66,
-                                columnNumber: 7
-                            }, this)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 62,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    className: "cs-flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
+                                        className: "cs-h3",
+                                        children: "Activity & Meal Sponsorships"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                        lineNumber: 73,
+                                        columnNumber: 8
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 7
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                    className: "cs-item-text",
+                                    children: "Activity and meal sponsorships fund the fun, and the fuel behind it!These donations go directly toward covering the cost of meals or specific camp activities, helping us create joyful moments and meaningful memories for every camper."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
+                                    lineNumber: 75,
+                                    columnNumber: 7
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/components/stitches/donate/services-d-2198/services-d-2198.tsx",
-                            lineNumber: 65,
+                            lineNumber: 61,
                             columnNumber: 6
                         }, this)
                     ]
@@ -1181,6 +1155,7 @@ function Donate() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$stitches$2f$shared$2f$cta$2d$403$2f$cta$2d$403$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
                 imageSrc: "/images/donate-bbq.jpg",
+                imageAlt: "A couple in front of a barbecue",
                 title: "How to Donate",
                 buttonText: "    Donate Today",
                 subtitle: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1196,7 +1171,7 @@ function Donate() {
                                     children: "360-371-0531"
                                 }, void 0, false, {
                                     fileName: "[project]/src/pages/donate.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 84,
                                     columnNumber: 8
                                 }, void 0),
                                 " ",
@@ -1208,13 +1183,13 @@ function Donate() {
                                     children: "admin@lionscamphorizon.org"
                                 }, void 0, false, {
                                     fileName: "[project]/src/pages/donate.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 88,
                                     columnNumber: 8
                                 }, void 0)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/pages/donate.tsx",
-                            lineNumber: 79,
+                            lineNumber: 80,
                             columnNumber: 7
                         }, void 0),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -1222,18 +1197,18 @@ function Donate() {
                                 children: "Donations can be mailed to Lions Camp Horizon 7506 Gemini St. Blaine, WA 98230. Or click the button below!"
                             }, void 0, false, {
                                 fileName: "[project]/src/pages/donate.tsx",
-                                lineNumber: 92,
+                                lineNumber: 93,
                                 columnNumber: 8
                             }, void 0)
                         }, void 0, false, {
                             fileName: "[project]/src/pages/donate.tsx",
-                            lineNumber: 91,
+                            lineNumber: 92,
                             columnNumber: 7
                         }, void 0)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/pages/donate.tsx",
-                    lineNumber: 78,
+                    lineNumber: 79,
                     columnNumber: 6
                 }, void 0),
                 linkHref: ""

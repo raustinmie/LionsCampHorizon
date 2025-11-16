@@ -16,9 +16,9 @@ export default function BoardSection() {
 						members who share our passion to provide services to individuals
 						with disabilities. All Directors are unpaid volunteers.Interested in
 						serving on our board? Let’s talk.{" "}
-						<Link className="cs-link" href="">
+						<Link className="cs-link" href="president@lionscamphorizon.org">
 							Email our board president
-						</Link>{" "}
+						</Link>
 						to start a conversation.
 					</p>
 					<ul className="cs-board">

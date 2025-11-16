@@ -71,6 +71,7 @@ export default function Staff() {
 				subtitle="We don't just accept diversity; we embrace it."
 				buttonText="Apply Online"
 				linkHref={staffApplicationLink}
+				imageAlt="a camper and counselor"
 			/>
 			<GalleryS1152 />
 			<Cta697
