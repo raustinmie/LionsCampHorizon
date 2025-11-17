@@ -13,18 +13,20 @@
 		/* set text align to left if content needs to be left aligned */
 		text-align: center;
 		width: 100%;
-		max-width: 66.25rem;
 		display: flex;
 		flex-direction: column;
 		/* centers content horizontally, set to flex-start to left align */
 		align-items: center;
+		justify-content: center;
+		padding-bottom: 2rem;
 	}
 	#services-2387 .cs-title {
 		font-weight: 700;
+		max-width: 66.25rem;
 		margin-bottom: 1rem;
 	}
 	#services-2387 .cs-text {
-		max-width: 100%;
+		max-width: 66.25rem;
 	}
 	#services-2387 .cs-wrapper {
 		display: flex;
@@ -137,7 +139,7 @@
 	}
 }
 /* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 90rem) {
 	#services-2387 .cs-wrapper {
 		flex-direction: row;
 		align-items: stretch;
