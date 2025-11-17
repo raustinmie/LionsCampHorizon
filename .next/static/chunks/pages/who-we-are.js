@@ -1,8 +1,0 @@
-__turbopack_load_page_chunks__("/who-we-are", [
-  "static/chunks/[root-of-the-server]__d841bade._.js",
-  "static/chunks/node_modules_next_bb985d6d._.js",
-  "static/chunks/node_modules_react-dom_82bb97c6._.js",
-  "static/chunks/node_modules_2a5cf4bb._.js",
-  "static/chunks/src_pages_who-we-are_5771e187._.js",
-  "static/chunks/src_pages_who-we-are_990a8a23._.js"
-])
