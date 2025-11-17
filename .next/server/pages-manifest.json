@@ -5,5 +5,6 @@
   "/_error": "pages/_error.js",
   "/camp": "pages/camp.js",
   "/donate": "pages/donate.js",
+  "/staff": "pages/staff.js",
   "/who-we-are": "pages/who-we-are.js"
 }

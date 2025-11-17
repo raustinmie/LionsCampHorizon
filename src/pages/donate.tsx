@@ -11,8 +11,9 @@ import Link from "next/link";
 export default function Donate() {
 	const faqData: FaqQuestionAndAnswer[] = [
 		{
-			question: "What if I've never been to a camp before?",
-			answer: "",
+			question: "What if I've never been to camp before?",
+			answer:
+				"We would love to have you! We know that a first-time camp experience can feel exciting — and sometimes a little overwhelming — so we’re here to help you feel comfortable every step of the way. We encourage new campers and families to schedule a tour, meet our staff, and get answers to any questions you may have.",
 		},
 		{
 			question:
@@ -22,11 +23,19 @@ export default function Donate() {
 		},
 		{
 			question: "Can I come to camp if I have special dietary requirements?",
-			answer: "",
+			answer: `Yes, in most cases we are able to accommodate medically required dietary
+restrictions. While we do not prepare fully individualized menus, we offer a variety
+of food options at each meal and do our best to work with your camper’s dietary
+needs. If your camper has specific dietary restrictions, we encourage you to
+contact us so we can review your camper’s specific requirements and make sure
+we can safely support them.`,
 		},
 		{
 			question: "Do I need a Physical Exam before I can attend camp?",
-			answer: "",
+			answer: `Yes. A new physical/health exam form is required each year. This helps us
+ensure we have the most up-to-date medical information so we can keep all
+campers safe and properly supported. All medications brought to camp must also
+match the information provided by your doctor on the health exam form.`,
 		},
 	];
 	return (
