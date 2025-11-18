@@ -23,7 +23,7 @@ export default function Cta403({
 			<div className="cs-container">
 				<div className="cs-content">
 					<h2 className="cs-title">{title}</h2>
-					<p className="cs-text">{subtitle}</p>
+					<div className="cs-text">{subtitle}</div>
 					<Link href={linkHref} className="cs-button-solid secondary">
 						{buttonText}
 					</Link>
