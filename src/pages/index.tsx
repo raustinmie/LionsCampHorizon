@@ -10,8 +10,8 @@ export default function Home() {
 	return (
 		<div style={{ width: "100%" }}>
 			<HomeSeo
-				description="Discover Whatcom County’s favorite seasonal pop-up! Red Barn Market brings 110 local makers to the NW Washington Fairgrounds, Nov 14-15."
-				ogDescription="Red Barn Market is Whatcom County’s top holiday market — 110 vendors, festive finds, and VIP early access Nov 14-15 at the NW Washington Fairgrounds."
+				description="Lions Camp Horizon offers safe, joyful overnight summer camps for teens and adults with disabilities. Located in Blaine, WA, our weekly sessions build confidence, independence and lifelong friendships in an inclusive environment where everyone belongs."
+				ogDescription="Experience the joy of summer at Lions Camp Horizon. For over 50 years, we’ve welcomed teens and adults with all types of disabilities to a safe, fun-filled overnight camp that celebrates abilities, encourages independence and creates lifelong friendships."
 			/>
 			<Hero2149 />
 			<Sbs2369 />

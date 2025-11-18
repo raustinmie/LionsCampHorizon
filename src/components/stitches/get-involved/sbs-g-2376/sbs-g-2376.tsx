@@ -7,13 +7,21 @@ export default function SbsG2376() {
 		<section id="sbs-g-2376">
 			<div className="cs-container">
 				<div className="cs-content">
-					<span className="cs-topper">Why Choose Us</span>
-					<h2 className="cs-title">Guided Therapy Services</h2>
+					<h2 className="cs-title">We Invite You to Be Part of the Magic!</h2>
 					<p className="cs-text">
-						We offer comprehensive support for individuals, couples, and
-						families facing various life transitions, emotional hurdles, and
-						relationship issues. Our dedicated services are designed to help you
-						navigate these challenges with understanding and care.
+						Camp Horizon comes to life because of the generous people who give
+						their time, energy, and love to our campers. Every year, volunteers
+						contribute hundreds of hours to help our campers experience
+						unforgettable summer memories. And there is always space for one
+						more helping hand or helping heart.Whether you love gardening,
+						building, cleaning, painting, arts & crafts, cheering others on, or
+						simply showing up with a smile, there’s a place for you here. You
+						can serve a meal, join a spring clean-up day, help with grounds and
+						facility projects, share a talent or support camp as a financial
+						partner.We’d love to have join us!Please reach out to{" "}
+						<Link href="mailto:admin@lionscamphorizon.org">
+							admin@lionscamphorizon.org
+						</Link>
 					</p>
 				</div>
 				<div className="cs-wrapper">

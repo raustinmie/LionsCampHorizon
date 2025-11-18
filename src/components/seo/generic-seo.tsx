@@ -8,14 +8,19 @@ import {
 	WebPage,
 	Service,
 	Blog,
+	JobPosting,
+	Place,
 } from "schema-dts";
 
-type JsonLdType =
+export type JsonLdType =
 	| WithContext<WebSite>
 	| WithContext<Organization>
 	| WithContext<Article>
 	| WithContext<WebPage>
+	| WithContext<Place>
+	| WithContext<JobPosting>
 	| WithContext<Blog>
+	| WithContext<WebPage>
 	| WithContext<Service>;
 
 interface SeoProps {
@@ -33,7 +38,7 @@ export default function GenericSeo({
 	title,
 	description,
 	ogDescription,
-	canonicalUrlPath = "/",
+	canonicalUrlPath = "",
 	ogType = "website",
 	twitterCard = "summary_large_image",
 	noIndex = false,
@@ -44,7 +49,8 @@ export default function GenericSeo({
 			{/* Primary Meta Tags */}
 			<title key="seo-title">{title}</title>
 			<meta key="seo-description" name="description" content={description} />
-
+			<meta charSet="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			{noIndex && <meta name="robots" content="noindex,nofollow" />}
 
 			{/* Canonical */}

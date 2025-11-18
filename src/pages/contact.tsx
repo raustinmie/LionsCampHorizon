@@ -7,8 +7,8 @@ export default function Contact() {
 	return (
 		<div style={{ width: "100%" }}>
 			<ContactSeo
-				description="Questions about Red Barn Market? Get in touch with our team — we’re happy to help vendors and shoppers alike."
-				ogDescription="Reach the Red Barn Market crew for vendor inquiries, ticket info, or general questions about Whatcom County’s favorite seasonal pop-up."
+				description="Have questions or want to get in touch with Lions Camp Horizon? Reach out to us via phone, email, or our online form. We’re happy to provide information on camper registration, volunteering, facility rentals, and more."
+				ogDescription="Connect with Lions Camp Horizon! Whether you’re interested in camp programs, volunteering, or renting our facilities, we’re here to help. Contact us today and we’ll guide you every step of the way."
 			/>
 			<CustomSbsrC />
 			<Contact2320 />

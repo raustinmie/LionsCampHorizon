@@ -6,13 +6,143 @@ import Services961 from "@/components/stitches/facility-rentals/services-961/ser
 import Cta697 from "@/components/stitches/shared/cta-697/cta-697";
 import Reviews306 from "@/components/stitches/shared/reviews-306/reviews-306";
 import Image from "next/image";
-export default function MarketInformation() {
+import { WithContext, Place, Service } from "schema-dts";
+export default function FacilityRentals() {
+	const facilitySpacesJsonLd: WithContext<Place>[] = [
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Dormitories",
+			description:
+				"Four rustic Airforce Station dormitories with 46 beds per building, shared restrooms, and TV lounge. Accommodates up to 184 guests total.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+			maximumAttendeeCapacity: 184,
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Webster Conference Center",
+			description:
+				"Conference building with large open room, library-style breakout area, kitchenette, folding tables and chairs. Max occupancy 69.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+			maximumAttendeeCapacity: 69,
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Theatre",
+			description:
+				"Theatre-style seating with wheelchair accessible stage, projection screen, and small kitchen area. Max occupancy 99.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+			maximumAttendeeCapacity: 99,
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Commercial Kitchen & Dining Hall",
+			description:
+				"Professional-grade commercial kitchen updated in 2017, dining hall seats 99. Suitable for group meal prep or small food business use.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+			maximumAttendeeCapacity: 99,
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Craft Building",
+			description:
+				"Bright craft space with large tables and room for hands-on activities. Includes small restroom for convenience.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Game Room",
+			description:
+				"Lounge area with pool tables, air hockey, cards, and vintage two-lane bowling alley.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Firepit",
+			description:
+				"Outdoor fire pit with benches for group gatherings, campfires, and storytelling.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Place",
+			name: "Outdoor Pavilion (Coming 2026)",
+			description:
+				"Covered outdoor gathering space for events and campers. Generous gift from Andersen Construction, available for future rentals.",
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: "7506 Gemini Street",
+				addressLocality: "Blaine",
+				addressRegion: "WA",
+				postalCode: "98230",
+				addressCountry: "US",
+			},
+		},
+	];
+
 	return (
 		<div>
 			<GenericSeo
-				description="Browse 110 makers featured at Red Barn Market! Explore holiday gifts, décor, treats, and more from talented vendors across Whatcom County."
-				ogDescription="Meet the 110 vendors bringing handmade goods, décor, treats, and festive finds to Red Barn Market. Discover your new favorite local maker this holiday season."
-				title="Red Barn Market Events - Vendor Information"
+				title="Facility Rentals | Lions Camp Horizon"
+				description="Host your next retreat, reunion, or event at Lions Camp Horizon in Blaine, WA. Our campus features dormitories, conference spaces, a theatre, commercial kitchen, craft building, and firepit, accommodating groups of all sizes from day events to overnight stays."
+				ogDescription="Looking for the perfect venue near Birch Bay, WA? Lions Camp Horizon offers flexible facility rentals with dorms, meeting spaces, a theatre, commercial kitchen, and more. Ideal for retreats, family reunions, trainings, and special events."
+				canonicalUrlPath="facility-rentals"
+				jsonLd={facilitySpacesJsonLd}
 			/>
 			<HeroF2149 />
 			<Services961 />

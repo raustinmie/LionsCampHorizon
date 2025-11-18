@@ -20,7 +20,16 @@ export { primaryPhone };
 const primaryAddress1 = "7506 Gemini Street";
 export { primaryAddress1 };
 
-const primaryAddress2 = "Blaine, WA 98230";
+const locality = "Blaine";
+export { locality };
+
+const state = "WA";
+export { state };
+
+const zip = "98230";
+export { zip };
+
+const primaryAddress2 = `${locality}, ${state} ${zip}`;
 export { primaryAddress2 };
 
 const facebookUrl = "https://www.facebook.com/CampHorizonBlaine";

@@ -1,67 +1,53 @@
 import GenericSeo from "@/components/seo/generic-seo";
 import HeroS2149 from "@/components/stitches/staff/hero-s-2149/hero-s-2149";
-import { companyName, staffApplicationLink } from "@/constants";
-import { FaqQuestionAndAnswer } from "@/components/seo/faq-seo";
+import {
+	canonicalUrl,
+	companyName,
+	facebookUrl,
+	instagramUrl,
+	locality,
+	primaryAddress1,
+	primaryEmail,
+	staffApplicationLink,
+	state,
+	zip,
+} from "@/constants";
 import Services2387 from "@/components/stitches/staff/services-2387/services-2387";
 import Cta403 from "@/components/stitches/shared/cta-403/cta-403";
 import GalleryS1152 from "@/components/stitches/staff/gallery-s-1152/gallery-s-1152";
 import Cta697 from "@/components/stitches/shared/cta-697/cta-697";
+import { WithContext, Organization, JobPosting } from "schema-dts";
 
 export default function Staff() {
-	const faqData: FaqQuestionAndAnswer[] = [
+	const staffJsonLd: WithContext<Organization | JobPosting>[] = [
 		{
-			question: "What if I've never been to a camp before?",
-			answer: "",
-		},
-		{
-			question:
-				"What if I can't afford to pay for Camp? Will DSHS cover the cost of camp?",
-			answer:
-				"We never want finances to be the reason someone misses out on camp. We offer financial assistance through CAMPerships, as well as no-cost payment plans for families paying privately. Camp Horizon is also an approved DSHS/DDA Respite Care Provider, and we can work directly with your Case Resource Manager to coordinate billing if you receive respite benefits.",
-		},
-		{
-			question: "Can I come to camp if I have special dietary requirements?",
-			answer: "",
-		},
-		{
-			question: "Do I need a Physical Exam before I can attend camp?",
-			answer: "",
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			name: companyName,
+			url: `${canonicalUrl}staff`,
+			sameAs: [facebookUrl, instagramUrl],
+			address: {
+				"@type": "PostalAddress",
+				streetAddress: primaryAddress1,
+				addressLocality: locality,
+				addressRegion: state,
+				postalCode: zip,
+				addressCountry: "US",
+			},
+			telephone: "primaryPhone",
+			email: primaryEmail,
+			nonprofitStatus: "Nonprofit501c3",
 		},
 	];
+
 	return (
 		<div>
 			<GenericSeo
-				description="Join 110 makers at Red Barn Market! Share your goods with thousands of shoppers at Whatcom County’s favorite seasonal market."
-				ogDescription="Be part of Red Barn Market’s vibrant vendor family. Showcase your handmade, vintage, or specialty items to eager shoppers in a lively holiday setting."
-				title={`${companyName} | Camp`}
-				canonicalUrlPath="vendor-information"
-				jsonLd={{
-					"@context": "https://schema.org",
-					"@type": "Service",
-					name: "Vendor Booth at Red Barn Market",
-					description:
-						"Vendor opportunities for Red Barn Market, Whatcom County's top holiday pop-up. Share handmade, vintage, and specialty goods with thousands of visitors.",
-					provider: {
-						"@type": "Organization",
-						name: "Red Barn Market",
-						url: "https://redbarnmarketevents.com",
-					},
-					areaServed: {
-						"@type": "AdministrativeArea",
-						name: "Whatcom County, WA",
-					},
-					offers: {
-						"@type": "Offer",
-						url: "https://redbarnmarketevents.com/vendor-information",
-						price: "Variable",
-						priceCurrency: "USD",
-						eligibleRegion: {
-							"@type": "AdministrativeArea",
-							name: "Whatcom County, WA",
-						},
-						availability: "https://schema.org/InStock",
-					},
-				}}
+				title="Staff Opportunities | Lions Camp Horizon"
+				description="Join the team at Lions Camp Horizon in Blaine, WA! Seasonal positions for counselors, activities coordinators, kitchen staff, and medical support are available for our summer camp serving teens and adults with disabilities. Experience a summer full of fun, friendship, and meaningful work."
+				ogDescription="Looking for a summer of joy, teamwork, and making a difference? Lions Camp Horizon is hiring seasonal staff to support teens and adults with disabilities at our overnight summer camp in Blaine, WA."
+				canonicalUrlPath="staff"
+				jsonLd={staffJsonLd}
 			/>
 			<HeroS2149 />
 			<Services2387 />

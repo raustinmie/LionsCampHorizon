@@ -15,8 +15,9 @@ export default function About() {
 	return (
 		<div>
 			<AboutSeo
-				description="Learn how Red Barn Market celebrates local creativity with curated vendors, cheerful vibes, and seasonal markets at the NW Washington Fairgrounds."
-				ogDescription="Behind Red Barn Market: a joyful team bringing Whatcom County together for seasonal shopping and holiday cheer at the NW Washington Fairgrounds."
+				description="Lions Camp Horizon is a welcoming summer camp in Blaine, WA for teens and adults with disabilities. For over 50 years, we’ve fostered independence, confidence, and lifelong friendships through safe, inclusive recreational programs and supportive community experiences."
+				ogDescription="Discover Lions Camp Horizon: a summer camp where teens and adults with disabilities can relax, grow, and make lifelong friends. Since 1974, our safe, supportive programs in Blaine, WA have empowered campers to explore their abilities, build confidence, and enjoy unforgettable summer experiences.
+"
 			/>
 			<CustomHero />
 			<Services2198 />

@@ -103,9 +103,6 @@
 		border-radius: 0.25rem;
 		transition: width 0.3s;
 	}
-	#meet-team-1141 .cs-button-solid:hover:before {
-		width: 100%;
-	}
 	#meet-team-1141 .cs-button-solid {
 		/* prevents flexbox from squishing it */
 		flex: none;
@@ -132,21 +129,8 @@
 		padding: clamp(1rem, 1.5vw, 2rem);
 		border-radius: 8px;
 	}
-	#meet-team-1141 .cs-item:hover .cs-picture:before,
-	#meet-team-1141 .cs-item:hover .cs-picture:after {
-		opacity: 1;
-	}
 	#meet-team-1141 .cs-item:hover .cs-picture img {
 		transform: scale(1.1);
-	}
-	#meet-team-1141 .cs-item:hover .cs-info {
-		background-color: var(--primary);
-	}
-	#meet-team-1141 .cs-item:hover .cs-name {
-		color: var(--secondary);
-	}
-	#meet-team-1141 .cs-item:hover .cs-job {
-		color: var(--bodyTextColorWhite);
 	}
 	#meet-team-1141 .cs-picture {
 		width: 100%;

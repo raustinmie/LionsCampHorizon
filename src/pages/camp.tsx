@@ -3,17 +3,18 @@ import CustomCta from "@/components/stitches/camp/custom-cta/custom-cta";
 import HeroC2149 from "@/components/stitches/camp/hero-c-2149/hero-c-2149";
 import Sbs2375 from "@/components/stitches/camp/sbs-2375/sbs-2375";
 import Sbs2375B from "@/components/stitches/camp/sbs-2375-b/sbs-2375-b";
-import { companyName } from "@/constants";
 import Link from "next/link";
 import Faq2216 from "@/components/stitches/camp/faq-2216/faq-2216";
 import { FaqQuestionAndAnswer } from "@/components/seo/faq-seo";
 import Reviews306 from "@/components/stitches/shared/reviews-306/reviews-306";
+import CampSeo from "@/components/seo/camp-seo";
 
 export default function Camp() {
 	const faqData: FaqQuestionAndAnswer[] = [
 		{
-			question: "What if I've never been to a camp before?",
-			answer: "",
+			question: "What if I've never been to camp before?",
+			answer:
+				"We would love to have you! We know that a first-time camp experience can feel exciting — and sometimes a little overwhelming — so we’re here to help you feel comfortable every step of the way. We encourage new campers and families to schedule a tour, meet our staff, and get answers to any questions you may have.",
 		},
 		{
 			question:
@@ -23,47 +24,27 @@ export default function Camp() {
 		},
 		{
 			question: "Can I come to camp if I have special dietary requirements?",
-			answer: "",
+			answer: `Yes, in most cases we are able to accommodate medically required dietary
+restrictions. While we do not prepare fully individualized menus, we offer a variety
+of food options at each meal and do our best to work with your camper’s dietary
+needs. If your camper has specific dietary restrictions, we encourage you to
+contact us so we can review your camper’s specific requirements and make sure
+we can safely support them.`,
 		},
 		{
 			question: "Do I need a Physical Exam before I can attend camp?",
-			answer: "",
+			answer: `Yes. A new physical/health exam form is required each year. This helps us
+ensure we have the most up-to-date medical information so we can keep all
+campers safe and properly supported. All medications brought to camp must also
+match the information provided by your doctor on the health exam form.`,
 		},
 	];
 	return (
 		<div>
-			<GenericSeo
-				description="Join 110 makers at Red Barn Market! Share your goods with thousands of shoppers at Whatcom County’s favorite seasonal market."
-				ogDescription="Be part of Red Barn Market’s vibrant vendor family. Showcase your handmade, vintage, or specialty items to eager shoppers in a lively holiday setting."
-				title={`${companyName} | Camp`}
-				canonicalUrlPath="vendor-information"
-				jsonLd={{
-					"@context": "https://schema.org",
-					"@type": "Service",
-					name: "Vendor Booth at Red Barn Market",
-					description:
-						"Vendor opportunities for Red Barn Market, Whatcom County's top holiday pop-up. Share handmade, vintage, and specialty goods with thousands of visitors.",
-					provider: {
-						"@type": "Organization",
-						name: "Red Barn Market",
-						url: "https://redbarnmarketevents.com",
-					},
-					areaServed: {
-						"@type": "AdministrativeArea",
-						name: "Whatcom County, WA",
-					},
-					offers: {
-						"@type": "Offer",
-						url: "https://redbarnmarketevents.com/vendor-information",
-						price: "Variable",
-						priceCurrency: "USD",
-						eligibleRegion: {
-							"@type": "AdministrativeArea",
-							name: "Whatcom County, WA",
-						},
-						availability: "https://schema.org/InStock",
-					},
-				}}
+			<CampSeo
+				faqData={faqData}
+				description="Discover overnight summer camp experiences for teens and adults with disabilities at Lions Camp Horizon in Blaine, WA. Our Base Camp and Adventure Camp sessions build confidence, independence and lifelong friendships in a safe, inclusive environment."
+				ogDescription="Experience the joy of summer at Lions Camp Horizon. Our overnight Base Camp and Adventure Camp programs welcome teens and adults with disabilities for a week of friendship, belonging, and unforgettable experiences where abilities—not disabilities—guide every day."
 			/>
 			<HeroC2149 />
 			<Sbs2375 />
