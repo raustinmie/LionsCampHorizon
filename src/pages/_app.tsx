@@ -1,5 +1,6 @@
 import "../components/stitches/contact/contact-2320/contact-2320.css";
 import "../components/stitches/contact/custom-sbsr-c/custom-sbsr-c.css";
+import "../components/stitches/donate/cta-403d/cta-403d.css";
 import "../components/stitches/donate/custom-sbsr-d/custom-sbsr-d.css";
 import "../components/stitches/donate/custom-sbs-d/custom-sbs-d.css";
 import "../components/stitches/donate/sbs-d-2369/sbs-d-2369.css";
@@ -44,6 +45,7 @@ import type { AppProps } from "next/app";
 import Footer1391 from "@/components/stitches/nav/footer-1391/footer-1391";
 import { Merriweather, Montserrat } from "next/font/google";
 import Nav from "@/components/stitches/nav/header/nav/nav";
+import Script from "next/script";
 
 const merriweather = Merriweather({
 	subsets: ["latin"],
@@ -70,6 +72,8 @@ declare global {
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<div className={`${merriweather.className}`}>
+			<Script src="https://js.stripe.com/v3/" strategy="beforeInteractive" />
+
 			<div className="app-container">
 				<Nav />
 				<Component {...pageProps} />

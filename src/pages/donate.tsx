@@ -9,6 +9,7 @@ import CustomSbsrD from "@/components/stitches/donate/custom-sbsr-d/custom-sbsr-
 import Cta403 from "@/components/stitches/shared/cta-403/cta-403";
 import Link from "next/link";
 import { canonicalUrl } from "@/constants";
+import Cta403D from "@/components/stitches/donate/cta-403d/cta-403d";
 export default function Donate() {
 	return (
 		<div>
@@ -31,7 +32,7 @@ export default function Donate() {
 			<SbsD2369 />
 			<CustomSbsD />
 			<CustomSbsrD />
-			<Cta403
+			<Cta403D
 				imageSrc="/images/donate-bbq.jpg"
 				imageAlt="A couple in front of a barbecue"
 				title="How to Donate"
