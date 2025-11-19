@@ -1,6 +1,7 @@
 import { companyName, canonicalUrl, primaryEmail } from "@/constants";
 import LegalModal from "./legal-modal";
 import Link from "next/link";
+import styles from "./legal-modal.module.css";
 
 export default function PrivacyPolicy() {
 	const policy = (
@@ -254,7 +255,7 @@ export default function PrivacyPolicy() {
 	);
 
 	return (
-		<div>
+		<div className={styles.legalese}>
 			<LegalModal title="Privacy Policy" content={policy} />
 		</div>
 	);

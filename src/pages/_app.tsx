@@ -40,6 +40,7 @@ import "../components/stitches/camp/custom-cta/custom-cta.css";
 import "../components/stitches/camp/faq-2216/faq-2216.css";
 import "../styles/globals.css";
 import "../styles/special-events.css";
+import "../styles/camper-application.css";
 
 import type { AppProps } from "next/app";
 import Footer1391 from "@/components/stitches/nav/footer-1391/footer-1391";

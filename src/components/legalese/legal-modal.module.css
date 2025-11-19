@@ -29,8 +29,12 @@
 	cursor: pointer;
 	padding: 0;
 	font-size: 1rem;
-	font-family: var(--fontBody);
+	display: inline-block;
+	/* font-family: var(--fontBody); */
 	color: var(--bodyTextColor);
+}
+.legalese {
+	display: inline-block;
 }
 .legalButton:hover {
 	color: var(--primaryRed);

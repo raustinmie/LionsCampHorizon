@@ -1,0 +1,96 @@
+#cs-camper-application-form {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+}
+
+#cs-camper-application-form .cs-form-title {
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
+}
+
+#cs-camper-application-form .cs-field-wrapper {
+	margin-bottom: 1rem;
+}
+
+#cs-camper-application-form .cs-label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+}
+
+#cs-camper-application-form .cs-input,
+#cs-camper-application-form .cs-textarea,
+#cs-camper-application-form .cs-select {
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+#cs-camper-application-form .cs-textarea {
+	min-height: 120px;
+}
+
+#cs-camper-application-form .cs-section-title {
+	font-size: 1.3rem;
+	margin: 1.5rem 0 0.5rem;
+}
+
+#cs-camper-application-form .cs-section-description {
+	margin-bottom: 1rem;
+}
+
+#cs-camper-application-form .cs-step-separator {
+	margin: 2rem 0;
+	border: 0;
+	border-top: 1px dashed #ccc;
+}
+
+#cs-camper-application-form .cs-name-group-label,
+#cs-camper-application-form .cs-address-group-label {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+#cs-camper-application-form .cs-name-field,
+#cs-camper-application-form .cs-address-field {
+	margin-bottom: 0.5rem;
+}
+
+#cs-camper-application-form .cs-radio-item,
+#cs-camper-application-form .cs-checkbox-item {
+	margin-bottom: 0.25rem;
+}
+
+#cs-camper-application-form .cs-custom-html {
+	margin-bottom: 1rem;
+}
+
+#cs-camper-application-form .cs-form-actions {
+	margin-top: 2rem;
+}
+
+#cs-camper-application-form .cs-btn {
+	padding: 0.6rem 1.2rem;
+	border-radius: 999px;
+	border: none;
+	cursor: pointer;
+}
+
+#cs-camper-application-form .cs-btn-submit {
+	background: #007a3d;
+	color: #fff;
+	font-weight: 600;
+}
+
+.data_collection_consent_197_0 {
+	display: inline-block;
+}
+
+#consent-checkbox {
+	display: flex;
+}

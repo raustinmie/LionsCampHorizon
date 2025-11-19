@@ -8,7 +8,7 @@ interface LegalModalProps {
 export default function LegalModal({ title, content }: LegalModalProps) {
 	const [showModal, setShowModal] = useState(false);
 	return (
-		<div>
+		<div className={styles.legalese}>
 			<button className={styles.legalButton} onClick={() => setShowModal(true)}>
 				{title}
 			</button>
