@@ -217,6 +217,7 @@ body {
 	gap: 2rem;
 	margin-bottom: 2rem;
 }
+
 @media (max-width: 767px) {
 	.mobile {
 		display: block;
@@ -224,4 +225,9 @@ body {
 	.policy-links {
 		flex-direction: column;
 	}
+}
+
+/* POLICIES PAGE */
+#cs-policies {
+	padding: var(--sectionPadding);
 }

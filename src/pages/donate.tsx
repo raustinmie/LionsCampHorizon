@@ -60,7 +60,6 @@ export default function Donate() {
 						</ul>
 					</div>
 				}
-				linkHref=""
 			/>
 		</div>
 	);

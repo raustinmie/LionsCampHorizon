@@ -10,7 +10,6 @@ export interface Cta403DProps {
 	title: string;
 	subtitle: string | ReactNode;
 	buttonText: string;
-	linkHref: string; // fallback link if needed
 	imageAlt: string;
 }
 

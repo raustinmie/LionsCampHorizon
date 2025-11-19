@@ -99,12 +99,12 @@ export default function Footer1391() {
 							</Link>
 						</li>
 						<li className="cs-li">
-							<Link href="" className="cs-link">
-								Health Exam
+							<Link href="/physical-examination-form.pdf" className="cs-link">
+								LCH Physical Exam Form{" "}
 							</Link>
 						</li>
 						<li className="cs-li">
-							<Link href="" className="cs-link">
+							<Link href="/policies" className="cs-link">
 								Camp Policies
 							</Link>
 						</li>
@@ -114,7 +114,7 @@ export default function Footer1391() {
 							</Link>
 						</li>
 						<li className="cs-li">
-							<Link href="" className="cs-link">
+							<Link href="/packing-list.pdf" className="cs-link">
 								Camp Packing/Need to Know
 							</Link>
 						</li>

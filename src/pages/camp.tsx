@@ -53,10 +53,13 @@ match the information provided by your doctor on the health exam form.`,
 			<div className="policy-section">
 				<h2>Please review camp policies</h2>
 				<div className="policy-links">
-					<Link className="cs-button-solid secondary" href="">
+					<Link className="cs-button-solid secondary" href="/policies">
 						Policies
 					</Link>
-					<Link className="cs-button-solid secondary" href="">
+					<Link
+						className="cs-button-solid secondary"
+						href="/physical-examination-form.pdf"
+					>
 						Physical Exam Form
 					</Link>
 				</div>
