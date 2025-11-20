@@ -3,9 +3,9 @@
 	--secondary: #fec107;
 	--secondarySemiTransparent: rgba(254, 193, 7, 0.7);
 	--darkBackground: #414f65;
-	--headerColor: #1a1a1a;
+	--headerColor: #000000;
 	--headerColorWhite: #fff;
-	--bodyTextColor: #484848;
+	--bodyTextColor: #000000;
 	--bodyTextColorWhite: #fafbfc;
 	--primaryGreen: #556b41;
 	--primaryRed: #9e442e;
@@ -61,6 +61,7 @@ body {
 	width: 100%;
 	max-width: 40.625rem;
 	margin: 0;
+	font-family: var(--fontBody);
 	color: var(--bodyTextColor);
 }
 
