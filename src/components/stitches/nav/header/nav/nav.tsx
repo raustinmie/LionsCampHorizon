@@ -154,7 +154,7 @@ export default function Nav() {
 							height={56}
 						/>
 						<div className="cs-flex">
-							<span className="cs-desc">Join Us Now</span>
+							<span className="cs-desc">Get Involved</span>
 							<span className="cs-header">Become a Volunteer</span>
 						</div>
 					</Link>
