@@ -159,7 +159,7 @@ export default function Nav() {
 						</div>
 					</Link>
 					<Link href="/donate" className="cs-button-solid cs-nav-button">
-						Donate Now
+						Donate
 					</Link>
 				</div>
 			</div>

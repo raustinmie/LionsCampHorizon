@@ -53,27 +53,27 @@ const LABELS = {
 	"input_radio_1::Adult XL": "Adult XL",
 	"input_radio_1::Adult 2X": "Adult 2X",
 	"input_radio_1::Adult 3X": "Adult 3X",
-	input_radio_2: "Has the camper attended Lions Camp Horizon previously:",
+	input_radio_2: "Has the camper attended Lions Camp Horizon previously",
 	"input_radio_2::Yes": "Yes",
 	"input_radio_2::No": "No",
-	input_text: "If so, please advise the last year of participation:",
+	input_text: "If so, please advise the last year of participation",
 	input_text_20: "How did you heard about Lions Camp?",
 	input_radio_3:
 		"Has camper previously attended a different overnight/residential camp?",
 	"input_radio_3::Yes": "Yes",
 	"input_radio_3::No": "No",
 	description:
-		"If your camper is new to Camp Horizon and participated at another overnight camp, please advise the name and location of the camp and how your camper handled being away from home:",
+		"If your camper is new to Camp Horizon and participated at another overnight camp, please advise the name and location of the camp and how your camper handled being away from home",
 	checkbox:
 		"Please select ALL session dates your camper is available to attend camp. We will prioritize your 1 st and 2 nd choice but may need to look at other date options if those are not available. Please note Adventure Camp is subject to eligibility requirements. First time campers must attend Base Camp.",
 	"checkbox::Adventure Camp 1 - July 7-11*": "Adventure Camp 1 - July 7-11*",
 	"checkbox::Base Camp 1 - July 14-18": "Base Camp 1 - July 14-18",
 	"checkbox::Base Camp 2 - July 21-25": "Base Camp 2 - July 21-25",
 	"checkbox::Adventure Camp 2 - August 4-8": "Adventure Camp 2 - August 4-8*",
-	first_choice_199: "First Choice:",
-	second_choice_200: "Second Choice:",
+	first_choice_199: "First Choice",
+	second_choice_200: "Second Choice",
 	input_text_1: "How many sessions would you like your camper to attend?",
-	input_radio_5: "Camp Session Payment Method:",
+	input_radio_5: "Camp Session Payment Method",
 	"input_radio_5::Private Pay": "Private Pay",
 	"input_radio_5::Respite Benefits – DSHS/DDA": "Respite Benefits – DSHS/DDA",
 	custom_html_5:
@@ -86,12 +86,12 @@ const LABELS = {
 	names_4: "Name",
 	input_text_12: "Email Address",
 	input_text_16: "Phone number",
-	contact_1_name_20: "Emergency Contact #1 Name:",
-	contact_1_relationship_21: "Emergency Contact #1 Relationship:",
-	contact_1_cell_phone_23: "Emergency Contact #1 Cell Phone:",
-	contact_2_name_24: "Emergency Contact #2 Name:",
-	contact_2_relationship_25: "Emergency Contact #2 Relationship:",
-	contact_2_cell_phone_27: "Emergency Contact #2 Cell Phone:",
+	contact_1_name_20: "Emergency Contact #1 Name",
+	contact_1_relationship_21: "Emergency Contact #1 Relationship",
+	contact_1_cell_phone_23: "Emergency Contact #1 Cell Phone",
+	contact_2_name_24: "Emergency Contact #2 Name",
+	contact_2_relationship_25: "Emergency Contact #2 Relationship",
+	contact_2_cell_phone_27: "Emergency Contact #2 Cell Phone",
 	mobility_36: "Mobility (select all that apply)",
 	"mobility_36::Walks/runs independently": "Walks/runs independently",
 	"mobility_36::Needs assistance walking/running":
@@ -144,7 +144,7 @@ const LABELS = {
 	activities_your_camper_does_not_like_46:
 		"What are some LEAST favorite activities?",
 	checkbox_10:
-		"Clubs are being offered this year. Please select any that your camper would be interested in:",
+		"Clubs are being offered this year. Please select any that your camper would be interested in",
 	"checkbox_10::Relaxation/Spa": "Relaxation/Spa",
 	"checkbox_10::Arts and crafts": "Arts and crafts",
 	"checkbox_10::Sports": "Sports",
@@ -155,7 +155,7 @@ const LABELS = {
 	"checkbox_10::Cooking/baking": "Cooking/baking",
 	"checkbox_10::Exploring nature": "Exploring nature",
 	"checkbox_10::Music": "Music",
-	checkbox_1: "Care Needs (select all that apply):",
+	checkbox_1: "Care Needs (select all that apply)",
 	"checkbox_1::Has good fine motor skills": "Has good fine motor skills",
 	"checkbox_1::Has poor fine motor skills": "Has poor fine motor skills",
 	"checkbox_1::Needs hand over hand": "Needs hand over hand",
@@ -251,7 +251,7 @@ const LABELS = {
 		'Please provide more details about "Needs bed checks for incontinence."',
 	input_text_4:
 		'Please provide more details about "Has trouble falling asleep or staying asleep."',
-	input_text_19: "Please provide usual bedtime and usual wake-up time:",
+	input_text_19: "Please provide usual bedtime and usual wake-up time",
 	input_text_5:
 		"Please provide any schedule or other information that may be helpful with camper's night routine. ",
 	checkbox_6: "Communication (Select all that apply) ",
@@ -328,9 +328,9 @@ const LABELS = {
 	custom_html_9:
 		"<p>These are general medical questions, a Health Examination Form will be provided for your camper's Doctor or Nurse Practitioner to complete.</p>",
 	list_all_foods_your_camper_cannot_eat_due_to_severe_intolerance_and_or_allergic_reactions_105:
-		"Camper’s Primary Diagnosis:",
+		"Camper’s Primary Diagnosis",
 	list_any_ingredients_in_processed_or_packaged_foods_your_camper_cannot_eat_due_to_intolerance_and_or_allergic_reactions_106:
-		"Secondary Diagnosis:",
+		"Secondary Diagnosis",
 	if_your_camper_ingests_or_comes_in_contact_with_any_foods_or_ingredients_listed_above_describe_his_her_reaction_please_include_physical_or_behavioral_signs_symptoms_evidenced_and_low_long_after_cont:
 		"Chronic Medical Conditions: ",
 	input_radio_9: "Does your camper have seizures?",
@@ -341,7 +341,7 @@ const LABELS = {
 	input_radio_10: "Do they have a written behavior plan in place?",
 	"input_radio_10::Yes": "Yes",
 	"input_radio_10::No": "No",
-	checkbox_8: "Does your camper have any of the following:",
+	checkbox_8: "Does your camper have any of the following",
 	"checkbox_8::Urostomy Bag": "Urostomy Bag",
 	"checkbox_8::Stoma/Colostomy Bag": "Stoma/Colostomy Bag",
 	"checkbox_8::Catheter": "Catheter",
@@ -406,7 +406,7 @@ const LABELS = {
 		"Food Allergies - Please explain the severity, reaction, and details of the restriction.",
 	description_64: "Other dietary requirements",
 	custom_html_14: "Parent/Guardian Consent Form",
-	input_text_17: "Camper Name:",
+	input_text_17: "Camper Name",
 	input_radio_8:
 		"Photo/Video Release: Designated staff members take photos of events and activities. Some of these photos may be focused on your camper, or they may be in the background. It is our intention that all photos are a positive reflection of your camper. Photos are posted on our social media during camp sessions to provide families/caregivers with a glimpse into camp life. They may also be used in promotional materials such as brochures, flyers, and website photos. Do you give Lions Camp Horizon permission to use photos and/or video that may contain images of your camper?",
 	"input_radio_8::Yes": "Yes",

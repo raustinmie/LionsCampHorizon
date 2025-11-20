@@ -91,10 +91,7 @@ export default function Footer1391() {
 							<span className="cs-header">Quick Links</span>
 						</li>
 						<li className="cs-li">
-							<Link
-								href="https://form.jotform.com/252884360756063"
-								className="cs-link"
-							>
+							<Link href="/camper-application" className="cs-link">
 								Camper Application
 							</Link>
 						</li>
