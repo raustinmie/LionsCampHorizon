@@ -80,6 +80,22 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+	#cta-403 {
+		height: 25rem;
+		padding-top: 0;
+	}
+
+	#cta-403 .cs-content {
+		display: flex;
+		justify-content: center;
+		height: 25rem;
+		align-items: center;
+		box-sizing: border-box;
+	}
+	#cta-403 .cs-text {
+		text-align: center;
+	}
+
 	#cta-403 .cs-background {
 		/* clips the black slant so it doesnt overflow */
 		overflow: hidden;
@@ -105,12 +121,10 @@
 	#cta-403 .cs-container {
 		flex-direction: row;
 		justify-content: space-between;
+		height: 25rem;
+		box-sizing: border-box;
 	}
-	#cta-403 .cs-content {
-		text-align: left;
-		align-items: flex-start;
-		width: 50%;
-	}
+
 	#cta-403 .cs-text,
 	#cta-403 .cs-title {
 		margin-left: 0;

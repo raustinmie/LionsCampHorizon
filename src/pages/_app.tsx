@@ -72,7 +72,7 @@ declare global {
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<div className={`${merriweather.className} ${montserrat.className}`}>
+		<div className={`${montserrat.className} ${merriweather.className}`}>
 			<Script src="https://js.stripe.com/v3/" strategy="beforeInteractive" />
 
 			<div className="app-container">

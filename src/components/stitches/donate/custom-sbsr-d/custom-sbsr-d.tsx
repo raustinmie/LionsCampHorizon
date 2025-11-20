@@ -21,8 +21,8 @@ export default function CustomSbsrD() {
 						financial advisor for more information.
 					</p>
 
+					<p className="cs-h3">Some Examples of DAFs are</p>
 					<ul className="cs-list">
-						<p className="cs-h3">Some Examples of DAFs are</p>
 						<li className="cs-item">Fidelity Charitable</li>
 						<li className="cs-item">National Philanthropic</li>
 						<li className="cs-item">Schwab Charitable Trust</li>

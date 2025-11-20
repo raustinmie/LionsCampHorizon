@@ -18,12 +18,11 @@ export default function BoardSection() {
 						serving on our board? Let’s talk.{" "}
 						<Link className="cs-link" href="president@lionscamphorizon.org">
 							Email our board president
-						</Link>
+						</Link>{" "}
 						to start a conversation.
 					</p>
+					<h3 className="cs-h3">Board of Directors</h3>
 					<ul className="cs-board">
-						<li className="cs-item">Board of Directors</li>
-
 						<li className="cs-item">President = Melisa VanderStelt</li>
 						<li className="cs-item">Vice President - Christina Thomas</li>
 						<li className="cs-item">Treasurer - Vacant</li>

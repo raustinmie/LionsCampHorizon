@@ -28,6 +28,10 @@
 		opacity: 0.8;
 		z-index: 1;
 	}
+	#custom-sbs .cs-link {
+		color: var(--bodyTextColor);
+	}
+
 	#custom-sbs .cs-background img {
 		top: 0;
 		left: 0;

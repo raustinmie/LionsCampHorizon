@@ -7,7 +7,6 @@
 	#hero-f-2149 {
 		/* 300px - 400px on top - leaving extra space for the navigation */
 		/* 60px - 100px on bottom */
-		padding: 0 0 clamp(3.75rem, 7.5vw, 6.25rem) 0;
 		/* prevents the topper line from causing an overflow */
 		overflow: hidden;
 		position: relative;

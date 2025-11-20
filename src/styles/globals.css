@@ -2,6 +2,7 @@
 	--primary: #71ae60;
 	--secondary: #fec107;
 	--secondarySemiTransparent: rgba(254, 193, 7, 0.7);
+	--tertiary: #ec6e45;
 	--darkBackground: #414f65;
 	--headerColor: #000000;
 	--headerColorWhite: #fff;
@@ -54,6 +55,12 @@ body {
 	font-size: var(--headerFontSize);
 }
 
+.cs-li {
+	font-family: var(--fontBody);
+}
+.cs-item-text {
+	font-family: var(--fontBody);
+}
 .cs-text {
 	font-size: var(--bodyFontSize);
 	line-height: 1.5em;

@@ -157,6 +157,9 @@
 		order: -1;
 	}
 
+	#sbs-2375 .cs-container {
+		padding-top: 2rem;
+	}
 	#sbs-2375 .cs-picture {
 		max-width: 33rem;
 		/* remove height:auto; give a consistent aspect ratio */

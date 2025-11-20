@@ -50,9 +50,13 @@ export default function HeroC2149() {
 					last a lifetime — all in a safe, supportive environment where
 					abilities shine.
 				</p>
-				<Link href={buttonHref} className="cs-button-solid">
-					{buttonText}
-				</Link>
+				{!isOpen ? (
+					<div className="cs-fake-button">Registration opens January 15!</div>
+				) : (
+					<Link href="/camper-application" className="cs-button-solid">
+						Apply Now
+					</Link>
+				)}
 			</div>
 		</section>
 	);

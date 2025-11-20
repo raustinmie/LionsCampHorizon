@@ -49,11 +49,11 @@
 	}
 	#custom-sbsr-d .cs-content {
 		/* set text align to left if content needs to be left aligned */
-		text-align: center;
 		width: 100%;
 		max-width: 32.3125rem;
 		display: flex;
 		flex-direction: column;
+		font-family: var(--fontBody);
 		/* centers content horizontally, set to flex-start to left align */
 		align-items: center;
 	}

@@ -1,8 +1,24 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { ImageRotator } from "../../camp/sbs-2375/sbs-2375";
 
 export default function SbsG2376() {
+	const activitiesImages = [
+		"/images/g-activities.jpeg",
+		"/images/g-activities2.jpeg",
+		"/images/g-activities3.jpeg",
+	];
+	const serviceImages = [
+		"/images/g-service.jpeg",
+		"/images/g-service2.jpeg",
+		"/images/g-service3.jpeg",
+	];
+	const kitchenImages = [
+		"/images/g-food.jpeg",
+		"/images/g-food2.jpeg",
+		"/images/g-food3.jpeg",
+	];
 	return (
 		<section id="sbs-g-2376">
 			<div className="cs-container">
@@ -18,7 +34,11 @@ export default function SbsG2376() {
 						simply showing up with a smile, there’s a place for you here. You
 						can serve a meal, join a spring clean-up day, help with grounds and
 						facility projects, share a talent or support camp as a financial
-						partner.We’d love to have join us!Please reach out to{" "}
+						partner.
+						<br />
+						We’d love to have join us!
+						<br />
+						Please reach out to{" "}
 						<Link href="mailto:admin@lionscamphorizon.org">
 							admin@lionscamphorizon.org
 						</Link>
@@ -42,16 +62,11 @@ export default function SbsG2376() {
 								at Camp Horizon!
 							</p>
 						</div>
-						<div className="cs-picture">
-							<Image
-								src="/images/get-involved-activities.png"
-								alt="a camper riding a horse"
-								width={528}
-								height={378}
-								loading="lazy"
-								decoding="async"
-							/>
-						</div>
+						<ImageRotator
+							images={activitiesImages}
+							intervalMs={6000}
+							alt="camp activity volunteer photo"
+						/>
 					</div>
 					{/*SBS Reverse*/}
 					<div className="cs-flex">
@@ -74,16 +89,11 @@ export default function SbsG2376() {
 								growing!
 							</p>
 						</div>
-						<div className="cs-picture">
-							<Image
-								src="/images/get-involved-maintenance.png"
-								alt="a crew working on concrete"
-								width={528}
-								height={378}
-								loading="lazy"
-								decoding="async"
-							/>
-						</div>
+						<ImageRotator
+							images={serviceImages}
+							intervalMs={5000}
+							alt="camp maintenance service photo"
+						/>
 					</div>
 					{/*Side By Side*/}
 					<div className="cs-flex">
@@ -103,16 +113,11 @@ export default function SbsG2376() {
 								someone’s day, we’d love to have you in the dining hall with us!
 							</p>
 						</div>
-						<div className="cs-picture">
-							<Image
-								src="/images/get-involved-food.png"
-								alt="volunteers in the camp kitchen"
-								width={528}
-								height={378}
-								loading="lazy"
-								decoding="async"
-							/>
-						</div>
+						<ImageRotator
+							images={kitchenImages}
+							intervalMs={4000}
+							alt="kitchen volunteer photo"
+						/>
 					</div>
 				</div>
 			</div>

@@ -9,6 +9,11 @@ const images = [
 	"/images/camp-base-camp3.jpeg",
 ];
 
+const adventureCampImages = [
+	"/images/camp-adventure-camp.jpg",
+	"/images/camp-adventure-camp2.jpeg",
+	"/images/camp-adventure-camp3.jpeg",
+];
 export default function Sbs2375() {
 	return (
 		<section id="sbs-2375">
@@ -78,16 +83,7 @@ export default function Sbs2375() {
 								</li>
 							</ul>
 						</div>
-						{/* <Image
-								src="/images/camp-base-camp.jpg"
-								alt="campers at base camp"
-								width={528}
-								height={378}
-								loading="lazy"
-								decoding="async"
-								className="cs-position-top"
-							/> */}
-						<BaseCampRotator images={images} intervalMs={10000} />
+						<ImageRotator images={images} intervalMs={5000} />
 					</div>
 					{/*SBS Reverse*/}
 					<div className="cs-flex">
@@ -121,16 +117,11 @@ export default function Sbs2375() {
 								<li className="cs-li">Offsite fieldtrips</li>
 							</ul>
 						</div>
-						<div className="cs-picture">
-							<Image
-								src="/images/camp-adventure-camp.jpg"
-								alt="campers at mini golf"
-								width={528}
-								height={378}
-								loading="lazy"
-								decoding="async"
-							/>
-						</div>
+						<ImageRotator
+							images={adventureCampImages}
+							intervalMs={5000}
+							alt="adventure camp photo"
+						/>
 					</div>
 				</div>
 			</div>
@@ -150,7 +141,7 @@ type Props = {
 	alt?: string;
 };
 
-function BaseCampRotator({
+export function ImageRotator({
 	images = baseImages,
 	intervalMs = 5000,
 	alt = "base camp photo",

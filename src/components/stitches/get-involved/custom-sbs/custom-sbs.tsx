@@ -30,8 +30,11 @@ export default function CustomSbs() {
 						way to make a direct impact.
 					</p>
 					<h3 className="cs-h3">
-						Please visit our "Donate" tab to learn more about options available
-						for financial contributions.
+						Please visit our{" "}
+						<Link className="cs-link" href="/donate">
+							Donate page
+						</Link>{" "}
+						to learn more about options available for financial contributions.
 					</h3>
 				</div>
 			</div>

@@ -7,6 +7,7 @@
 	#services-2387 {
 		padding: var(--sectionPadding);
 		background-color: #fbf9f5;
+		padding-top: 2rem;
 	}
 
 	#services-2387 .cs-content {

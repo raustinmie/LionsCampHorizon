@@ -28,6 +28,11 @@
 		/* centers content horizontally, set to flex-start to left align */
 		align-items: center;
 	}
+	#board-section .cs-h3 {
+		color: var(--bodyTextColorWhite);
+		margin-bottom: 0;
+	}
+
 	#board-section .cs-topper {
 		font-size: var(--topperFontSize);
 		line-height: 1.2em;

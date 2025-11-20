@@ -106,6 +106,7 @@
 		width: 50%;
 		/* Makes img tag act as a background image */
 		object-fit: cover;
+		object-position: top;
 		/* positions the image inside the parent */
 	}
 	#custom-sbsr-c .cs-container {

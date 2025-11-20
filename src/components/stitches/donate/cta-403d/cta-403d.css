@@ -9,7 +9,6 @@
 		position: relative;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
-		padding-left: 2rem;
 		background: var(--darkBackground);
 	}
 	#cta-403d .cs-link {
@@ -23,6 +22,11 @@
 		z-index: -1;
 		margin-top: 2rem;
 	}
+	#cta-403d .cs-text {
+		text-align: left;
+		margin: 1rem;
+	}
+
 	#cta-403d .cs-background:before {
 		/* background color overlay */
 		display: block;
@@ -40,7 +44,7 @@
 		/* Makes img tag act as a background image */
 		object-fit: cover;
 		/* positions the image inside the parent */
-		object-position: 0% 30%;
+		object-position: 0% 20%;
 	}
 	#cta-403d .cs-container {
 		width: 100%;
@@ -80,6 +84,9 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+	#cta-403d {
+		padding-left: 2rem;
+	}
 	#cta-403d .cs-background {
 		/* clips the black slant so it doesnt overflow */
 		overflow: hidden;
@@ -100,7 +107,7 @@
 		/* Makes img tag act as a background image */
 		object-fit: cover;
 		/* positions the image inside the parent */
-		object-position: 0% 30%;
+		object-position: 0% 15%;
 	}
 	#cta-403d .cs-container {
 		flex-direction: row;
