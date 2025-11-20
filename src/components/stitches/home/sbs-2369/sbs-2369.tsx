@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { camperApplicationLink } from "@/constants";
+import { isOpen } from "@/constants";
 
 export default function Sbs2369() {
 	return (
@@ -30,15 +30,27 @@ export default function Sbs2369() {
 					<h2 className="cs-title">What can we help you find?</h2>
 					<ul className="cs-ul">
 						<li className="cs-li">
-							<Link href={camperApplicationLink} className="cs-li-link">
-								<Image
-									src="images/home-spiral.svg"
-									alt="checkmark"
-									width={24}
-									height={24}
-								/>
-								Camper Registration
-							</Link>
+							{!isOpen ? (
+								<Link href="/camp" className="cs-li-link">
+									<Image
+										src="images/home-spiral.svg"
+										alt="checkmark"
+										width={24}
+										height={24}
+									/>
+									Camp Information
+								</Link>
+							) : (
+								<Link href="/camper-application" className="cs-li-link">
+									<Image
+										src="images/home-spiral.svg"
+										alt="checkmark"
+										width={24}
+										height={24}
+									/>
+									Camper Registration
+								</Link>
+							)}
 						</li>
 						<li className="cs-li">
 							<Link href="/facility-rentals" className="cs-li-link">

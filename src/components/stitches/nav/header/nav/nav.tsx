@@ -87,7 +87,7 @@ export default function Nav() {
 			<div className="cs-container">
 				{/*Nav Logo*/}
 				<Link href="/" className="cs-logo" aria-label="back to home">
-					<Image src="/images/logo.png" alt="logo" width={43} height={43} />
+					<Image src="/images/logo.png" alt="logo" width={80} height={80} />
 				</Link>
 				{/*Navigation List*/}
 				<nav className="cs-nav" role="navigation">

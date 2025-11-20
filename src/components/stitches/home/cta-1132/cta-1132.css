@@ -43,7 +43,7 @@
 		margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
 		font-weight: 500;
 
-		color: var(--bodyTextColorWhite);
+		color: var(--bodyTextColor);
 	}
 	#cta-1132 .cs-button-box {
 		display: flex;
