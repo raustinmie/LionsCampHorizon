@@ -20,7 +20,7 @@ export default function Sbsr2181() {
 					</p>
 					<div className="cs-button-box">
 						<Link href="/who-we-are" className="cs-button-solid">
-							{`Learn Our Story >`}
+							{`Learn Our Story`}
 						</Link>
 					</div>
 				</div>

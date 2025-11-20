@@ -33,6 +33,7 @@
 	}
 	#cta-1132 .cs-topper {
 		color: var(--secondary);
+		color: var(--bodyTextColor);
 	}
 
 	#cta-1132 .cs-title {
@@ -40,6 +41,7 @@
 		max-width: 24ch;
 		/* 28px - 40px */
 		margin: 0 0 clamp(1.75rem, 3vw, 2.5rem);
+		font-weight: 500;
 
 		color: var(--bodyTextColorWhite);
 	}
