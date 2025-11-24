@@ -14,9 +14,9 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-dorms.png"
+								src="/images/facilities-dorms.avif"
 								alt="a lions camp horizon dorm room"
-								width={413}
+								width={414}
 								height={240}
 								loading="lazy"
 								decoding="async"
@@ -38,9 +38,9 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-cc.png"
+								src="/images/facilities-cc.avif"
 								alt="the lions camp horizon conference center"
-								width={413}
+								width={414}
 								height={240}
 								loading="lazy"
 								decoding="async"
@@ -62,9 +62,9 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-theatre.png"
+								src="/images/facilities-theatre.avif"
 								alt="the lions camp horizon theatre"
-								width={413}
+								width={414}
 								height={240}
 								loading="lazy"
 								decoding="async"
@@ -86,10 +86,10 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-kitchen.png"
+								src="/images/facilities-kitchen.avif"
 								alt="utensils in the lions camp horizon kitchen"
-								width={413}
-								height={240}
+								width={411}
+								height={227}
 								loading="lazy"
 								decoding="async"
 								aria-hidden="true"
@@ -113,9 +113,9 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-craft-room.png"
+								src="/images/facilities-craft-room.avif"
 								alt="utensils in the lions camp horizon kitchen"
-								width={413}
+								width={414}
 								height={240}
 								loading="lazy"
 								decoding="async"
@@ -138,9 +138,9 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-game-room.png"
+								src="/images/facilities-game-room.avif"
 								alt="utensils in the lions camp horizon kitchen"
-								width={413}
+								width={414}
 								height={240}
 								loading="lazy"
 								decoding="async"
@@ -163,9 +163,9 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-firepit.png"
+								src="/images/facilities-firepit.avif"
 								alt="the lions camp horizon fire pit"
-								width={413}
+								width={414}
 								height={240}
 								loading="lazy"
 								decoding="async"
@@ -185,10 +185,10 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-pavilion.jpg"
+								src="/images/facilities-pavilion.avif"
 								alt="a coming soon banner"
-								width={413}
-								height={240}
+								width={1800}
+								height={1200}
 								loading="lazy"
 								decoding="async"
 								aria-hidden="true"

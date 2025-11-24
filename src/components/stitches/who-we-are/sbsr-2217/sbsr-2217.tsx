@@ -10,10 +10,10 @@ export default function Sbsr2217() {
 					{/*Top left image*/}
 					<div className="cs-picture cs-picture1">
 						<Image
-							src="/images/wwa-history1.jpg"
+							src="/images/wwa-history1.avif"
 							alt="campers and staff on a monster truck"
-							width={297}
-							height={366}
+							width={1699}
+							height={1128}
 							loading="lazy"
 							decoding="async"
 						/>
@@ -21,10 +21,10 @@ export default function Sbsr2217() {
 					{/*Bottom right image*/}
 					<div className="cs-picture cs-picture2">
 						<Image
-							src="/images/wwa-history2.jpg"
+							src="/images/wwa-history2.avif"
 							alt="campers on a bleacher"
-							width={405}
-							height={376}
+							width={1591}
+							height={1101}
 							loading="lazy"
 							decoding="async"
 						/>

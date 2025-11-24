@@ -17,10 +17,10 @@ export default function ServicesD2198() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/donate-ways1.jpg"
+								src="/images/donate-ways1.avif"
 								alt="happy campers"
-								width={550}
-								height={377}
+								width={1080}
+								height={810}
 								loading="lazy"
 								decoding="async"
 							/>
@@ -39,10 +39,10 @@ export default function ServicesD2198() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/donate-ways2.jpg"
+								src="/images/donate-ways2.avif"
 								alt="happy campers"
-								width={550}
-								height={377}
+								width={2016}
+								height={1512}
 								loading="lazy"
 								decoding="async"
 								className="picture-2"
@@ -61,10 +61,10 @@ export default function ServicesD2198() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/donate-ways3.jpg"
+								src="/images/donate-ways3.avif"
 								alt="a camper doing inflatable axe throwing"
-								width={550}
-								height={377}
+								width={4032}
+								height={3024}
 								loading="lazy"
 								decoding="async"
 							/>

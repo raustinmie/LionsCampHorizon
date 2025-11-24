@@ -1,7 +1,7 @@
 const canonicalUrl = "https://www.lionscamphorizon.org/";
 export { canonicalUrl };
 
-const ogImagePath = `${canonicalUrl}/images/LCHOG.png`;
+const ogImagePath = `${canonicalUrl}/images/LCHOG.avif`;
 export { ogImagePath };
 
 const ogIconPath = "";

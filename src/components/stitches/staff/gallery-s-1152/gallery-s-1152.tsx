@@ -12,10 +12,10 @@ export default function GalleryS1152() {
 					{/*Picture 1*/}
 					<div className="cs-image">
 						<Image
-							src="/images/staff-gallery1.jpg"
+							src="/images/staff-gallery1.avif"
 							alt="gallery"
-							width={272}
-							height={320}
+							width={3024}
+							height={4032}
 							loading="lazy"
 							decoding="async"
 						/>
@@ -23,10 +23,10 @@ export default function GalleryS1152() {
 					{/*Picture 2*/}
 					<div className="cs-image">
 						<Image
-							src="/images/staff-gallery2.jpg"
+							src="/images/staff-gallery2.avif"
 							alt="gallery"
-							width={272}
-							height={320}
+							width={1080}
+							height={810}
 							loading="lazy"
 							decoding="async"
 						/>
@@ -34,10 +34,10 @@ export default function GalleryS1152() {
 					{/*Picture 3*/}
 					<div className="cs-image">
 						<Image
-							src="/images/staff-gallery3.jpg"
+							src="/images/staff-gallery3.avif"
 							alt="gallery"
-							width={272}
-							height={320}
+							width={2268}
+							height={4032}
 							loading="lazy"
 							decoding="async"
 						/>
@@ -45,10 +45,10 @@ export default function GalleryS1152() {
 					{/*Picture 4*/}
 					<div className="cs-image">
 						<Image
-							src="/images/staff-gallery4.jpg"
+							src="/images/staff-gallery4.avif"
 							alt="gallery"
-							width={272}
-							height={320}
+							width={4032}
+							height={3024}
 							loading="lazy"
 							decoding="async"
 						/>
@@ -56,10 +56,10 @@ export default function GalleryS1152() {
 					{/*Picture 5*/}
 					<div className="cs-image">
 						<Image
-							src="/images/staff-gallery5.jpg"
+							src="/images/staff-gallery5.avif"
 							alt="gallery"
-							width={272}
-							height={320}
+							width={4032}
+							height={3024}
 							loading="lazy"
 							decoding="async"
 						/>

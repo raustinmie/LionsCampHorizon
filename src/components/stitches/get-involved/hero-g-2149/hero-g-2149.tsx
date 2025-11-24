@@ -9,25 +9,25 @@ export default function HeroG2149() {
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/get-involved-hero1.jpg"
+						src="/images/get-involved-hero1.avif"
 						className="cs-image2"
 						alt="a border patrol agent with a thank you card"
-						width={388}
-						height={517}
+						width={1512}
+						height={2016}
 					/>
 					<Image
-						src="/images/get-involved-hero2.jpg"
+						src="/images/get-involved-hero2.avif"
 						className="cs-image1"
 						alt="a camp conga line"
-						width={817}
-						height={517}
+						width={1280}
+						height={960}
 					/>{" "}
 					<Image
-						src="/images/get-involved-hero3.jpg"
+						src="/images/get-involved-hero3.avif"
 						className="cs-image3"
 						alt="a camper writing a thank you card"
-						width={529}
-						height={517}
+						width={1511}
+						height={1557}
 					/>
 				</div>
 			</div>

@@ -7,6 +7,8 @@ import { loadStripe } from "@stripe/stripe-js";
 
 export interface Cta403DProps {
 	imageSrc: string;
+	imageWidth: number;
+	imageHeight: number;
 	title: string;
 	subtitle: string | ReactNode;
 	buttonText: string;
@@ -15,6 +17,8 @@ export interface Cta403DProps {
 
 export default function Cta403D({
 	imageSrc,
+	imageWidth,
+	imageHeight,
 	title,
 	subtitle,
 	buttonText,
@@ -69,8 +73,8 @@ export default function Cta403D({
 				<Image
 					src={imageSrc}
 					alt={imageAlt}
-					width={1920}
-					height={660}
+					width={imageWidth}
+					height={imageHeight}
 					loading="lazy"
 					decoding="async"
 					aria-hidden="true"

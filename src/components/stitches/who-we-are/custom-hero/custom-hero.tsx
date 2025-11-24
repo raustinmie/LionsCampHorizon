@@ -16,11 +16,11 @@ export default function CustomHero() {
 		<section id="custom-hero">
 			<div className="cs-container">
 				<Image
-					src="/images/whoweare-hero1.jpg"
+					src="/images/whoweare-hero1.avif"
 					className="cs-image1"
 					alt="A thank you letter from a camper"
-					width={464 * 0.7}
-					height={618 * 0.7}
+					width={436}
+					height={640}
 				/>
 				<div className="cs-content">
 					<h1 className="cs-title">Who We Are</h1>
@@ -35,11 +35,11 @@ export default function CustomHero() {
 					</p>
 				</div>
 				<Image
-					src="/images/whoweare-hero2.jpg"
+					src="/images/whoweare-hero2.avif"
 					className="cs-image3"
 					alt="A thank you letter from a camper"
-					width={464 * 0.7}
-					height={618 * 0.7}
+					width={422}
+					height={640}
 				/>
 			</div>
 		</section>

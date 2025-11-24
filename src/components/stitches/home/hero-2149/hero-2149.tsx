@@ -15,7 +15,7 @@ export default function Hero2149() {
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/home-header.jpg"
+						src="/images/home-header.avif"
 						alt="campers sitting in a circle on the grass"
 						fill
 					/>

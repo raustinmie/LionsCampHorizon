@@ -21,10 +21,10 @@ export default function Footer1391() {
 					<div className="cs-flex">
 						<Link href="/" className="cs-logo">
 							<Image
-								src="/images/logo.png"
+								src="/images/logo.avif"
 								alt="logo"
-								width={317}
-								height={49}
+								width={617}
+								height={609}
 								aria-hidden="true"
 								loading="lazy"
 								decoding="async"
@@ -91,7 +91,7 @@ export default function Footer1391() {
 							<span className="cs-header">Quick Links</span>
 						</li>
 						<li className="cs-li">
-							<Link href="/camper-applicationgi" className="cs-link">
+							<Link href="/camper-application" className="cs-link">
 								Camper Application
 							</Link>
 						</li>

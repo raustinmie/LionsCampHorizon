@@ -16,10 +16,10 @@ export default function MeetTeam1141() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/meet-angie.png"
+								src="/images/meet-angie.avif"
 								alt="a headshot of Angie Dixon"
-								width={305}
-								height={407}
+								width={498}
+								height={406}
 								loading="lazy"
 								decoding="async"
 							/>
@@ -48,10 +48,10 @@ export default function MeetTeam1141() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/meet-nakita.jpg"
+								src="/images/meet-nakita.avif"
 								alt="Nakita Zylstra"
-								width={305}
-								height={407}
+								width={1512}
+								height={2016}
 								loading="lazy"
 								decoding="async"
 							/>

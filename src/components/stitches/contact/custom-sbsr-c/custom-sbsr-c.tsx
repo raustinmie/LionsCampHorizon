@@ -16,10 +16,10 @@ export default function CustomSbsrC() {
 			{/*Background Image*/}
 			<div className="cs-background">
 				<Image
-					src="/images/contact-hero.jpg"
+					src="/images/contact-hero.avif"
 					alt="counselors at the bowling alley"
-					width={1920}
-					height={660}
+					width={2048}
+					height={1536}
 					loading="lazy"
 					decoding="async"
 					aria-hidden="true"

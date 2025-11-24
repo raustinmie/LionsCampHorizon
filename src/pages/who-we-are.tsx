@@ -1,5 +1,4 @@
 import AboutSeo from "@/components/seo/about-seo";
-import Image from "next/image";
 import { FaqQuestionAndAnswer } from "@/components/seo/faq-seo";
 import CustomHero from "@/components/stitches/who-we-are/custom-hero/custom-hero";
 import Services2198 from "@/components/stitches/who-we-are/services-2198/services-2198";
@@ -28,7 +27,9 @@ export default function About() {
 			<Sbsr2217B />
 			<Sbsr2217C />
 			<Reviews306
-				imageSrc="/images/wwa-review.jpg"
+				imageSrc="/images/wwa-review.avif"
+				imageWidth={2862}
+				imageHeight={3486}
 				referralText="Volunteering at Camp Horizon is one of the highlights of my summer.  The campers and staff are so enjoyable to be around.  The smiles and laughs from all are good for the soul."
 				referrerName="Holly L."
 				referrerTitle="Lions Camp Horizon Volunteer"

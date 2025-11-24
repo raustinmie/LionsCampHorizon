@@ -18,25 +18,25 @@ export default function HeroC2149() {
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/camp-hero2.jpg"
+						src="/images/camp-hero2.avif"
 						className="cs-image1"
 						alt="A camper's luggage"
-						width={817}
-						height={517}
+						width={1512}
+						height={2016}
 					/>{" "}
 					<Image
-						src="/images/camp-hero1.jpg"
+						src="/images/camp-hero1.avif"
 						className="cs-image2"
 						alt="Staff ready to welcome campers"
-						width={388}
-						height={517}
+						width={1916}
+						height={1213}
 					/>
 					<Image
-						src="/images/camp-hero3.jpg"
+						src="/images/camp-hero3.avif"
 						className="cs-image3"
 						alt="Making a video of a camper"
-						width={529}
-						height={517}
+						width={1512}
+						height={2016}
 					/>
 				</div>
 			</div>

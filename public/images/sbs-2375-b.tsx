@@ -74,10 +74,10 @@ export default function Sbs2375B() {
 					</div>
 					<div className="cs-picture">
 						<Image
-							src="/images/camp-fees.jpg"
+							src="/images/camp-fees.avif"
 							alt="A camper at a carnival with lots of tickets"
-							width={528}
-							height={378}
+							width={2268}
+							height={3633}
 							loading="lazy"
 							decoding="async"
 						/>

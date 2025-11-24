@@ -18,10 +18,10 @@ export default function Services2387() {
 				<div className="cs-wrapper">
 					<div className="cs-picture">
 						<Image
-							src="/images/staff-seasonal.jpg"
+							src="/images/staff-seasonal.avif"
 							alt="A camper and staff member with their tongues stuck out"
-							width={402}
-							height={416}
+							width={1512}
+							height={2016}
 							loading="lazy"
 							decoding="async"
 						/>

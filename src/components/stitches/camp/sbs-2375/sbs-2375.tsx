@@ -4,15 +4,15 @@ import Image from "next/image";
 import { image } from "framer-motion/client";
 
 const images = [
-	"/images/camp-base-camp.jpg",
-	"/images/camp-base-camp2.jpeg",
-	"/images/camp-base-camp3.jpeg",
+	"/images/camp-base-camp.avif",
+	"/images/camp-base-camp2.avif",
+	"/images/camp-base-camp3.avif",
 ];
 
 const adventureCampImages = [
-	"/images/camp-adventure-camp.jpg",
-	"/images/camp-adventure-camp2.jpeg",
-	"/images/camp-adventure-camp3.jpeg",
+	"/images/camp-adventure-camp.avif",
+	"/images/camp-adventure-camp2.avif",
+	"/images/camp-adventure-camp3.avif",
 ];
 export default function Sbs2375() {
 	return (
@@ -130,9 +130,9 @@ export default function Sbs2375() {
 }
 
 const baseImages = [
-	"/images/camp-base-camp.jpg",
-	"/images/camp-base-camp2.jpeg",
-	"/images/camp-base-camp3.jpeg",
+	"/images/camp-base-camp.avif",
+	"/images/camp-base-camp2.avif",
+	"/images/camp-base-camp3.avif",
 ];
 
 type Props = {

@@ -4,6 +4,8 @@ import Image from "next/image";
 
 export interface Cta403Props {
 	imageSrc: string;
+	imageWidth: number;
+	imageHeight: number;
 	title: string;
 	subtitle: string | ReactNode;
 	buttonText: string;
@@ -12,6 +14,8 @@ export interface Cta403Props {
 }
 export default function Cta403({
 	imageSrc,
+	imageWidth,
+	imageHeight,
 	title,
 	subtitle,
 	buttonText,
@@ -34,8 +38,8 @@ export default function Cta403({
 				<Image
 					src={imageSrc}
 					alt={imageAlt}
-					width={1920}
-					height={660}
+					width={imageWidth}
+					height={imageHeight}
 					loading="lazy"
 					decoding="async"
 					aria-hidden="true"

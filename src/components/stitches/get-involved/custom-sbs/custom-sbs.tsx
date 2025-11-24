@@ -41,10 +41,10 @@ export default function CustomSbs() {
 			{/*Background Image*/}
 			<div className="cs-background">
 				<Image
-					src="/images/get-involved-partner.jpg"
+					src="/images/get-involved-partner.avif"
 					alt="a camper dancing with a counselor"
-					width={1920}
-					height={660}
+					width={1512}
+					height={2016}
 					loading="lazy"
 					decoding="async"
 					aria-hidden="true"

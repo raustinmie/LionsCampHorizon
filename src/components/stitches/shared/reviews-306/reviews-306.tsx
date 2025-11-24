@@ -3,25 +3,34 @@ import Image from "next/image";
 
 interface Reviews306Props {
 	imageSrc?: string;
+	imageWidth?: number;
+	imageHeight?: number;
 	referralText: string;
 	referrerName?: string;
 	referrerTitle?: string;
 }
 export default function Reviews306({
 	imageSrc,
+	imageWidth,
+	imageHeight,
 	referralText,
 	referrerName,
 	referrerTitle,
 }: Reviews306Props) {
 	return (
 		<section id="reviews-306">
-			{imageSrc && (
+			{imageSrc && imageWidth && imageHeight && (
 				<div className="cs-image">
-					<Image src={imageSrc} alt="building" width={842} height={548} />
+					<Image
+						src={imageSrc}
+						alt="building"
+						width={imageWidth}
+						height={imageHeight}
+					/>
 				</div>
 			)}
 			<div className="cs-content">
-				<Image src="/images/quote.png" alt="quote" width={40} height={33} />
+				<Image src="/images/quote.avif" alt="quote" width={40} height={33} />
 				<p className="cs-review">{referralText}</p>
 				<div className="cs-info">
 					<div className="cs-flex">
@@ -31,11 +40,11 @@ export default function Reviews306({
 				</div>
 				{/*Bottom watermark quote*/}
 				<Image
-					src="/images/quote.png"
+					src="/images/quote.avif"
 					alt="quote"
 					className="cs-watermark"
-					width={136}
-					height={120}
+					width={40}
+					height={33}
 				/>
 			</div>
 		</section>

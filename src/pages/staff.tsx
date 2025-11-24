@@ -52,7 +52,9 @@ export default function Staff() {
 			<HeroS2149 />
 			<Services2387 />
 			<Cta403
-				imageSrc="/images/staff-cta.jpg"
+				imageSrc="/images/staff-cta.avif"
+				imageWidth={2048}
+				imageHeight={1536}
 				title="Lions Camp Horizon is an equal opportunity employer."
 				subtitle="We don't just accept diversity; we embrace it."
 				buttonText="Apply Online"

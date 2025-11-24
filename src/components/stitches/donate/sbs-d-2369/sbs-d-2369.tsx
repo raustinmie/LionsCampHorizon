@@ -9,10 +9,10 @@ export default function SbsD2369() {
 				{/*Main Image*/}
 				<div className="cs-picture">
 					<Image
-						src="/images/donate-other.jpg"
+						src="/images/donate-other.avif"
 						alt="campers having fun"
-						width={565}
-						height={814}
+						width={3024}
+						height={4032}
 						loading="lazy"
 						decoding="async"
 					/>

@@ -26,10 +26,10 @@ export default function Sbsr2181() {
 				</div>
 				<div className="cs-picture">
 					<Image
-						src="/images/home-history.jpg"
+						src="/images/home-history.avif"
 						alt="photo of campers from the past"
-						width={742}
-						height={640}
+						width={1621}
+						height={1108}
 					/>
 				</div>
 			</div>

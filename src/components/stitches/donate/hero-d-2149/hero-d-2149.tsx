@@ -8,7 +8,7 @@ export default function HeroD2149() {
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/donate-hero.jpg"
+						src="/images/donate-hero.avif"
 						alt="A collage of happy campers"
 						fill
 					/>

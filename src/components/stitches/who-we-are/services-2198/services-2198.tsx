@@ -13,10 +13,10 @@ export default function Services2198() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/what-were-all-about1.png"
+								src="/images/what-were-all-about1.avif"
 								alt="a camper flexing his biceps"
-								width={550}
-								height={377}
+								width={1670}
+								height={994}
 								loading="lazy"
 								decoding="async"
 							/>
@@ -33,10 +33,10 @@ export default function Services2198() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/what-were-all-about2.jpg"
+								src="/images/what-were-all-about2.avif"
 								alt="a camper and counselor hugging"
-								width={550}
-								height={377}
+								width={2316}
+								height={3057}
 								loading="lazy"
 								decoding="async"
 								className="picture-2"
@@ -54,10 +54,10 @@ export default function Services2198() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/what-were-all-about3.jpg"
+								src="/images/what-were-all-about3.jpeg"
 								alt="two men arm wrestling"
-								width={550}
-								height={377}
+								width={3024}
+								height={2294}
 								loading="lazy"
 								decoding="async"
 							/>

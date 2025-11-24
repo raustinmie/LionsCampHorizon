@@ -23,7 +23,7 @@ export default function BoardSection() {
 					</p>
 					<h3 className="cs-h3">Board of Directors</h3>
 					<ul className="cs-board">
-						<li className="cs-item">President = Melisa VanderStelt</li>
+						<li className="cs-item">President - Melisa VanderStelt</li>
 						<li className="cs-item">Vice President - Christina Thomas</li>
 						<li className="cs-item">Treasurer - Vacant</li>
 						<li className="cs-item">Secretary - Wendy Canessa</li>

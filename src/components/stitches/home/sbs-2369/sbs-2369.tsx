@@ -11,18 +11,18 @@ export default function Sbs2369() {
 					{/*Main Image*/}
 					<div className="cs-picture">
 						<Image
-							src="/images/home-circle.png"
+							src="/images/home-circle.avif"
 							alt="camper looking through a tube"
-							width={565}
-							height={814}
+							width={1056}
+							height={1074}
 						/>
 					</div>
 					<Image
 						className="cs-flower"
-						src="/images/home-blur.png"
+						src="/images/home-blur.avif"
 						alt="flower blur"
-						width={635}
-						height={697}
+						width={996}
+						height={714}
 					/>
 				</div>
 				<div className="cs-content">

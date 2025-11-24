@@ -36,10 +36,10 @@ export default function CustomSbsrD() {
 			{/*Background Image*/}
 			<div className="cs-background">
 				<Image
-					src="/images/donate-daf.jpg"
+					src="/images/donate-daf.avif"
 					alt="A bus full of campers and counselors"
-					width={1920}
-					height={660}
+					width={3024}
+					height={4032}
 					loading="lazy"
 					decoding="async"
 					aria-hidden="true"

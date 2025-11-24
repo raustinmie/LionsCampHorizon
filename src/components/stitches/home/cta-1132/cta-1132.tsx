@@ -19,10 +19,10 @@ export default function Cta1132() {
 			</div>
 			<div className="cs-background">
 				<Image
-					src="/images/home-cta.jpg"
+					src="/images/home-cta.avif"
 					alt="a smiling camper"
-					width={1280}
-					height={568}
+					width={1195}
+					height={426}
 					loading="lazy"
 					decoding="async"
 				/>

@@ -24,7 +24,7 @@ export default function SpecialEvents() {
 				<div className="cs-picture">
 					<Image
 						priority
-						src="/images/special-hero.jpg"
+						src="/images/special-hero.avif"
 						alt="Men ready for construction in front of a Lions Camp Horizon building"
 						fill
 					/>

@@ -13,7 +13,7 @@ export default function CustomCta() {
 				</div>
 				<div className="cs-picture">
 					<Image
-						src="/images/camp-banana.jpg"
+						src="/images/camp-banana.avif"
 						alt="campers and counselors sitting around a campfire"
 						fill
 						loading="lazy"

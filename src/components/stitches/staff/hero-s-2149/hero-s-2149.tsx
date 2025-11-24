@@ -9,25 +9,25 @@ export default function HeroS2149() {
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/staff-hero1.jpg"
+						src="/images/staff-hero1.avif"
 						className="cs-image1"
 						alt="A staff show"
-						width={817}
-						height={517}
+						width={1282}
+						height={1709}
 					/>
 					<Image
-						src="/images/staff-hero2.jpg"
+						src="/images/staff-hero2.avif"
 						className="cs-image2"
 						alt="staff having fun"
-						width={388}
-						height={517}
+						width={4032}
+						height={3024}
 					/>
 					<Image
-						src="/images/staff-hero3.jpg"
+						src="/images/staff-hero3.avif"
 						className="cs-image3"
 						alt="a camper and a staff member dressed up as a banana"
-						width={529}
-						height={517}
+						width={3024}
+						height={4032}
 					/>
 				</div>
 			</div>

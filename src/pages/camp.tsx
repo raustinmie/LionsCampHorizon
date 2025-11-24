@@ -66,7 +66,9 @@ match the information provided by your doctor on the health exam form.`,
 			</div>
 			<Faq2216 faqData={faqData} />
 			<Reviews306
-				imageSrc="/images/camp-review.jpg"
+				imageSrc="/images/camp-review.avif"
+				imageWidth={2048}
+				imageHeight={1536}
 				referralText="“Camp is the most awesome place on Earth, and that is the absolute 100% truth."
 				referrerName="Trevor E."
 				referrerTitle="Lions Camp Horizon Camper"

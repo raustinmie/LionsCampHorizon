@@ -19,10 +19,10 @@ export default function CustomSbsD() {
 			{/*Background Image*/}
 			<div className="cs-background">
 				<Image
-					src="/images/donate-did-you-know.jpg"
+					src="/images/donate-did-you-know.avif"
 					alt="A camper and counselor"
-					width={1920}
-					height={660}
+					width={1512}
+					height={2016}
 					loading="lazy"
 					decoding="async"
 					aria-hidden="true"

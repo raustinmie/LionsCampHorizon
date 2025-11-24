@@ -5,19 +5,19 @@ import { ImageRotator } from "../../camp/sbs-2375/sbs-2375";
 
 export default function SbsG2376() {
 	const activitiesImages = [
-		"/images/g-activities.jpeg",
-		"/images/g-activities2.jpeg",
-		"/images/g-activities3.jpeg",
+		"/images/g-activities.avif",
+		"/images/g-activities2.avif",
+		"/images/g-activities3.avif",
 	];
 	const serviceImages = [
-		"/images/g-service.jpeg",
-		"/images/g-service2.jpeg",
-		"/images/g-service3.jpeg",
+		"/images/g-service.avif",
+		"/images/g-service2.avif",
+		"/images/g-service3.avif",
 	];
 	const kitchenImages = [
-		"/images/g-food.jpeg",
-		"/images/g-food2.jpeg",
-		"/images/g-food3.jpeg",
+		"/images/g-food.avif",
+		"/images/g-food2.avif",
+		"/images/g-food3.avif",
 	];
 	return (
 		<section id="sbs-g-2376">

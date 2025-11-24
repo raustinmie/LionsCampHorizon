@@ -147,7 +147,9 @@ export default function FacilityRentals() {
 			<HeroF2149 />
 			<Services961 />
 			<Cta403
-				imageSrc="/images/facilities-application.jpg"
+				imageSrc="/images/facilities-application.avif"
+				imageWidth={2016}
+				imageHeight={1512}
 				imageAlt="Lions Camp Horizon dining hall"
 				title="Rental Application"
 				subtitle="Ready to rent our campus"
@@ -156,7 +158,9 @@ export default function FacilityRentals() {
 			/>
 			<Services1168 />
 			<Reviews306
-				imageSrc="/images/facilities-review.jpg"
+				imageSrc="/images/facilities-review.avif"
+				imageWidth={2048}
+				imageHeight={1536}
 				referralText="When we get together at Camp Horizon, something magical happens.  We laugh louder, grow closer and leave as a stronger community.  It's the perfect place to unplug, reconnect and soak up the summer camp feeling."
 			/>
 			<Cta697

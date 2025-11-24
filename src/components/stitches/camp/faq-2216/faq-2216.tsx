@@ -43,10 +43,10 @@ export default function Faq2216({ faqData }: Faq2216Props) {
 							<Image
 								loading="lazy"
 								decoding="async"
-								src="/images/camp-faq.jpg"
+								src="/images/camp-faq.avif"
 								alt="A man in a chicken costume"
-								width="590"
-								height="801"
+								width={2268}
+								height={3456}
 								aria-hidden="true"
 							/>
 						</picture>
