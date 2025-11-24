@@ -27,7 +27,7 @@ export default function Home() {
 				/>
 			</div>
 			<Reviews306
-				imageSrc="/images/home-review.avif"
+				imageSrc="/images/home-review.jpg"
 				imageWidth={640}
 				imageHeight={480}
 				referralText="Camp Horizon is all about friendships, loving counselors and making summer memories!"

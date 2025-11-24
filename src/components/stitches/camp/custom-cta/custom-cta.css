@@ -30,7 +30,7 @@
 	}
 	#custom-cta .cs-picture img {
 		object-fit: cover;
-		object-position: top;
+		object-position: 0 20%;
 		width: 100%;
 	}
 }

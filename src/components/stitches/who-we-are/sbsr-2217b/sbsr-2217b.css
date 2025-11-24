@@ -90,7 +90,7 @@
 		/* scales the whole group based on the view width size and stop when that vales equals .74em, resets at desktop */
 		font-size: min(2.32vw, 0.74em);
 		width: 39.375em;
-		height: 40.9375em;
+		height: 30.9375em;
 		display: block;
 		position: relative;
 		z-index: 1;
@@ -119,20 +119,18 @@
 		left: 0;
 	}
 	#sbsr-2217b .cs-picture1 {
-		width: 30.0625em;
-		height: 75%;
+		width: 50%;
+		aspect-ratio: 413/323;
 		border: 4px solid #ffffff;
 		top: 0;
-		bottom: 17.5625em;
-		left: 0;
+		left: 10%;
 	}
 	#sbsr-2217b .cs-picture2 {
-		width: 25.8125em;
-		height: 50%;
+		width: 60%;
+		aspect-ratio: 1621/1108;
 		border: 4px solid #ffffff;
-		top: 16.9375em;
-		right: 0;
 		bottom: 0;
+		right: 10%;
 	}
 
 	#sbsr-2217b .cs-graphic {
@@ -166,7 +164,6 @@
 	}
 	#sbsr-2217b .cs-image-group {
 		font-size: min(1.2vw, 1em);
-		height: auto;
 		flex: none;
 		order: 2;
 	}
