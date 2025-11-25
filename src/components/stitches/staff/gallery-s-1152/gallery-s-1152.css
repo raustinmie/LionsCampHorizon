@@ -44,7 +44,8 @@
 	}
 	#gallery-s-1152 .cs-image {
 		/* 260px - 360px */
-		min-height: clamp(16.25rem, 60vw, 20rem);
+		/* min-height: clamp(16.25rem, 60vw, 16rem); */
+		aspect-ratio: 1.2/1;
 		border-radius: 1rem;
 		/* clips the image corners */
 		overflow: hidden;
@@ -62,6 +63,9 @@
 		/* makes it act like a background image */
 		object-fit: cover;
 	}
+	#gallery-s-1152 .cs-image3 img {
+		object-position: 0 20%;
+	}
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75rem) {
@@ -72,6 +76,10 @@
 	#gallery-s-1152 .cs-image {
 		grid-column: span 4;
 	}
+	#gallery-s-1152 .cs-image:nth-of-type(3) {
+		grid-column: span;
+	}
+
 	#gallery-s-1152 .cs-image:nth-of-type(4),
 	#gallery-s-1152 .cs-image:nth-of-type(5) {
 		grid-column: span 6;

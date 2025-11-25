@@ -177,6 +177,7 @@
 		width: 100%;
 		height: auto;
 		display: block;
+		object-fit: contain;
 	}
 	#sbs-d-2369 .cs-flower {
 		width: 75em;
@@ -244,10 +245,6 @@
 		align-items: flex-end;
 		position: relative;
 		z-index: 1;
-	}
-	#sbs-d-2369 .cs-picture img {
-		height: 100%;
-		width: auto;
 	}
 	#sbs-d-2369 .cs-flower {
 		width: 80vw;

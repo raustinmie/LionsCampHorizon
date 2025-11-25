@@ -24,19 +24,11 @@ export default function Camp() {
 		},
 		{
 			question: "Can I come to camp if I have special dietary requirements?",
-			answer: `Yes, in most cases we are able to accommodate medically required dietary
-restrictions. While we do not prepare fully individualized menus, we offer a variety
-of food options at each meal and do our best to work with your camper’s dietary
-needs. If your camper has specific dietary restrictions, we encourage you to
-contact us so we can review your camper’s specific requirements and make sure
-we can safely support them.`,
+			answer: `Yes, in most cases we are able to accommodate medically required dietary restrictions. While we do not prepare fully individualized menus, we offer a variety of food options at each meal and do our best to work with your camper’s dietary needs. If your camper has specific dietary restrictions, we encourage you to contact us so we can review your camper’s specific requirements and make sure we can safely support them.`,
 		},
 		{
 			question: "Do I need a Physical Exam before I can attend camp?",
-			answer: `Yes. A new physical/health exam form is required each year. This helps us
-ensure we have the most up-to-date medical information so we can keep all
-campers safe and properly supported. All medications brought to camp must also
-match the information provided by your doctor on the health exam form.`,
+			answer: `Yes. A new physical/health exam form is required each year. This helps us ensure we have the most up-to-date medical information so we can keep all campers safe and properly supported. All medications brought to camp must also match the information provided by your doctor on the health exam form.`,
 		},
 	];
 	return (

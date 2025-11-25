@@ -11,8 +11,8 @@
 		display: flex;
 		justify-content: center;
 	}
-	#special-events .cs-picture:before {
-		/* background color overlay */
+	/* #special-events .cs-picture:before {
+		background color overlay
 		content: "";
 		position: absolute;
 		display: block;
@@ -23,7 +23,7 @@
 		top: 0;
 		left: 0;
 		z-index: 1;
-	}
+	} */
 	#special-events-hero .cs-picture img {
 		object-fit: cover;
 	}

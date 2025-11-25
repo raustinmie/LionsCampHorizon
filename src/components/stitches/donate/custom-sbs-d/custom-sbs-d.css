@@ -10,6 +10,7 @@
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		background: var(--primary);
+		min-height: clamp(20rem, 40vw, 40rem);
 	}
 	#custom-sbs-d .cs-background {
 		width: 100%;
@@ -48,6 +49,7 @@
 		align-items: center;
 		/* 48px - 64px */
 		gap: clamp(3rem, 6vw, 4rem);
+		margin-top: clamp(4rem, calc(12rem - 12vw), 6rem);
 	}
 	#custom-sbs-d .cs-content {
 		/* set text align to left if content needs to be left aligned */
@@ -105,10 +107,11 @@
 	#custom-sbs-d .cs-container {
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 	}
 	#custom-sbs-d .cs-content {
 		text-align: left;
-		align-items: flex-start;
+		align-items: center;
 		width: 50%;
 	}
 	#custom-sbs-d .cs-text,

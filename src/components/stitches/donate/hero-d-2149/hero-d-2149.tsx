@@ -8,9 +8,36 @@ export default function HeroD2149() {
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/donate-hero.avif"
+						src="/images/donate-hero1.jpeg"
 						alt="A collage of happy campers"
-						fill
+						height={300}
+						width={200}
+						className="cs-desktop-only"
+					/>
+					<Image
+						src="/images/donate-hero2.jpeg"
+						alt="A collage of happy campers"
+						height={300}
+						width={200}
+					/>
+					<Image
+						src="/images/donate-hero3.jpeg"
+						alt="A collage of happy campers"
+						height={300}
+						width={200}
+					/>
+					<Image
+						src="/images/donate-hero4.jpeg"
+						alt="A collage of happy campers"
+						height={300}
+						width={200}
+					/>
+					<Image
+						src="/images/donate-hero5.jpeg"
+						alt="A collage of happy campers"
+						height={300}
+						width={200}
+						className="cs-desktop-only"
 					/>
 				</div>
 			</div>

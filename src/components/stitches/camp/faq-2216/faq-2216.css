@@ -12,6 +12,7 @@
 	}
 	#faq-2216 .cs-title {
 		color: var(--bodyTextColorWhite);
+		font-size: clamp(1.9375rem, 3vw, 2.5rem);
 	}
 	#faq-2216 .cs-container {
 		width: 100%;

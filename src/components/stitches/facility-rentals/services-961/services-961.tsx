@@ -52,7 +52,7 @@ export default function Services961() {
 			</div>
 			<div className="cs-background">
 				<Image
-					src="/images/facilities-parachute.avif"
+					src="/images/facilities-parachute.jpg"
 					alt="a parachute"
 					width={1536}
 					height={2048}

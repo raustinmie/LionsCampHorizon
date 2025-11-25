@@ -32,7 +32,7 @@ export default function Cta403D({
 	const closeModal = () => setIsModalOpen(false);
 	const stripePromise = loadStripe(
 		"pk_live_51SFgRlE1VIxhDy5JIkRMWMvPoDscjHTte1WJVE8gLGGsMWCcYppwPTOoyUIVnmpibq1Q7OEyS8tc0FlJRNnEk75A00hvzNR1Zw"
-	); // your publishable key
+	);
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();

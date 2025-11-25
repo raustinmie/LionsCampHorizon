@@ -32,7 +32,7 @@ export default function GalleryS1152() {
 						/>
 					</div>
 					{/*Picture 3*/}
-					<div className="cs-image">
+					<div className="cs-image cs-image3">
 						<Image
 							src="/images/staff-gallery3.avif"
 							alt="gallery"
