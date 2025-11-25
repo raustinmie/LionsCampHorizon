@@ -11,7 +11,7 @@ export default function CustomSbsD() {
 					<p className="cs-text">
 						Did you know many companies match donations made by their employees
 						and retirees to non-profits like ours? If your employer will match
-						your gift please contact us at admin@lionscamphorizon.org so we may
+						your gift please contact us at admin@lionscamphorizon.org so we may
 						provide the information you need to submit your match request.
 					</p>
 				</div>

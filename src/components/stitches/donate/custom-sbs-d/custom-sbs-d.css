@@ -49,7 +49,7 @@
 		align-items: center;
 		/* 48px - 64px */
 		gap: clamp(3rem, 6vw, 4rem);
-		margin-top: clamp(4rem, calc(12rem - 12vw), 6rem);
+		min-height: clamp(20rem, 35vw, 50rem);
 	}
 	#custom-sbs-d .cs-content {
 		/* set text align to left if content needs to be left aligned */

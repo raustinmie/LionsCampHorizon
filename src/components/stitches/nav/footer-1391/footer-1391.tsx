@@ -136,7 +136,7 @@ export default function Footer1391() {
 							</Link>
 						</li>
 						<li className="cs-li">
-							<Link href="/rentals" className="cs-link">
+							<Link href="/facility-rentals" className="cs-link">
 								Rentals
 							</Link>
 						</li>
