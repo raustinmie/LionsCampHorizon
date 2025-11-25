@@ -1,6 +1,7 @@
 import "../components/stitches/contact/contact-2320/contact-2320.css";
 import "../components/stitches/contact/custom-sbsr-c/custom-sbsr-c.css";
 import "../components/stitches/donate/cta-403d/cta-403d.css";
+import "../components/stitches/donate/donation-modal/donation-modal.css";
 import "../components/stitches/donate/custom-sbsr-d/custom-sbsr-d.css";
 import "../components/stitches/donate/custom-sbs-d/custom-sbs-d.css";
 import "../components/stitches/donate/sbs-d-2369/sbs-d-2369.css";

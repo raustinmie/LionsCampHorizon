@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-export default function HeroD2149() {
+interface HeroD2149Props {
+	onDonateClick?: () => void;
+}
+
+export default function HeroD2149({ onDonateClick }: HeroD2149Props) {
 	return (
 		<section id="hero-d-2149">
 			<div className="cs-container">
@@ -50,6 +54,11 @@ export default function HeroD2149() {
 					us to continually improve our programs, and keep Camp Horizon safe,
 					accessible, and full of joy. Every dollar counts!
 				</p>
+				{onDonateClick && (
+					<button className="cs-button-solid" onClick={onDonateClick}>
+						Donate Online
+					</button>
+				)}
 			</div>
 		</section>
 	);

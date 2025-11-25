@@ -118,6 +118,37 @@ body {
 .cs-button-solid.secondary:before {
 	background: #ec6345;
 }
+
+.thank-you {
+	padding: var(--sectionPadding);
+	text-align: center;
+	background: #fdfaf8;
+	color: var(--bodyTextColor);
+}
+.thank-you__container {
+	max-width: 40rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+}
+.thank-you__button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.85rem 2rem;
+	background: var(--primary);
+	color: #fff;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background 0.2s ease;
+}
+.thank-you__button:hover {
+	background: var(--primaryGreen);
+	color: #fff;
+}
 .cs-button-solid:hover:before {
 	width: 100%;
 	border-radius: 12px;

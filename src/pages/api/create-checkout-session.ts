@@ -14,11 +14,13 @@ export default async function handler(
 		return res.status(405).end("Method Not Allowed");
 	}
 
-	const { amount } = req.body;
+	const { amount, designation } = req.body;
 
 	if (!amount || amount < 1) {
 		return res.status(400).json({ error: "Invalid amount" });
 	}
+	const trimmedDesignation =
+		typeof designation === "string" ? designation.trim() : "";
 
 	try {
 		const session = await stripe.checkout.sessions.create({
@@ -27,7 +29,10 @@ export default async function handler(
 				{
 					price_data: {
 						currency: "usd",
-						product_data: { name: "Donation" },
+						product_data: {
+							name: "Donation",
+							description: trimmedDesignation || undefined,
+						},
 						unit_amount: amount,
 					},
 					quantity: 1,

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import GenericSeo from "@/components/seo/generic-seo";
 import { companyName } from "@/constants";
 import { FaqQuestionAndAnswer } from "@/components/seo/faq-seo";
@@ -10,7 +11,12 @@ import Cta403 from "@/components/stitches/shared/cta-403/cta-403";
 import Link from "next/link";
 import { canonicalUrl } from "@/constants";
 import Cta403D from "@/components/stitches/donate/cta-403d/cta-403d";
+import DonationModal from "@/components/stitches/donate/donation-modal/donation-modal";
 export default function Donate() {
+	const [isDonateModalOpen, setDonateModalOpen] = useState(false);
+	const openDonateModal = () => setDonateModalOpen(true);
+	const closeDonateModal = () => setDonateModalOpen(false);
+
 	return (
 		<div>
 			<GenericSeo
@@ -27,7 +33,7 @@ export default function Donate() {
 						"Support Lions Camp Horizon and help teens and adults with disabilities experience a summer full of fun, friendships, and life-changing memories. Your donation, big or small, makes a difference!",
 				}}
 			/>
-			<HeroD2149 />
+			<HeroD2149 onDonateClick={openDonateModal} />
 			<ServicesD2198 />
 			<SbsD2369 />
 			<CustomSbsD />
@@ -40,6 +46,7 @@ export default function Donate() {
 				title="How to Donate"
 				buttonText="
 			Donate Today"
+				onDonateClick={openDonateModal}
 				subtitle={
 					<div>
 						<p className="cs-text">
@@ -63,6 +70,7 @@ export default function Donate() {
 					</div>
 				}
 			/>
+			<DonationModal isOpen={isDonateModalOpen} onClose={closeDonateModal} />
 		</div>
 	);
 }
