@@ -74,10 +74,7 @@ export default function Nav() {
 							<br />
 							{primaryAddress2}
 						</Link>
-						<Link
-							href="https://www.google.com/maps/place/Lions+Camp+Horizon/@48.9128912,-122.7383547,1351m/data=!3m1!1e3!4m6!3m5!1s0x5485c079683c38a1:0x99a426c59f97749c!8m2!3d48.9136659!4d-122.7347404!16s%2Fg%2F1tdjqv3d?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D"
-							className="cs-top-link"
-						>
+						<Link href={`tel:${primaryPhone}`} className="cs-top-link">
 							<Phone />
 							{primaryPhone}
 						</Link>
