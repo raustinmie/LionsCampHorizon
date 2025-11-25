@@ -1056,21 +1056,21 @@ export default function CamperApplicationForm() {
 									id="checkbox_0"
 									type="checkbox"
 									name="checkbox"
-									value="Adventure Camp 1 - July 7-11*"
+									value="Adventure Camp 1 - July 6-10"
 									checked={
 										Array.isArray(values["checkbox"]) &&
-										values["checkbox"].includes("Adventure Camp 1 - July 7-11*")
+										values["checkbox"].includes("Adventure Camp 1 - July 6-10*")
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox",
-											"Adventure Camp 1 - July 7-11*",
+											"Adventure Camp 1 - July 6-10*",
 											e.target.checked
 										)
 									}
 								/>
 								<label htmlFor="checkbox_0">
-									Adventure Camp 1 - July 7-11*
+									Adventure Camp 1 - July 6-10*
 								</label>
 							</div>
 							<div className="cs-checkbox-item">
@@ -1078,63 +1078,63 @@ export default function CamperApplicationForm() {
 									id="checkbox_1"
 									type="checkbox"
 									name="checkbox"
-									value="Base Camp 1 - July 14-18"
+									value="Base Camp 1 - July 13-17"
 									checked={
 										Array.isArray(values["checkbox"]) &&
-										values["checkbox"].includes("Base Camp 1 - July 14-18")
+										values["checkbox"].includes("Base Camp 1 - July 13-17")
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox",
-											"Base Camp 1 - July 14-18",
+											"Base Camp 1 - July 13-17",
 											e.target.checked
 										)
 									}
 								/>
-								<label htmlFor="checkbox_1">Base Camp 1 - July 14-18</label>
+								<label htmlFor="checkbox_1">Base Camp 1 - July 13-17</label>
 							</div>
 							<div className="cs-checkbox-item">
 								<input
 									id="checkbox_2"
 									type="checkbox"
 									name="checkbox"
-									value="Base Camp 2 - July 21-25"
+									value="Base Camp 2 - July 20-24"
 									checked={
 										Array.isArray(values["checkbox"]) &&
-										values["checkbox"].includes("Base Camp 2 - July 21-25")
+										values["checkbox"].includes("Base Camp 2 - July 20-24")
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox",
-											"Base Camp 2 - July 21-25",
+											"Base Camp 2 - July 20-24",
 											e.target.checked
 										)
 									}
 								/>
-								<label htmlFor="checkbox_2">Base Camp 2 - July 21-25</label>
+								<label htmlFor="checkbox_2">Base Camp 2 - July 20-24</label>
 							</div>
 							<div className="cs-checkbox-item">
 								<input
 									id="checkbox_3"
 									type="checkbox"
 									name="checkbox"
-									value="Adventure Camp 2 - August 4-8*"
+									value="Adventure Camp 2 - August 3-7*"
 									checked={
 										Array.isArray(values["checkbox"]) &&
 										values["checkbox"].includes(
-											"Adventure Camp 2 - August 4-8*"
+											"Adventure Camp 2 - August 3-7*"
 										)
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox",
-											"Adventure Camp 2 - August 4-8*",
+											"Adventure Camp 2 - August 3-7*",
 											e.target.checked
 										)
 									}
 								/>
 								<label htmlFor="checkbox_3">
-									Adventure Camp 2 - August 4-8*
+									Adventure Camp 2 - August 3-7*
 								</label>
 							</div>
 						</fieldset>

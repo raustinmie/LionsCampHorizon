@@ -2108,23 +2108,23 @@
 						"help_message": "**(pre-requisites for admission apply \u2013 contact us at acd@lionscamphorizon.org)",
 						"advanced_options": [
 							{
-								"label": "Adventure Camp 1 - July 7-11*\r",
-								"value": "Adventure Camp 1 - July 7-11*\r",
+								"label": "Adventure Camp 1 - July 6-10*\r",
+								"value": "Adventure Camp 1 - July 6-10*\r",
 								"id": 0
 							},
 							{
-								"label": "Base Camp 1 - July 14-18\r",
-								"value": "Base Camp 1 - July 14-18\r",
+								"label": "Base Camp 1 - July 13-17\r",
+								"value": "Base Camp 1 - July 13-17\r",
 								"id": 1
 							},
 							{
-								"label": "Base Camp 2 - July 21-25\r",
-								"value": "Base Camp 2 - July 21-25\r",
+								"label": "Base Camp 2 - July 20-24\r",
+								"value": "Base Camp 2 - July 20-24\r",
 								"id": 2
 							},
 							{
-								"label": "Adventure Camp 2 - August 4-8*\r",
-								"value": "Adventure Camp 2 - August 4-8*\r",
+								"label": "Adventure Camp 2 - August 3-7*\r",
+								"value": "Adventure Camp 2 - August 3-7*\r",
 								"id": 3
 							}
 						],
@@ -2172,23 +2172,23 @@
 						"placeholder": "",
 						"advanced_options": [
 							{
-								"label": "Adventure Camp 1 - July 7-11*",
-								"value": "Adventure Camp 1 - July 7-11*",
+								"label": "Adventure Camp 1 - July 6-10*",
+								"value": "Adventure Camp 1 - July 6-10*",
 								"id": 0
 							},
 							{
-								"label": "Base Camp 1 - July 14-18",
-								"value": "Base Camp 1 - July 14-18",
+								"label": "Base Camp 1 - July 13-17",
+								"value": "Base Camp 1 - July 13-17",
 								"id": 1
 							},
 							{
-								"label": "Base Camp 2 - July 21-25",
-								"value": "Base Camp 2 - July 21-25",
+								"label": "Base Camp 2 - July 20-24",
+								"value": "Base Camp 2 - July 20-24",
 								"id": 2
 							},
 							{
-								"label": "Adventure Camp 2 - August 4-8*",
-								"value": "Adventure Camp 2 - August 4-8*",
+								"label": "Adventure Camp 2 - August 3-7*",
+								"value": "Adventure Camp 2 - August 3-7*",
 								"id": 3
 							}
 						],
@@ -2234,23 +2234,23 @@
 						"placeholder": "",
 						"advanced_options": [
 							{
-								"label": "Adventure Camp 1 - July 7-11*",
-								"value": "Adventure Camp 1 - July 7-11*",
+								"label": "Adventure Camp 1 - July 6-10*",
+								"value": "Adventure Camp 1 - July 6-10*",
 								"id": 0
 							},
 							{
-								"label": "Base Camp 1 - July 14-18",
-								"value": "Base Camp 1 - July 14-18",
+								"label": "Base Camp 1 - July 13-17",
+								"value": "Base Camp 1 - July 13-17",
 								"id": 1
 							},
 							{
-								"label": "Base Camp 2 - July 21-25",
-								"value": "Base Camp 2 - July 21-25",
+								"label": "Base Camp 2 - July 20-24",
+								"value": "Base Camp 2 - July 20-24",
 								"id": 2
 							},
 							{
-								"label": "Adventure Camp 2 - August 4-8*",
-								"value": "Adventure Camp 2 - August 4-8*",
+								"label": "Adventure Camp 2 - August 3-7*",
+								"value": "Adventure Camp 2 - August 3-7*",
 								"id": 3
 							}
 						],
