@@ -41,6 +41,10 @@
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+	#hero-2149 .cs-header-image {
+		width: 33%;
+	}
+
 	#hero-2149 .cs-topper {
 		color: var(--secondary);
 		font-family: var(--fontHeader);
@@ -102,6 +106,7 @@
 		position: relative;
 		display: block;
 		z-index: -2;
+		height: 100vw;
 	}
 
 	#hero-2149 .cs-background img {
@@ -110,11 +115,37 @@
 		object-fit: cover;
 		object-position: top;
 	}
+
+	#hero-2149 .cs-header-image3,
+	#hero-2149 .cs-header-image1 {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 26rem) {
+	#hero-2149 .cs-background {
+		height: 50vw;
+	}
+	#hero-2149 .cs-background img {
+		width: 50%;
+	}
+	#hero-2149 .cs-header-image1 {
+		display: unset;
+	}
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
 	#hero-2149 .cs-topper {
 		top: 30%;
+	}
+	#hero-2149 .cs-header-image3 {
+		display: unset;
+	}
+	#hero-2149 .cs-background {
+		height: 33vw;
+	}
+	#hero-2149 .cs-background img {
+		width: 33%;
 	}
 }
 /* Small Desktop - 1024px */

@@ -6,18 +6,31 @@ export default function Hero2149() {
 	return (
 		<section id="hero-2149">
 			<div className="cs-container">
-				<span className="cs-topper">
-					Welcome to
-					<br />
-					Lions Camp Horizon
-				</span>
-
 				{/* Background Image */}
 				<div className="cs-background">
 					<Image
-						src="/images/home-header.avif"
+						src="/images/home-hero-bumper.jpg"
+						alt="camper and counselor in a go kart"
+						height={728}
+						width={720}
+						priority
+						className="cs-header-image cs-header-image1"
+					/>
+					<Image
+						src="/images/logo.png"
+						alt="logo"
+						height={1512}
+						width={2016}
+						priority
+						className="cs-header-image cs-header-image2"
+					/>
+					<Image
+						src="/images/home-hero-circle.jpg"
 						alt="campers sitting in a circle on the grass"
-						fill
+						height={1512}
+						width={2016}
+						className="cs-header-image cs-header-image3"
+						priority
 					/>
 				</div>
 			</div>

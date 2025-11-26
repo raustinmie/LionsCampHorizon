@@ -21,7 +21,7 @@ export default function Footer1391() {
 					<div className="cs-flex">
 						<Link href="/" className="cs-logo">
 							<Image
-								src="/images/logo.avif"
+								src="/images/logo-transparent.svg"
 								alt="logo"
 								width={617}
 								height={609}
