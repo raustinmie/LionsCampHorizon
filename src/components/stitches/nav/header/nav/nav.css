@@ -520,7 +520,7 @@ html {
 		display: none;
 	}
 	#cs-navigation .cs-logo {
-		max-width: 8rem;
+		height: 8rem;
 		margin: 0 auto 0 1rem;
 		padding: 0 1rem;
 		display: flex;
