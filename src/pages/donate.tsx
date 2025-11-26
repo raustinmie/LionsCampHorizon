@@ -66,6 +66,11 @@ export default function Donate() {
 								Donations can be mailed to Lions Camp Horizon 7506 Gemini St.
 								Blaine, WA 98230. Or click the button below!
 							</li>
+							<li>
+								<strong>Please note:</strong> online donations include a
+								processing fee. To give without this fee, checks can be mailed
+								to Lions Camp Horizon 7506 Gemini St., Blaine WA 98230
+							</li>
 						</ul>
 					</div>
 				}

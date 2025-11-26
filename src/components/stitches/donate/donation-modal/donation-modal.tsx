@@ -76,7 +76,7 @@ export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
 						required
 					/>
 					<textarea
-						placeholder="What is this donation for? (optional)"
+						placeholder="Name of donor/organization and purpose of donation (General Operations, Campership, Meal Program, Etc.)"
 						value={designation}
 						onChange={(e) => setDesignation(e.target.value)}
 						rows={3}

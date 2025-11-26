@@ -51,7 +51,7 @@
 
 .donation-modal-form textarea {
 	resize: vertical;
-	min-height: 5rem;
+	min-height: 10rem;
 }
 
 .donation-modal-submit {
