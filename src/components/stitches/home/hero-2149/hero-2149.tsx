@@ -41,8 +41,7 @@ export default function Hero2149() {
 					summer camp to teens and adults of all abilities for over 50 years.{" "}
 				</h1>
 				<p className="cs-text">
-					At Lions Camp Horizon, abilities—not disabilities—guide us. We provide
-					safe, joyful summer camp experiences that build confidence,
+					We provide safe, joyful summer camp experiences that build confidence,
 					independence, and lifelong friendships.
 				</p>
 			</div>

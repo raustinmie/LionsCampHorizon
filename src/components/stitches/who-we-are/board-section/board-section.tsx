@@ -11,13 +11,16 @@ export default function BoardSection() {
 					</div>
 					<p className="cs-text">
 						Lions Camp Horizon is owned and operated by the Camp Horizon
-						Foundation a 501(c)3 organization. The Foundation has a Board of
+						Foundation, a 501(c)3 organization. The Foundation has a Board of
 						Directors comprised of District 19H Lions and other community
 						members who share our passion to provide services to individuals
-						with disabilities. All Directors are unpaid volunteers.Interested in
-						serving on our board? Let’s talk.{" "}
-						<Link className="cs-link" href="president@lionscamphorizon.org">
-							Email our board president
+						with disabilities. All directors are unpaid volunteers. Interested
+						in serving on our board? Let’s talk.{" "}
+						<Link
+							className="cs-link"
+							href="mailto:president@lionscamphorizon.org"
+						>
+							Email our Board President
 						</Link>{" "}
 						to start a conversation.
 					</p>
@@ -27,13 +30,15 @@ export default function BoardSection() {
 						<li className="cs-item">Vice President - Christina Thomas</li>
 						<li className="cs-item">Treasurer - Vacant</li>
 						<li className="cs-item">Secretary - Wendy Canessa</li>
+						<li className="cs-item">
+							Don Webster - Former President & Facilities Director
+						</li>
 						<li className="cs-item">Facilities Advisor - George Henderson</li>
 						<li className="cs-item">
 							Canadian Outreach Coordinator - Lynda Davidson
 						</li>
-						<li className="cs-item">Bill Briggs</li>
-						<li className="cs-item">Don Webster</li>
-						<li className="cs-item">Spencer Koch</li>
+						<li className="cs-item">Bill Briggs - Camp Casey Representative</li>
+						<li className="cs-item">Spencer Koch - Member at Large</li>
 					</ul>
 				</div>
 			</div>

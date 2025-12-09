@@ -26,7 +26,7 @@ export default function Sbs2375() {
 						reach adulthood, Lions Camp Horizon continues to welcome campers
 						throughout their lifetime. We have no upper age limit, because we
 						believe fun, friendship, and belonging are for every age. Our
-						campers range in age from 12 to 75+, and some have been part of our
+						campers range in age from 15 to 75+, and some have been part of our
 						camp family for more than 35 years. Here, traditions continue,
 						friendships deepen, and every year brings new opportunities for
 						connection. Our program is designed for teens and adults with
@@ -69,7 +69,7 @@ export default function Sbs2375() {
 								<li className="cs-li">
 									Overnight camp. All onsite. (Monday-Friday).
 								</li>
-								<li className="cs-li">Ages 12 and up </li>
+								<li className="cs-li">Ages 15 and up </li>
 								<li className="cs-li">
 									Camper to Staff ratios from 1:1 - 4:1{" "}
 								</li>
@@ -98,11 +98,11 @@ export default function Sbs2375() {
 								and an adventure to be announced! To ensure the safety of
 								campers and staff, campers must attend a Base Camp session first
 								or complete a site-visit meeting before joining Adventure Camp.
-								3:1-4:1 camper to staff ratio is required for Adventure Camp
+								3:1-4:1 camper to staff ratio is required for Adventure Camp.
 							</p>
 							<ul className="cs-ul">
 								<li className="cs-li">Overnight camp. (Monday-Friday).</li>
-								<li className="cs-li">Ages 12 and up </li>
+								<li className="cs-li">Ages 15 and up </li>
 								<li className="cs-li">
 									Camper to Staff ratios from 3:1 - 4:1{" "}
 								</li>

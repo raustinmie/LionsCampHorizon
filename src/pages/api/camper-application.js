@@ -446,12 +446,12 @@ export default async function handler(req, res) {
 
 	// 3. Prepare transporter (SMTP)
 	const transporter = nodemailer.createTransport({
-		host: process.env.SMTP_HOST,
-		port: parseInt(process.env.SMTP_PORT ?? "587"),
+		host: process.env.PRIVATEEMAIL_HOST,
+		port: 587,
 		secure: process.env.SMTP_SECURE === "true",
 		auth: {
-			user: process.env.SMTP_USER,
-			pass: process.env.SMTP_PASS,
+			user: process.env.PRIVATEEMAIL_USER,
+			pass: process.env.PRIVATEEMAIL_PASS,
 		},
 		tls: {
 			rejectUnauthorized: false,
@@ -460,7 +460,7 @@ export default async function handler(req, res) {
 
 	try {
 		await transporter.sendMail({
-			from: process.env.SMTP_FROM ?? process.env.SMTP_USER,
+			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,
 			subject: "New Camper Application",
 			text: emailText,

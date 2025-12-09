@@ -1,8 +1,15 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { ImageRotator } from "../../camp/sbs-2375/sbs-2375";
 
 export default function Services1168() {
+	const theaterImages = [
+		"/images/Theatre.jpg",
+		"/images/Theatre1.jpg",
+		"/images/Theatre3.jpg",
+		"/images/Theatre4.jpg",
+	];
 	return (
 		<section id="services-1168">
 			<div className="cs-container">
@@ -61,15 +68,7 @@ export default function Services1168() {
 					</li>
 					<li className="cs-item">
 						<div className="cs-picture">
-							<Image
-								src="/images/facilities-theatre.avif"
-								alt="the lions camp horizon theatre"
-								width={414}
-								height={240}
-								loading="lazy"
-								decoding="async"
-								aria-hidden="true"
-							/>
+							<ImageRotator images={theaterImages} intervalMs={5000} />
 						</div>
 						<div className="cs-info">
 							<h3 className="cs-h3">Theatre</h3>
@@ -113,7 +112,7 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-craft-room.avif"
+								src="/images/facilities-craft-room.jpg"
 								alt="utensils in the lions camp horizon kitchen"
 								width={414}
 								height={240}
@@ -138,7 +137,7 @@ export default function Services1168() {
 					<li className="cs-item">
 						<div className="cs-picture">
 							<Image
-								src="/images/facilities-game-room.avif"
+								src="/images/facilities-game-room.jpg"
 								alt="utensils in the lions camp horizon kitchen"
 								width={414}
 								height={240}

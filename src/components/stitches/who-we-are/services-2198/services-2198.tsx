@@ -26,7 +26,7 @@ export default function Services2198() {
 						</div>
 						<p className="cs-item-text">
 							To provide recreational activities that encourage independence,
-							build new skills, develop lifelong friendships and create lasting
+							build new skills, develop lifelong friendships, and create lasting
 							memories of camp.
 						</p>
 					</li>
@@ -47,7 +47,7 @@ export default function Services2198() {
 						</div>
 						<p className="cs-item-text">
 							To empower people challenged by disabilities through experiences
-							that help develop life skills, foster independence and build
+							that help develop life skills, foster independence, and build
 							self-esteem.
 						</p>
 					</li>

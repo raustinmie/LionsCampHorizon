@@ -29,14 +29,14 @@ export default function SbsG2376() {
 						their time, energy, and love to our campers. Every year, volunteers
 						contribute hundreds of hours to help our campers experience
 						unforgettable summer memories. And there is always space for one
-						more helping hand or helping heart.Whether you love gardening,
+						more helping hand or helping heart. Whether you love gardening,
 						building, cleaning, painting, arts & crafts, cheering others on, or
 						simply showing up with a smile, there’s a place for you here. You
 						can serve a meal, join a spring clean-up day, help with grounds and
-						facility projects, share a talent or support camp as a financial
+						facility projects, share a talent, or support camp as a financial
 						partner.
 						<br />
-						We’d love to have join us!
+						We’d love to have you join us!
 						<br />
 						Please reach out to{" "}
 						<Link href="mailto:admin@lionscamphorizon.org">
@@ -84,9 +84,8 @@ export default function SbsG2376() {
 							<p className="cs-text">
 								Whether you’re skilled with tools, love working outdoors, or
 								simply enjoy pitching in where it’s needed, your time and
-								teamwork make a lasting difference for campers all year
-								long.Come roll up your sleeves and help us keep the magic
-								growing!
+								teamwork make a lasting difference for campers all year long.
+								Come roll up your sleeves and help us keep the magic growing!
 							</p>
 						</div>
 						<ImageRotator

@@ -20,7 +20,7 @@ export default function CustomSbs() {
 					</p>
 					<h3 className="cs-h3">Endowment Fund</h3>
 					<p className="cs-text">
-						deal for legacy or long-term gifts designed to sustain camp for
+						Ideal for legacy or long-term gifts designed to sustain camp for
 						years to come.
 					</p>
 					<h3 className="cs-h3">Program Sponsorships</h3>

@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { ContactForm } from "component-library";
+import { ContactFormV2 } from "component-library";
 import { primaryAddress1, primaryAddress2 } from "@/constants";
 import Link from "next/link";
 
 export default function Contact2320() {
+	const smtpSecure =
+		process.env.NEXT_PUBLIC_PRIVATEEMAIL_SECURE !== undefined
+			? process.env.NEXT_PUBLIC_PRIVATEEMAIL_SECURE === "true"
+			: undefined;
+
 	return (
 		<section id="contact-2320">
 			<div className="cs-container">
@@ -12,7 +17,14 @@ export default function Contact2320() {
 					<span className="cs-topper">Contact</span>
 					<h2 className="cs-title">Get In Touch</h2>
 					{/*Form*/}
-					<ContactForm />
+					<ContactFormV2
+						toEmail="r.austin.mie@gmail.com"
+						smtpHost={process.env.PRIVATEEMAIL_HOST!}
+						smtpPort={process.env.PRIVATEEMAIL_PORT!}
+						smtpUser={process.env.PRIVATEEMAIL_USER!}
+						smtpPass={process.env.PRIVATEEMAIL_PASS!}
+						smtpSecure={smtpSecure}
+					/>
 				</div>
 				{/*Map Image, pin is made in the Figma then export as one image*/}
 				<div className="cs-map">
