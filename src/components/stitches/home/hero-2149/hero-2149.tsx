@@ -37,7 +37,7 @@ export default function Hero2149() {
 
 			<div className="cs-content">
 				<h1 className="cs-title">
-					Where everyone belongs! Spreading sunshine, smiles and the joy of
+					Where everyone belongs! Spreading sunshine, smiles, and the joy of
 					summer camp to teens and adults of all abilities for over 50 years.{" "}
 				</h1>
 				<p className="cs-text">
