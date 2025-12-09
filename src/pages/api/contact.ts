@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import type SMTPTransport from "nodemailer/lib/smtp-transport";
 
 type ContactFormV2Submission = {
 	name: string;
@@ -113,12 +114,15 @@ export default async function handler(
 		const transporter = nodemailer.createTransport({
 			host: process.env.PRIVATEEMAIL_HOST!,
 			port: smtpPort,
-			secure: typeof body.smtpSecure === "boolean" ? body.smtpSecure : 465,
+			secure:
+				typeof body.smtpSecure === "boolean"
+					? body.smtpSecure
+					: smtpPort === 465,
 			auth: {
 				user: process.env.PRIVATEEMAIL_USER!,
 				pass: process.env.PRIVATEEMAIL_PASS!,
 			},
-		});
+		} satisfies SMTPTransport.Options);
 		console.log("transporter created");
 		var response = await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER,
