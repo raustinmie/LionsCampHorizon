@@ -11,7 +11,7 @@ export default function Sbsr2181() {
 					<h2 className="cs-title">Celebrating 50 Years of Camp Horizon </h2>
 					<p className="cs-text">
 						Since 1974, Lions Camp Horizon has been creating a safe place for
-						teens and adults with disabilities to laugh, grow and belong.  What
+						teens and adults with disabilities to laugh, grow, and belong.  What
 						began as a single week of camp for 17 campers at the Lynden Fair
 						Grounds has grown into a vibrant summer tradition.  Today, we are
 						proud to call Bay Horizon Park our home, where we welcome up to 55
