@@ -79,6 +79,7 @@
 	#sbs-2369 .cs-topper {
 		text-align: center;
 		margin: auto;
+		color: var(--headerColor);
 	}
 	#sbs-2369 .cs-title {
 		text-align: center;
@@ -196,7 +197,6 @@
 	}
 	#sbs-2369 .cs-topper {
 		margin-bottom: 0.25rem;
-		color: var(--headerColor);
 	}
 	#sbs-2369 .cs-title {
 		margin-bottom: 2rem;
