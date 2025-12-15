@@ -78,7 +78,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 			<div className="app-container">
 				<Nav />
-				<Component {...pageProps} />
+				<main className="main-content">
+					<Component {...pageProps} />
+				</main>
 				<Footer1391 />
 			</div>
 		</div>
