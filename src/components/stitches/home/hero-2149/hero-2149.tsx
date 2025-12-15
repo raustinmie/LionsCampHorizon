@@ -1,6 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+
+const blurDataUrl =
+	"data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
 export default function Hero2149() {
 	return (
@@ -13,15 +15,23 @@ export default function Hero2149() {
 						alt="camper and counselor in a go kart"
 						height={728}
 						width={720}
-						priority
 						className="cs-header-image cs-header-image1"
+						sizes="(max-width: 768px) 100vw, 50vw"
+						quality={85}
+						priority
+						placeholder="blur"
+						blurDataURL={blurDataUrl}
 					/>
 					<Image
 						src="/images/logo.png"
 						alt="logo"
 						height={1512}
 						width={2016}
-						priority
+						sizes="(max-width: 768px) 45vw, 25vw"
+						quality={80}
+						loading="lazy"
+						placeholder="blur"
+						blurDataURL={blurDataUrl}
 						className="cs-header-image cs-header-image2"
 					/>
 					<Image
@@ -29,8 +39,12 @@ export default function Hero2149() {
 						alt="campers sitting in a circle on the grass"
 						height={1512}
 						width={2016}
+						sizes="(max-width: 768px) 70vw, 30vw"
+						quality={80}
+						loading="lazy"
+						placeholder="blur"
+						blurDataURL={blurDataUrl}
 						className="cs-header-image cs-header-image3"
-						priority
 					/>
 				</div>
 			</div>

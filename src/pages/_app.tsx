@@ -74,7 +74,7 @@ declare global {
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<div className={`${montserrat.className} ${merriweather.className}`}>
-			<Script src="https://js.stripe.com/v3/" strategy="beforeInteractive" />
+			<Script src="https://js.stripe.com/v3/" strategy="lazyOnload" />
 
 			<div className="app-container">
 				<Nav />
