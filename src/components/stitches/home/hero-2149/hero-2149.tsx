@@ -18,7 +18,7 @@ export default function Hero2149() {
 						className="cs-header-image cs-header-image1"
 						sizes="(max-width: 768px) 100vw, 50vw"
 						quality={85}
-						priority
+						loading="lazy"
 						placeholder="blur"
 						blurDataURL={blurDataUrl}
 					/>
@@ -29,7 +29,7 @@ export default function Hero2149() {
 						width={2016}
 						sizes="(max-width: 768px) 45vw, 25vw"
 						quality={80}
-						loading="lazy"
+						priority
 						placeholder="blur"
 						blurDataURL={blurDataUrl}
 						className="cs-header-image cs-header-image2"
