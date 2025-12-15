@@ -19,7 +19,7 @@ export default function Footer1391() {
 				{/*Top Section*/}
 				<div className="cs-top">
 					<div className="cs-flex">
-						<Link href="/" className="cs-logo">
+						<Link href="/" className="cs-logo" aria-label="home">
 							<Image
 								src="/images/logo-transparent.svg"
 								alt="logo"
@@ -38,7 +38,7 @@ export default function Footer1391() {
 									className="cs-social-link"
 									rel="noopener"
 									target="_blank"
-									aria-label=""
+									aria-label="go to our facebook page"
 								>
 									<Image
 										src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-facebook.svg"
@@ -58,7 +58,7 @@ export default function Footer1391() {
 									className="cs-social-link"
 									rel="noopener"
 									target="_blank"
-									aria-label=""
+									aria-label="go to our instagram page"
 								>
 									<Image
 										src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-derm-footer.svg"
@@ -79,10 +79,13 @@ export default function Footer1391() {
 							Want to learn more about Lions Club International (LCI) the
 							world's largest service organization?
 						</strong>
-						<Link href="https://www.lionsclubs.org/en">
+						<Link className="lions-link" href="https://www.lionsclubs.org/en">
 							Lions Club International
 						</Link>
-						<Link href="https://lionsmd19.org/districts.php">
+						<Link
+							className="lions-link"
+							href="https://lionsmd19.org/districts.php"
+						>
 							Lions Mulitiple District 19
 						</Link>
 					</div>

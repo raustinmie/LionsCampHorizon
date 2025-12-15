@@ -654,36 +654,3 @@ html {
 		gap: clamp(1.5rem, 2.5vw, 2.5rem);
 	}
 }
-/* Larger Desktop - 1600px */
-@media only screen and (min-width: 100rem) {
-	#cs-navigation .cs-donate {
-		display: flex;
-		margin-left: auto;
-	}
-	/* #cs-navigation .cs-container {
-		gap: 5rem;
-	} */
-
-	#cs-navigation .cs-desktop-nav-actions {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1.5rem;
-		text-wrap: nowrap;
-		margin-left: 8rem;
-	}
-	#cs-navigation .non-desktop {
-		display: none;
-	}
-	#cs-navigation .cs-donate {
-		display: flex;
-		margin-left: auto;
-	}
-	#cs-navigation .cs-nav-button {
-		margin: 0;
-	}
-	#cs-navigation .cs-nav-button {
-		margin-left: auto;
-		display: block;
-	}
-}
