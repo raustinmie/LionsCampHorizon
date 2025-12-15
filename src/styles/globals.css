@@ -242,6 +242,17 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.flier-section {
+	text-align: center;
+	padding: 4rem 0;
+	background-color: var(--primary);
+}
+
+.flier-section img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
 /* CAMP */
 .policy-section {
 	text-align: center;

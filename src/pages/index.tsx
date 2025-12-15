@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Hero2149 from "@/components/stitches/home/hero-2149/hero-2149";
 import HomeSeo from "@/components/seo/home-seo";
 import Sbs2369 from "@/components/stitches/home/sbs-2369/sbs-2369";
@@ -15,6 +15,14 @@ export default function Home() {
 			/>
 			<Hero2149 />
 			<Sbs2369 />
+			<div className="flier-section">
+				<Image
+					src="/images/flier.png"
+					alt="Lions Camp Horizon Flier"
+					width={640}
+					height={480}
+				/>
+			</div>
 			<Sbsr2181 />
 			<div className="header">Lions Camp Horizon's First 50 Years</div>
 			<div className="video-container">

@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import PDFDocument from "pdfkit";
 
 const LABELS = {
 	campers_name_1: "Name",
@@ -417,6 +418,105 @@ const LABELS = {
 	names_3: "Name",
 };
 
+const escapeHtml = (value = "") =>
+	String(value)
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&#39;");
+
+const formatValue = (value) => {
+	if (Array.isArray(value)) {
+		return value
+			.map((entry) => (LABELS[entry] ? LABELS[entry] : entry))
+			.filter(Boolean)
+			.join(", ");
+	}
+	if (typeof value === "string" && LABELS[value]) {
+		return LABELS[value];
+	}
+	if (value === true) return "Yes";
+	if (value === false) return "No";
+	return value ?? "";
+};
+
+const buildPdf = (entries, submittedAt) =>
+	new Promise((resolve, reject) => {
+		const doc = new PDFDocument({ size: "LETTER", margin: 40 });
+		const chunks = [];
+
+		doc.on("data", (chunk) => chunks.push(chunk));
+		doc.on("end", () => resolve(Buffer.concat(chunks)));
+		doc.on("error", reject);
+
+		doc.font("Helvetica-Bold")
+			.fontSize(20)
+			.fillColor("#0f172a")
+			.text("New Camper Application Submission");
+		doc.moveDown(0.35);
+		doc
+			.font("Helvetica")
+			.fontSize(12)
+			.fillColor("#475569")
+			.text(`Submitted at: ${submittedAt ?? ""}`);
+		doc.moveDown();
+
+		const marginLeft = doc.page.margins.left;
+		const marginRight = doc.page.margins.right;
+		const usableWidth = doc.page.width - marginLeft - marginRight;
+		const labelWidth = Math.floor(usableWidth * 0.32);
+		const valueWidth = usableWidth - labelWidth;
+
+		entries.forEach(({ label, pretty }, index) => {
+			const display = pretty || "—";
+
+			doc.font("Helvetica-Bold").fontSize(12);
+			const labelHeight = doc.heightOfString(label, {
+				width: labelWidth - 16,
+				align: "left",
+			});
+
+			doc.font("Helvetica").fontSize(12);
+			const valueHeight = doc.heightOfString(display, {
+				width: valueWidth - 16,
+				align: "left",
+			});
+
+			const rowHeight = Math.max(labelHeight, valueHeight) + 16;
+
+			if (doc.y + rowHeight > doc.page.height - doc.page.margins.bottom) {
+				doc.addPage();
+			}
+
+			const y = doc.y;
+			const background = index % 2 === 0 ? "#ffffff" : "#e8f2fb";
+
+			doc.save();
+			doc.rect(marginLeft, y - 4, usableWidth, rowHeight).fill(background);
+			doc.restore();
+
+			doc.font("Helvetica-Bold")
+				.fontSize(12)
+				.fillColor("#0f172a")
+				.text(label, marginLeft + 8, y + 2, {
+					width: labelWidth - 16,
+				});
+
+			doc.font("Helvetica")
+				.fontSize(12)
+				.fillColor("#1f2937")
+				.text(display, marginLeft + labelWidth + 8, y + 2, {
+					width: valueWidth - 16,
+				});
+
+			doc.y = y + rowHeight;
+			doc.x = marginLeft;
+		});
+
+		doc.end();
+	});
+
 export default async function handler(req, res) {
 	if (req.method !== "POST") {
 		return res.status(405).json({ error: "Method not allowed" });
@@ -424,25 +524,58 @@ export default async function handler(req, res) {
 
 	const { values, submittedAt } = req.body;
 
-	// 2. Convert raw values to "question → answer"
-	const labeled = Object.entries(values).map(([key, value]) => {
+	// 2. Convert raw values to objects we can use for text & HTML
+	const labeledEntries = Object.entries(values).map(([key, value]) => {
 		const label = LABELS[key] ?? key; // fallback to key if missing
-		const pretty = Array.isArray(value)
-			? value.join(", ")
-			: value === true
-			? "Yes"
-			: value === false
-			? "No"
-			: value || "";
-		return `${label}: ${pretty}`;
+		const pretty = formatValue(value);
+		return { label, pretty };
 	});
 
 	const emailText = [
 		"New Camper Application Submission",
 		`Submitted at: ${submittedAt}`,
 		"",
-		...labeled,
+		...labeledEntries.map(({ label, pretty }) => `${label}: ${pretty}`),
 	].join("\n");
+
+	const htmlRows = labeledEntries
+		.map(({ label, pretty }, index) => {
+			const background = index % 2 === 0 ? "#ffffff" : "#e8f2fb";
+			return `
+				<tr style="background:${background};">
+					<td style="padding:12px;border:1px solid #d0d7de;font-weight:600;width:30%;vertical-align:top;">
+						${escapeHtml(label)}
+					</td>
+					<td style="padding:12px;border:1px solid #d0d7de;width:70%;vertical-align:top;">
+						${escapeHtml(pretty)}
+					</td>
+				</tr>
+			`;
+		})
+		.join("");
+
+	const htmlEmail = `
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charSet="utf-8" />
+				<title>New Camper Application</title>
+			</head>
+			<body style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5; background-color: #f5f5f5; margin: 0; padding: 24px;">
+				<section style="max-width: 900px; margin: 0 auto; background: #ffffff; border-radius: 8px; padding: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
+					<h1 style="margin: 0 0 8px; font-size: 24px; color: #0f172a;">New Camper Application Submission</h1>
+					<p style="margin: 0 0 20px; color: #475569;">Submitted at: <strong>${escapeHtml(
+						submittedAt ?? ""
+					)}</strong></p>
+					<table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+						<tbody>
+							${htmlRows}
+						</tbody>
+					</table>
+				</section>
+			</body>
+		</html>
+	`;
 
 	// 3. Prepare transporter (SMTP)
 	const transporter = nodemailer.createTransport({
@@ -459,11 +592,19 @@ export default async function handler(req, res) {
 	});
 
 	try {
+		const pdfBuffer = await buildPdf(labeledEntries, submittedAt);
 		await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,
 			subject: "New Camper Application",
 			text: emailText,
+			html: htmlEmail,
+			attachments: [
+				{
+					filename: "camper-application.pdf",
+					content: pdfBuffer,
+				},
+			],
 		});
 
 		return res.status(200).json({ ok: true });
