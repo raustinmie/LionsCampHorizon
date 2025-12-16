@@ -523,6 +523,10 @@ export default async function handler(req, res) {
 	}
 
 	const { values, submittedAt } = req.body;
+	const replyToAddress =
+		typeof values?.input_text_10 === "string" && values.input_text_10.trim()
+			? values.input_text_10.trim()
+			: undefined;
 
 	// 2. Convert raw values to objects we can use for text & HTML
 	const labeledEntries = Object.entries(values).map(([key, value]) => {
@@ -596,6 +600,7 @@ export default async function handler(req, res) {
 		await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,
+			...(replyToAddress ? { replyTo: replyToAddress } : {}),
 			subject: "New Camper Application",
 			text: emailText,
 			html: htmlEmail,
