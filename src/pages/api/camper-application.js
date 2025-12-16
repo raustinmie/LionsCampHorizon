@@ -597,11 +597,18 @@ export default async function handler(req, res) {
 
 	try {
 		const pdfBuffer = await buildPdf(labeledEntries, submittedAt);
+		const camperName =
+			formatValue(
+				values.campers_name_1 ??
+					values.first_1_3 ??
+					values.first_name ??
+					values.input_text_17
+			) || "Camper";
 		await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,
 			...(replyToAddress ? { replyTo: replyToAddress } : {}),
-			subject: "New Camper Application",
+			subject: `Camper Application from ${camperName}`,
 			text: emailText,
 			html: htmlEmail,
 			attachments: [
