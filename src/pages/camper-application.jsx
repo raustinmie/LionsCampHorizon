@@ -376,6 +376,22 @@ export default function CamperApplicationForm() {
 				)}
 				{values["input_radio"] === "no" && (
 					<div className="cs-field cs-text">
+						<label className="cs-label" htmlFor="input_text_18">
+							Relationship to Camper *
+						</label>
+						<input
+							className="cs-input"
+							type="text"
+							id="input_text_18"
+							required
+							name="input_text_18"
+							value={values["input_text_18"] || ""}
+							onChange={(e) => handleChange("input_text_18", e.target.value)}
+						/>
+					</div>
+				)}
+				{values["input_radio"] === "no" && (
+					<div className="cs-field cs-text">
 						<label className="cs-label" htmlFor="input_text_9">
 							Group home or facility name if applicable
 						</label>
@@ -471,39 +487,7 @@ export default function CamperApplicationForm() {
 									placeholder="Zip"
 								/>
 							</div>
-							<div className="cs-address-field cs-address-country">
-								<label className="cs-label" htmlFor="country">
-									Country
-								</label>
-								<select
-									className="cs-select"
-									id="country"
-									name="country"
-									value={values["country"] || ""}
-									onChange={(e) => handleChange("country", e.target.value)}
-								>
-									<option value="">Select…</option>
-									<option value="US">US of America</option>
-									<option value="UK">United Kingdom</option>
-								</select>
-							</div>
 						</div>
-					</div>
-				)}
-				{values["input_radio"] === "no" && (
-					<div className="cs-field cs-text">
-						<label className="cs-label" htmlFor="input_text_18">
-							Relationship to Camper *
-						</label>
-						<input
-							className="cs-input"
-							type="text"
-							id="input_text_18"
-							required
-							name="input_text_18"
-							value={values["input_text_18"] || ""}
-							onChange={(e) => handleChange("input_text_18", e.target.value)}
-						/>
 					</div>
 				)}
 				{values["input_radio"] === "no" && (
@@ -589,246 +573,184 @@ export default function CamperApplicationForm() {
 						</fieldset>
 					</div>
 				)}
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-name-wrapper">
-						<div className="cs-field cs-name-group">
-							<div className="cs-name-group-label">
-								First and Last Name(s) for Parent/Guardian(s)
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="first_name">
-									First Name for Parent/Guardian #1 *
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="first_name"
-									required
-									name="first_name"
-									value={values["first_name"] || ""}
-									onChange={(e) => handleChange("first_name", e.target.value)}
-									placeholder="First Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="middle_name">
-									Middle Name
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="middle_name"
-									name="middle_name"
-									value={values["middle_name"] || ""}
-									onChange={(e) => handleChange("middle_name", e.target.value)}
-									placeholder="Middle Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="last_name">
-									Last Name for Parent/Guardian #1 *
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									required
-									id="last_name"
-									name="last_name"
-									value={values["last_name"] || ""}
-									onChange={(e) => handleChange("last_name", e.target.value)}
-									placeholder="Last Name"
-								/>
+				{values["input_radio"] === "yes" && (
+					<div className="cs-field-wrapper">
+						<div className="cs-field cs-name-wrapper">
+							<div className="cs-field cs-name-group">
+								<div className="cs-name-group-label">
+									First and Last Name(s) for Parent/Guardian(s)
+								</div>
+								<div className="cs-name-field">
+									<label className="cs-label" htmlFor="first_name_pg1">
+										First Name for Parent/Guardian #1 *
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="first_name_pg1"
+										required
+										name="first_name_pg1"
+										value={values["first_name_pg1"] || ""}
+										onChange={(e) =>
+											handleChange("first_name_pg1", e.target.value)
+										}
+										placeholder="First Name"
+									/>
+								</div>
+								<div className="cs-name-field">
+									<label className="cs-label" htmlFor="last_name_pg1">
+										Last Name for Parent/Guardian #1 *
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										required
+										id="last_name_pg1"
+										name="last_name_pg1"
+										value={values["last_name_pg1"] || ""}
+										onChange={(e) =>
+											handleChange("last_name_pg1", e.target.value)
+										}
+										placeholder="Last Name"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-unknown">
-						<input
-							className="cs-input"
-							type="text"
-							id="field_el_1706029603020"
-							name="field_el_1706029603020"
-							value={values["field_el_1706029603020"] || ""}
-							onChange={(e) =>
-								handleChange("field_el_1706029603020", e.target.value)
-							}
-						/>
-					</div>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-name-wrapper">
-						<div className="cs-field cs-name-group">
-							<div className="cs-name-group-label">
-								First and Last Name(s) for Parent/Guardian(s) #2
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="first_name">
-									First Name for Parent/Guardian #2
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="first_name"
-									name="first_name"
-									value={values["first_name"] || ""}
-									onChange={(e) => handleChange("first_name", e.target.value)}
-									placeholder="First Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="middle_name">
-									Middle Name
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="middle_name"
-									name="middle_name"
-									value={values["middle_name"] || ""}
-									onChange={(e) => handleChange("middle_name", e.target.value)}
-									placeholder="Middle Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="last_name">
-									Last Name for Parent/Guardian #2
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="last_name"
-									name="last_name"
-									value={values["last_name"] || ""}
-									onChange={(e) => handleChange("last_name", e.target.value)}
-									placeholder="Last Name"
-								/>
+				)}
+				{values["input_radio"] === "yes" && (
+					<div className="cs-field-wrapper">
+						<div className="cs-field cs-name-wrapper">
+							<div className="cs-field cs-name-group">
+								<div className="cs-name-field">
+									<label className="cs-label" htmlFor="first_name_pg2">
+										First Name for Parent/Guardian #2
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="first_name_pg2"
+										name="first_name_pg2"
+										value={values["first_name_pg2"] || ""}
+										onChange={(e) =>
+											handleChange("first_name_pg2", e.target.value)
+										}
+										placeholder="First Name"
+									/>
+								</div>
+								<div className="cs-name-field">
+									<label className="cs-label" htmlFor="last_name_pg2">
+										Last Name for Parent/Guardian #2
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="last_name_pg2"
+										name="last_name_pg2"
+										value={values["last_name_pg2"] || ""}
+										onChange={(e) =>
+											handleChange("last_name_pg2", e.target.value)
+										}
+										placeholder="Last Name"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-unknown">
-						<input
-							className="cs-input"
-							type="text"
-							id="field_el_1706029678146"
-							name="field_el_1706029678146"
-							value={values["field_el_1706029678146"] || ""}
-							onChange={(e) =>
-								handleChange("field_el_1706029678146", e.target.value)
-							}
-						/>
-					</div>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-address-wrapper">
-						<div className="cs-field cs-address-group">
-							<div className="cs-address-group-label">
-								Parent/Guardian's Mailing Address
-							</div>
-							<div className="cs-address-field">
-								<label className="cs-label" htmlFor="street_address_8_1">
-									Street Address *
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="street_address_8_1"
-									required
-									name="street_address_8_1"
-									value={values["street_address_8_1"] || ""}
-									onChange={(e) =>
-										handleChange("street_address_8_1", e.target.value)
-									}
-									placeholder="Address Line 1"
-								/>
-							</div>
-							<div className="cs-address-field">
-								<label className="cs-label" htmlFor="address_line_2_8_2">
-									Address Line 2
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="address_line_2_8_2"
-									name="address_line_2_8_2"
-									value={values["address_line_2_8_2"] || ""}
-									onChange={(e) =>
-										handleChange("address_line_2_8_2", e.target.value)
-									}
-									placeholder="Address Line 2"
-								/>
-							</div>
-							<div className="cs-address-field">
-								<label className="cs-label" htmlFor="city_8_3">
-									City *
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="city_8_3"
-									required
-									name="city_8_3"
-									value={values["city_8_3"] || ""}
-									onChange={(e) => handleChange("city_8_3", e.target.value)}
-									placeholder="City"
-								/>
-							</div>
-							<div className="cs-address-field">
-								<label className="cs-label" htmlFor="state_province_8_4">
-									State / Province *
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="state_province_8_4"
-									name="state_province_8_4"
-									required
-									value={values["state_province_8_4"] || ""}
-									onChange={(e) =>
-										handleChange("state_province_8_4", e.target.value)
-									}
-									placeholder="State"
-								/>
-							</div>
-							<div className="cs-address-field">
-								<label className="cs-label" htmlFor="zip_postal_code_8_5">
-									ZIP / Postal Code *
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="zip_postal_code_8_5"
-									required
-									name="zip_postal_code_8_5"
-									value={values["zip_postal_code_8_5"] || ""}
-									onChange={(e) =>
-										handleChange("zip_postal_code_8_5", e.target.value)
-									}
-									placeholder="Zip"
-								/>
-							</div>
-							<div className="cs-address-field cs-address-country">
-								<label className="cs-label" htmlFor="country_8_6">
-									Country *
-								</label>
-								<select
-									className="cs-select"
-									id="country_8_6"
-									required
-									name="country_8_6"
-									value={values["country_8_6"] || ""}
-									onChange={(e) => handleChange("country_8_6", e.target.value)}
-								>
-									<option value="">Select…</option>
-									<option value="US">US of America</option>
-									<option value="UK">United Kingdom</option>
-								</select>
+				)}
+				{values["input_radio"] === "yes" && (
+					<div className="cs-field-wrapper">
+						<div className="cs-field cs-address-wrapper">
+							<div className="cs-field cs-address-group">
+								<div className="cs-address-group-label">
+									Parent/Guardian's Mailing Address
+								</div>
+								<div className="cs-address-field">
+									<label className="cs-label" htmlFor="street_address_8_1">
+										Street Address *
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="street_address_8_1"
+										required
+										name="street_address_8_1"
+										value={values["street_address_8_1"] || ""}
+										onChange={(e) =>
+											handleChange("street_address_8_1", e.target.value)
+										}
+										placeholder="Address Line 1"
+									/>
+								</div>
+								<div className="cs-address-field">
+									<label className="cs-label" htmlFor="address_line_2_8_2">
+										Address Line 2
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="address_line_2_8_2"
+										name="address_line_2_8_2"
+										value={values["address_line_2_8_2"] || ""}
+										onChange={(e) =>
+											handleChange("address_line_2_8_2", e.target.value)
+										}
+										placeholder="Address Line 2"
+									/>
+								</div>
+								<div className="cs-address-field">
+									<label className="cs-label" htmlFor="city_8_3">
+										City *
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="city_8_3"
+										required
+										name="city_8_3"
+										value={values["city_8_3"] || ""}
+										onChange={(e) => handleChange("city_8_3", e.target.value)}
+										placeholder="City"
+									/>
+								</div>
+								<div className="cs-address-field">
+									<label className="cs-label" htmlFor="state_province_8_4">
+										State / Province *
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="state_province_8_4"
+										name="state_province_8_4"
+										required
+										value={values["state_province_8_4"] || ""}
+										onChange={(e) =>
+											handleChange("state_province_8_4", e.target.value)
+										}
+										placeholder="State"
+									/>
+								</div>
+								<div className="cs-address-field">
+									<label className="cs-label" htmlFor="zip_postal_code_8_5">
+										ZIP / Postal Code *
+									</label>
+									<input
+										className="cs-input"
+										type="text"
+										id="zip_postal_code_8_5"
+										required
+										name="zip_postal_code_8_5"
+										value={values["zip_postal_code_8_5"] || ""}
+										onChange={(e) =>
+											handleChange("zip_postal_code_8_5", e.target.value)
+										}
+										placeholder="Zip"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				)}
 				<div className="cs-field-wrapper">
 					<div className="cs-field cs-radio-group">
 						<fieldset className="cs-field cs-radio">
@@ -972,7 +894,7 @@ export default function CamperApplicationForm() {
 				{values["input_radio_2"] === "no" && (
 					<div className="cs-field cs-text">
 						<label className="cs-label" htmlFor="input_text_20">
-							How did you heard about Lions Camp?
+							How did you hear about Lions Camp?
 						</label>
 						<input
 							className="cs-input"
@@ -1263,46 +1185,36 @@ export default function CamperApplicationForm() {
 						<div className="cs-field cs-name-group">
 							<div className="cs-name-group-label">Name</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="first_name">
+								<label className="cs-label" htmlFor="payer_first_name">
 									First Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="first_name"
+									id="payer_first_name"
 									required
-									name="first_name"
-									value={values["first_name"] || ""}
-									onChange={(e) => handleChange("first_name", e.target.value)}
+									name="payer_first_name"
+									value={values["payer_first_name"] || ""}
+									onChange={(e) =>
+										handleChange("payer_first_name", e.target.value)
+									}
 									placeholder="First Name"
 								/>
 							</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="middle_name">
-									Middle Name
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="middle_name"
-									name="middle_name"
-									value={values["middle_name"] || ""}
-									onChange={(e) => handleChange("middle_name", e.target.value)}
-									placeholder="Middle Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="last_name">
+								<label className="cs-label" htmlFor="payer_last_name">
 									Last Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="last_name"
+									id="payer_last_name"
 									required
-									name="last_name"
-									value={values["last_name"] || ""}
-									onChange={(e) => handleChange("last_name", e.target.value)}
+									name="payer_last_name"
+									value={values["payer_last_name"] || ""}
+									onChange={(e) =>
+										handleChange("payer_last_name", e.target.value)
+									}
 									placeholder="Last Name"
 								/>
 							</div>
@@ -1367,20 +1279,6 @@ export default function CamperApplicationForm() {
 									value={values["first_name"] || ""}
 									onChange={(e) => handleChange("first_name", e.target.value)}
 									placeholder="First Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="middle_name">
-									Middle Name
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="middle_name"
-									name="middle_name"
-									value={values["middle_name"] || ""}
-									onChange={(e) => handleChange("middle_name", e.target.value)}
-									placeholder="Middle Name"
 								/>
 							</div>
 							<div className="cs-name-field">
@@ -1451,7 +1349,7 @@ export default function CamperApplicationForm() {
 				<div className="cs-field-wrapper">
 					<div className="cs-field cs-text">
 						<label className="cs-label" htmlFor="contact_1_name_20">
-							Emergency Contact #1 Name:
+							Emergency Contact Name:
 						</label>
 						<input
 							className="cs-input"
@@ -1468,7 +1366,7 @@ export default function CamperApplicationForm() {
 				<div className="cs-field-wrapper">
 					<div className="cs-field cs-text">
 						<label className="cs-label" htmlFor="contact_1_relationship_21">
-							Emergency Contact #1 Relationship:
+							Emergency Contact Relationship:
 						</label>
 						<input
 							className="cs-input"
@@ -1485,13 +1383,14 @@ export default function CamperApplicationForm() {
 				<div className="cs-field-wrapper">
 					<div className="cs-field cs-unknown">
 						<label className="cs-label" htmlFor="contact_1_cell_phone_23">
-							Emergency Contact #1 Cell Phone:
+							Emergency Contact Cell Phone:
 						</label>
 						<input
 							className="cs-input"
 							type="text"
 							id="contact_1_cell_phone_23"
 							name="contact_1_cell_phone_23"
+							autoComplete="off"
 							value={values["contact_1_cell_phone_23"] || ""}
 							onChange={(e) =>
 								handleChange("contact_1_cell_phone_23", e.target.value)
@@ -1504,57 +1403,6 @@ export default function CamperApplicationForm() {
 						className="cs-custom-html"
 						dangerouslySetInnerHTML={{ __html: "<hr />" }}
 					/>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-text">
-						<label className="cs-label" htmlFor="contact_2_name_24">
-							Emergency Contact #2 Name:
-						</label>
-						<input
-							className="cs-input"
-							type="text"
-							id="contact_2_name_24"
-							name="contact_2_name_24"
-							value={values["contact_2_name_24"] || ""}
-							onChange={(e) =>
-								handleChange("contact_2_name_24", e.target.value)
-							}
-						/>
-					</div>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-text">
-						<label className="cs-label" htmlFor="contact_2_relationship_25">
-							Emergency Contact #2 Relationship:
-						</label>
-						<input
-							className="cs-input"
-							type="text"
-							id="contact_2_relationship_25"
-							name="contact_2_relationship_25"
-							value={values["contact_2_relationship_25"] || ""}
-							onChange={(e) =>
-								handleChange("contact_2_relationship_25", e.target.value)
-							}
-						/>
-					</div>
-				</div>
-				<div className="cs-field-wrapper">
-					<div className="cs-field cs-unknown">
-						<label className="cs-label" htmlFor="contact_2_cell_phone_27">
-							Emergency Contact #2 Cell Phone:
-						</label>
-						<input
-							className="cs-input"
-							type="text"
-							id="contact_2_cell_phone_27"
-							name="contact_2_cell_phone_27"
-							value={values["contact_2_cell_phone_27"] || ""}
-							onChange={(e) =>
-								handleChange("contact_2_cell_phone_27", e.target.value)
-							}
-						/>
-					</div>
 				</div>
 				<div className="cs-field-wrapper">
 					<hr className="cs-step-separator" />
@@ -2322,8 +2170,7 @@ export default function CamperApplicationForm() {
 					<div className="cs-field cs-checkbox-group">
 						<fieldset className="cs-field cs-checkbox">
 							<legend className="cs-label">
-								Clubs are being offered this year. Please select any that your
-								camper would be interested in:
+								Please select any that your camper would be interested in:
 							</legend>
 							<div className="cs-checkbox-item">
 								<input
@@ -4866,12 +4713,11 @@ export default function CamperApplicationForm() {
 							className="cs-label"
 							htmlFor="list_any_ingredients_in_processed_or_packaged_foods_your_camper_cannot_eat_due_to_intolerance_and_or_allergic_reactions_106"
 						>
-							Secondary Diagnosis: *
+							Secondary Diagnosis:
 						</label>
 						<textarea
 							className="cs-textarea"
 							id="list_any_ingredients_in_processed_or_packaged_foods_your_camper_cannot_eat_due_to_intolerance_and_or_allergic_reactions_106"
-							required
 							name="list_any_ingredients_in_processed_or_packaged_foods_your_camper_cannot_eat_due_to_intolerance_and_or_allergic_reactions_106"
 							rows={3}
 							value={
@@ -4894,13 +4740,12 @@ export default function CamperApplicationForm() {
 							className="cs-label"
 							htmlFor="if_your_camper_ingests_or_comes_in_contact_with_any_foods_or_ingredients_listed_above_describe_his_her_reaction_please_include_physical_or_behavioral_signs_symptoms_evidenced_and_low_long_after_cont"
 						>
-							Chronic Medical Conditions: *
+							Chronic Medical Conditions:
 						</label>
 						<textarea
 							className="cs-textarea"
 							id="if_your_camper_ingests_or_comes_in_contact_with_any_foods_or_ingredients_listed_above_describe_his_her_reaction_please_include_physical_or_behavioral_signs_symptoms_evidenced_and_low_long_after_cont"
 							name="if_your_camper_ingests_or_comes_in_contact_with_any_foods_or_ingredients_listed_above_describe_his_her_reaction_please_include_physical_or_behavioral_signs_symptoms_evidenced_and_low_long_after_cont"
-							required
 							rows={3}
 							value={
 								values[
@@ -6066,20 +5911,6 @@ export default function CamperApplicationForm() {
 									value={values["first_name"] || ""}
 									onChange={(e) => handleChange("first_name", e.target.value)}
 									placeholder="First Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="middle_name">
-									Middle Name
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="middle_name"
-									name="middle_name"
-									value={values["middle_name"] || ""}
-									onChange={(e) => handleChange("middle_name", e.target.value)}
-									placeholder="Middle Name"
 								/>
 							</div>
 							<div className="cs-name-field">

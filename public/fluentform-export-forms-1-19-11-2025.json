@@ -1947,7 +1947,7 @@
 					},
 					"settings": {
 						"container_class": "",
-						"label": "How did you heard about Lions Camp?",
+						"label": "How did you hear about Lions Camp?",
 						"label_placement": "",
 						"admin_field_label": "",
 						"help_message": "",
@@ -2101,7 +2101,7 @@
 					"settings": {
 						"dynamic_default_value": "",
 						"container_class": "",
-						"label": "Please select ALL session dates your camper is available to attend camp. We will prioritize your 1 st and 2 nd choice but may need to look at other date options if those are not available. Please note Adventure Camp is subject to eligibility requirements. First time campers must attend Base Camp.",
+						"label": "Please select ALL session dates your camper is available to attend camp.",
 						"admin_field_label": "",
 						"label_placement": "",
 						"display_type": "",
@@ -2999,7 +2999,7 @@
 					},
 					"settings": {
 						"container_class": "",
-						"label": "Emergency Contact #1 Name:",
+						"label": "Emergency Contact Name:",
 						"label_placement": "top",
 						"admin_field_label": "",
 						"help_message": "",
@@ -3038,7 +3038,7 @@
 					},
 					"settings": {
 						"container_class": "",
-						"label": "Emergency Contact #1 Relationship:",
+						"label": "Emergency Contact Relationship:",
 						"label_placement": "top",
 						"admin_field_label": "",
 						"help_message": "",
@@ -3078,7 +3078,7 @@
 						"container_class": "",
 						"placeholder": "",
 						"auto_select_country": "no",
-						"label": "Emergency Contact #1 Cell Phone:",
+						"label": "Emergency Contact Cell Phone:",
 						"label_placement": "top",
 						"help_message": "",
 						"admin_field_label": "",
@@ -3130,132 +3130,6 @@
 						"template": "customHTML"
 					},
 					"uniqElKey": 154
-				},
-				{
-					"index": 24,
-					"element": "input_text",
-					"attributes": {
-						"type": "text",
-						"name": "contact_2_name_24",
-						"value": "",
-						"class": "gf_left_half",
-						"id": "",
-						"placeholder": "",
-						"maxlength": ""
-					},
-					"settings": {
-						"container_class": "",
-						"label": "Emergency Contact #2 Name:",
-						"label_placement": "top",
-						"admin_field_label": "",
-						"help_message": "",
-						"conditional_logics": [],
-						"validation_rules": {
-							"required": {
-								"value": false,
-								"message": "This field is required",
-								"global": false,
-								"global_message": "This field is required"
-							}
-						},
-						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique.",
-						"prefix_label": "",
-						"suffix_label": ""
-					},
-					"editor_options": {
-						"title": "Simple Text",
-						"icon_class": "ff-edit-text",
-						"template": "inputText"
-					},
-					"uniqElKey": 24
-				},
-				{
-					"index": 25,
-					"element": "input_text",
-					"attributes": {
-						"type": "text",
-						"name": "contact_2_relationship_25",
-						"value": "",
-						"class": "gf_right_half",
-						"id": "",
-						"placeholder": "",
-						"maxlength": ""
-					},
-					"settings": {
-						"container_class": "",
-						"label": "Emergency Contact #2 Relationship:",
-						"label_placement": "top",
-						"admin_field_label": "",
-						"help_message": "",
-						"conditional_logics": [],
-						"validation_rules": {
-							"required": {
-								"value": false,
-								"message": "This field is required",
-								"global": false,
-								"global_message": "This field is required"
-							}
-						},
-						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique.",
-						"prefix_label": "",
-						"suffix_label": ""
-					},
-					"editor_options": {
-						"title": "Simple Text",
-						"icon_class": "ff-edit-text",
-						"template": "inputText"
-					},
-					"uniqElKey": 25
-				},
-				{
-					"index": 27,
-					"element": "phone",
-					"attributes": {
-						"name": "contact_2_cell_phone_27",
-						"value": "",
-						"id": "",
-						"class": "gf_right_half",
-						"placeholder": "",
-						"type": "tel"
-					},
-					"settings": {
-						"container_class": "",
-						"placeholder": "",
-						"auto_select_country": "no",
-						"label": "Emergency Contact #2 Cell Phone:",
-						"label_placement": "top",
-						"help_message": "",
-						"admin_field_label": "",
-						"phone_country_list": {
-							"active_list": "all",
-							"visible_list": [],
-							"hidden_list": []
-						},
-						"default_country": "",
-						"validation_rules": {
-							"required": {
-								"value": false,
-								"message": "This field is required",
-								"global": false,
-								"global_message": "This field is required"
-							},
-							"valid_phone_number": {
-								"value": false,
-								"message": "Phone number is not valid",
-								"global": false,
-								"global_message": "Phone number is not valid"
-							}
-						},
-						"conditional_logics": []
-					},
-					"editor_options": {
-						"title": "Phone Field",
-						"icon_class": "el-icon-phone-outline",
-						"template": "inputText"
-					},
-					"uniqElKey": 27
 				},
 				{
 					"index": 30,
@@ -4023,7 +3897,7 @@
 					"settings": {
 						"dynamic_default_value": "",
 						"container_class": "",
-						"label": "Clubs are being offered this year. Please select any that your camper would be interested in:",
+						"label": "Please select any that your camper would be interested in:",
 						"admin_field_label": "",
 						"label_placement": "",
 						"display_type": "",
@@ -7076,7 +6950,7 @@
 					"settings": {
 						"dynamic_default_value": "",
 						"container_class": "",
-						"label": "Does your camper have any of the following:",
+						"label": "Does your camper have any of the following medical devices:",
 						"admin_field_label": "",
 						"label_placement": "",
 						"display_type": "",
@@ -8332,7 +8206,7 @@
 					"settings": {
 						"dynamic_default_value": "",
 						"container_class": "",
-						"label": "Photo/Video Release: Designated staff members take photos of events and activities. Some of these photos may be focused on your camper, or they may be in the background. It is our intention that all photos are a positive reflection of your camper. Photos are posted on our social media during camp sessions to provide families/caregivers with a glimpse into camp life. They may also be used in promotional materials such as brochures, flyers, and website photos. Do you give Lions Camp Horizon permission to use photos and/or video that may contain images of your camper?",
+						"label": "Photo/Video Release:",
 						"admin_field_label": "",
 						"label_placement": "",
 						"display_type": "",

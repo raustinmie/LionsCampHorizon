@@ -21,6 +21,12 @@ const LABELS = {
 	first_name: "First Name",
 	middle_name: "Middle Name",
 	last_name: "Last Name",
+	first_name_pg1: "Parent/Guardian #1 First Name",
+	middle_name_pg1: "Parent/Guardian #1 Middle Name",
+	last_name_pg1: "Parent/Guardian #1 Last Name",
+	first_name_pg2: "Parent/Guardian #2 First Name",
+	middle_name_pg2: "Parent/Guardian #2 Middle Name",
+	last_name_pg2: "Parent/Guardian #2 Last Name",
 	input_text_9: "Group home or facility name if applicable",
 	address_1: "Mailing Address",
 	address_line_1: "Address Line 1",
@@ -58,7 +64,7 @@ const LABELS = {
 	"input_radio_2::Yes": "Yes",
 	"input_radio_2::No": "No",
 	input_text: "If so, please advise the last year of participation",
-	input_text_20: "How did you heard about Lions Camp?",
+	input_text_20: "How did you hear about Lions Camp?",
 	input_radio_3:
 		"Has camper previously attended a different overnight/residential camp?",
 	"input_radio_3::Yes": "Yes",
@@ -80,6 +86,8 @@ const LABELS = {
 	custom_html_5:
 		"Please provide information for the person responsible for paying.",
 	names_5: "Name",
+	payer_first_name: "Payer First Name",
+	payer_last_name: "Payer Last Name",
 	input_text_15: "Email Address",
 	input_text_13: "Phone number",
 	custom_html_6:
@@ -87,12 +95,9 @@ const LABELS = {
 	names_4: "Name",
 	input_text_12: "Email Address",
 	input_text_16: "Phone number",
-	contact_1_name_20: "Emergency Contact #1 Name",
-	contact_1_relationship_21: "Emergency Contact #1 Relationship",
-	contact_1_cell_phone_23: "Emergency Contact #1 Cell Phone",
-	contact_2_name_24: "Emergency Contact #2 Name",
-	contact_2_relationship_25: "Emergency Contact #2 Relationship",
-	contact_2_cell_phone_27: "Emergency Contact #2 Cell Phone",
+	contact_1_name_20: "Emergency Contact Name",
+	contact_1_relationship_21: "Emergency Contact Relationship",
+	contact_1_cell_phone_23: "Emergency Contact Cell Phone",
 	mobility_36: "Mobility (select all that apply)",
 	"mobility_36::Walks/runs independently": "Walks/runs independently",
 	"mobility_36::Needs assistance walking/running":
@@ -144,8 +149,7 @@ const LABELS = {
 	what_are_some_favorite_activities_45: "What are some favorite activities?",
 	activities_your_camper_does_not_like_46:
 		"What are some LEAST favorite activities?",
-	checkbox_10:
-		"Clubs are being offered this year. Please select any that your camper would be interested in",
+	checkbox_10: "Please select any that your camper would be interested in",
 	"checkbox_10::Relaxation/Spa": "Relaxation/Spa",
 	"checkbox_10::Arts and crafts": "Arts and crafts",
 	"checkbox_10::Sports": "Sports",
@@ -408,8 +412,7 @@ const LABELS = {
 	description_64: "Other dietary requirements",
 	custom_html_14: "Parent/Guardian Consent Form",
 	input_text_17: "Camper Name",
-	input_radio_8:
-		"Photo/Video Release: Designated staff members take photos of events and activities. Some of these photos may be focused on your camper, or they may be in the background. It is our intention that all photos are a positive reflection of your camper. Photos are posted on our social media during camp sessions to provide families/caregivers with a glimpse into camp life. They may also be used in promotional materials such as brochures, flyers, and website photos. Do you give Lions Camp Horizon permission to use photos and/or video that may contain images of your camper?",
+	input_radio_8: "Photo/Video Release:",
 	"input_radio_8::Yes": "Yes",
 	"input_radio_8::No": "No",
 	checkbox_11: "I  agree to the Consent Form.",
@@ -487,7 +490,8 @@ const buildPdf = (entries, submittedAt) =>
 		doc.on("end", () => resolve(Buffer.concat(chunks)));
 		doc.on("error", reject);
 
-		doc.font("Helvetica-Bold")
+		doc
+			.font("Helvetica-Bold")
 			.fontSize(20)
 			.fillColor("#0f172a")
 			.text("New Camper Application Submission");
@@ -533,14 +537,16 @@ const buildPdf = (entries, submittedAt) =>
 			doc.rect(marginLeft, y - 4, usableWidth, rowHeight).fill(background);
 			doc.restore();
 
-			doc.font("Helvetica-Bold")
+			doc
+				.font("Helvetica-Bold")
 				.fontSize(12)
 				.fillColor("#0f172a")
 				.text(label, marginLeft + 8, y + 2, {
 					width: labelWidth - 16,
 				});
 
-			doc.font("Helvetica")
+			doc
+				.font("Helvetica")
 				.fontSize(12)
 				.fillColor("#1f2937")
 				.text(display, marginLeft + labelWidth + 8, y + 2, {
@@ -567,7 +573,12 @@ export default async function handler(req, res) {
 
 	// 2. Convert raw values to objects we can use for text & HTML
 	const labeledEntries = [];
-	const nameOverrides = new Set(["campers_name_1", "first_1_3", "middle_1_4", "last_1_6"]);
+	const nameOverrides = new Set([
+		"campers_name_1",
+		"first_1_3",
+		"middle_1_4",
+		"last_1_6",
+	]);
 	const combinedFullName = (() => {
 		const providedFull = formatValue("campers_name_1", values.campers_name_1);
 		if (providedFull) return providedFull;
