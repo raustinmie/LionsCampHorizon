@@ -72,7 +72,7 @@ const LABELS = {
 	description:
 		"If your camper is new to Camp Horizon and participated at another overnight camp, please advise the name and location of the camp and how your camper handled being away from home",
 	checkbox:
-		"Please select ALL session dates your camper is available to attend camp. We will prioritize your 1 st and 2 nd choice but may need to look at other date options if those are not available. Please note Adventure Camp is subject to eligibility requirements. First time campers must attend Base Camp.",
+		"Please select ALL session dates your camper is available to attend camp.",
 	"checkbox::Adventure Camp 1 - July 6-10*": "Adventure Camp 1 - July 6-10*",
 	"checkbox::Base Camp 1 - July 13-17": "Base Camp 1 - July 13-17",
 	"checkbox::Base Camp 2 - July 20-24": "Base Camp 2 - July 20-24",
@@ -346,7 +346,7 @@ const LABELS = {
 	input_radio_10: "Do they have a written behavior plan in place?",
 	"input_radio_10::Yes": "Yes",
 	"input_radio_10::No": "No",
-	checkbox_8: "Does your camper have any of the following",
+	checkbox_8: "Does your camper have any of the following medical devices?",
 	"checkbox_8::Urostomy Bag": "Urostomy Bag",
 	"checkbox_8::Stoma/Colostomy Bag": "Stoma/Colostomy Bag",
 	"checkbox_8::Catheter": "Catheter",
@@ -481,7 +481,103 @@ const formatValue = (key, value) => {
 	return value ?? "";
 };
 
-const buildPdf = (entries, submittedAt) =>
+const NAME_GROUPS = [
+	{
+		label: "Camper Name",
+		keys: ["campers_name_1", "first_1_3", "middle_1_4", "last_1_6"],
+		preferPrimary: true,
+	},
+	{
+		label: "Provided Name",
+		keys: ["first_name", "middle_name", "last_name"],
+	},
+	{
+		label: "Parent/Guardian #1 Name",
+		keys: ["first_name_pg1", "middle_name_pg1", "last_name_pg1"],
+	},
+	{
+		label: "Parent/Guardian #2 Name",
+		keys: ["first_name_pg2", "middle_name_pg2", "last_name_pg2"],
+	},
+	{
+		label: "Payer Name",
+		keys: ["payer_first_name", "payer_last_name"],
+	},
+];
+
+const ADDRESS_GROUPS = [
+	{
+		label: "Mailing Address",
+		keys: [
+			"address_line_1",
+			"address_line_2",
+			"city",
+			"state",
+			"zip",
+			"country",
+		],
+		fallbackKey: "address_1",
+	},
+	{
+		label: "Parent/Guardian Mailing Address",
+		keys: [
+			"street_address_8_1",
+			"address_line_2_8_2",
+			"city_8_3",
+			"state_province_8_4",
+			"zip_postal_code_8_5",
+			"country_8_6",
+		],
+		fallbackKey: "campers_address_8",
+	},
+];
+
+const buildNameEntry = (values, group) => {
+	const { keys, preferPrimary } = group;
+	if (!keys || keys.length === 0) return "";
+
+	if (preferPrimary) {
+		const primaryValue = formatValue(keys[0], values?.[keys[0]]);
+		if (primaryValue) return primaryValue;
+	}
+
+	const startIndex = preferPrimary ? 1 : 0;
+	const parts = keys
+		.slice(startIndex)
+		.map((key) => formatValue(key, values?.[key]))
+		.filter((part) => part && part.trim());
+
+	return parts.join(" ").trim();
+};
+
+const buildAddressEntry = (values, group) => {
+	const [line1Key, line2Key, cityKey, stateKey, zipKey, countryKey] =
+		group.keys;
+
+	let line1 = line1Key ? formatValue(line1Key, values?.[line1Key]) : "";
+	if (!line1 && group.fallbackKey) {
+		line1 = formatValue(group.fallbackKey, values?.[group.fallbackKey]);
+	}
+
+	const line2 = line2Key ? formatValue(line2Key, values?.[line2Key]) : "";
+	const city = cityKey ? formatValue(cityKey, values?.[cityKey]) : "";
+	const state = stateKey ? formatValue(stateKey, values?.[stateKey]) : "";
+	const zip = zipKey ? formatValue(zipKey, values?.[zipKey]) : "";
+	const country = countryKey
+		? formatValue(countryKey, values?.[countryKey])
+		: "";
+
+	const cityState = [city, state].filter(Boolean).join(", ");
+	const locality = cityState ? (zip ? `${cityState} ${zip}` : cityState) : zip;
+
+	const parts = [line1, line2, locality, country].filter(
+		(part) => part && part.trim()
+	);
+
+	return parts.join(", ");
+};
+
+const buildPdf = (entries, submittedAt, camperName = "") =>
 	new Promise((resolve, reject) => {
 		const doc = new PDFDocument({ size: "LETTER", margin: 40 });
 		const chunks = [];
@@ -490,11 +586,12 @@ const buildPdf = (entries, submittedAt) =>
 		doc.on("end", () => resolve(Buffer.concat(chunks)));
 		doc.on("error", reject);
 
+		const headingSuffix = camperName ? ` from ${camperName}` : "";
 		doc
 			.font("Helvetica-Bold")
 			.fontSize(20)
 			.fillColor("#0f172a")
-			.text("New Camper Application Submission");
+			.text(`New Camper Application Submission${headingSuffix}`);
 		doc.moveDown(0.35);
 		doc
 			.font("Helvetica")
@@ -573,30 +670,62 @@ export default async function handler(req, res) {
 
 	// 2. Convert raw values to objects we can use for text & HTML
 	const labeledEntries = [];
-	const nameOverrides = new Set([
-		"campers_name_1",
-		"first_1_3",
-		"middle_1_4",
-		"last_1_6",
-	]);
-	const combinedFullName = (() => {
-		const providedFull = formatValue("campers_name_1", values.campers_name_1);
-		if (providedFull) return providedFull;
-		const first = formatValue("first_1_3", values.first_1_3);
-		const middle = formatValue("middle_1_4", values.middle_1_4);
-		const last = formatValue("last_1_6", values.last_1_6);
-		return [first, middle, last].filter(Boolean).join(" ").trim();
-	})();
+	const suppressedKeys = new Set();
+	const combinedEntryMap = new Map();
+	const processedNameGroups = new Set();
+	const processedAddressGroups = new Set();
 
-	if (combinedFullName) {
-		labeledEntries.push({
-			label: "Camper Name",
-			pretty: combinedFullName,
-		});
-	}
+	const nameGroupLookup = new Map();
+	NAME_GROUPS.forEach((group) => {
+		group.keys.forEach((key) => nameGroupLookup.set(key, group));
+	});
+
+	const addressGroupLookup = new Map();
+	ADDRESS_GROUPS.forEach((group) => {
+		group.keys.forEach((key) => addressGroupLookup.set(key, group));
+		if (group.fallbackKey) {
+			addressGroupLookup.set(group.fallbackKey, group);
+		}
+	});
+
+	const addCombinedEntry = (label, pretty) => {
+		const normalized = typeof pretty === "string" ? pretty.trim() : "";
+		if (!normalized) return;
+		labeledEntries.push({ label, pretty: normalized });
+		combinedEntryMap.set(label, normalized);
+	};
 
 	Object.entries(values).forEach(([key, value]) => {
-		if (nameOverrides.has(key)) return;
+		const nameGroup = nameGroupLookup.get(key);
+		if (nameGroup) {
+			if (!processedNameGroups.has(nameGroup)) {
+				const pretty = buildNameEntry(values, nameGroup);
+				if (pretty) {
+					addCombinedEntry(nameGroup.label, pretty);
+				}
+				nameGroup.keys.forEach((nameKey) => suppressedKeys.add(nameKey));
+				processedNameGroups.add(nameGroup);
+			}
+			return;
+		}
+
+		const addressGroup = addressGroupLookup.get(key);
+		if (addressGroup) {
+			if (!processedAddressGroups.has(addressGroup)) {
+				const pretty = buildAddressEntry(values, addressGroup);
+				if (pretty) {
+					addCombinedEntry(addressGroup.label, pretty);
+				}
+				addressGroup.keys.forEach((addrKey) => suppressedKeys.add(addrKey));
+				if (addressGroup.fallbackKey) {
+					suppressedKeys.add(addressGroup.fallbackKey);
+				}
+				processedAddressGroups.add(addressGroup);
+			}
+			return;
+		}
+
+		if (suppressedKeys.has(key)) return;
 		const label = LABELS[key] ?? key; // fallback to key if missing
 		const pretty = formatValue(key, value);
 		labeledEntries.push({ label, pretty });
@@ -612,13 +741,14 @@ export default async function handler(req, res) {
 	const htmlRows = labeledEntries
 		.map(({ label, pretty }, index) => {
 			const background = index % 2 === 0 ? "#ffffff" : "#e8f2fb";
+			const safeValue = escapeHtml(pretty).replace(/\n/g, "<br />");
 			return `
 				<tr style="background:${background};">
 					<td style="padding:12px;border:1px solid #d0d7de;font-weight:600;width:30%;vertical-align:top;">
 						${escapeHtml(label)}
 					</td>
 					<td style="padding:12px;border:1px solid #d0d7de;width:70%;vertical-align:top;">
-						${escapeHtml(pretty)}
+						${safeValue}
 					</td>
 				</tr>
 			`;
@@ -663,12 +793,12 @@ export default async function handler(req, res) {
 	});
 
 	try {
-		const pdfBuffer = await buildPdf(labeledEntries, submittedAt);
 		const camperName =
-			combinedFullName ||
+			combinedEntryMap.get("Camper Name") ||
 			formatValue("campers_name_1", values.campers_name_1) ||
 			formatValue("input_text_17", values.input_text_17) ||
 			"Camper";
+		const pdfBuffer = await buildPdf(labeledEntries, submittedAt, camperName);
 		await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,

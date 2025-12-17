@@ -182,7 +182,7 @@
 							}
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique.",
+						"unique_validation_message": "This value needs to be unique.",
 						"prefix_label": "",
 						"suffix_label": ""
 					},
@@ -530,7 +530,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -853,7 +853,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -897,7 +897,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -941,7 +941,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -1214,7 +1214,7 @@
 										},
 										"conditional_logics": [],
 										"is_unique": "no",
-										"unique_validation_message": "Email address need to be unique."
+										"unique_validation_message": "Email address needs to be unique."
 									},
 									"editor_options": {
 										"title": "Email",
@@ -1441,7 +1441,7 @@
 										},
 										"conditional_logics": [],
 										"is_unique": "no",
-										"unique_validation_message": "Email address need to be unique."
+										"unique_validation_message": "Email address needs to be unique."
 									},
 									"editor_options": {
 										"title": "Email",
@@ -1925,7 +1925,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -1969,7 +1969,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -2307,7 +2307,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -2644,7 +2644,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -2692,7 +2692,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -2911,7 +2911,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -2959,7 +2959,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -3013,7 +3013,7 @@
 							}
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique.",
+						"unique_validation_message": "This value needs to be unique.",
 						"prefix_label": "",
 						"suffix_label": ""
 					},
@@ -3052,7 +3052,7 @@
 							}
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique.",
+						"unique_validation_message": "This value needs to be unique.",
 						"prefix_label": "",
 						"suffix_label": ""
 					},
@@ -4651,7 +4651,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -4693,7 +4693,7 @@
 							"conditions": [{ "field": "", "value": "", "operator": "" }]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -5310,7 +5310,7 @@
 							]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -5348,7 +5348,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -5386,7 +5386,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -5891,7 +5891,7 @@
 							"conditions": [{ "field": "", "value": "", "operator": "" }]
 						},
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -6543,7 +6543,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -6581,7 +6581,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
@@ -8186,7 +8186,7 @@
 						},
 						"conditional_logics": [],
 						"is_unique": "no",
-						"unique_validation_message": "This value need to be unique."
+						"unique_validation_message": "This value needs to be unique."
 					},
 					"editor_options": {
 						"title": "Simple Text",
