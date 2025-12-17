@@ -557,8 +557,7 @@
 							{ "id": 2, "value": "address_line_2" },
 							{ "id": 3, "value": "city" },
 							{ "id": 4, "value": "state" },
-							{ "id": 5, "value": "zip" },
-							{ "id": 6, "value": "country" }
+							{ "id": 5, "value": "zip" }
 						],
 						"conditional_logics": {
 							"type": "any",
@@ -759,55 +758,6 @@
 								"conditional_logics": []
 							},
 							"editor_options": { "template": "inputText" }
-						},
-						"country": {
-							"element": "select_country",
-							"attributes": {
-								"name": "country",
-								"value": "",
-								"id": "",
-								"class": "",
-								"placeholder": "Select Country",
-								"required": false
-							},
-							"settings": {
-								"container_class": "",
-								"label": "Country",
-								"label_placement": "",
-								"label_placement_options": [
-									{ "value": "", "label": "Default" },
-									{ "value": "top", "label": "Top" },
-									{ "value": "right", "label": "Right" },
-									{ "value": "bottom", "label": "Bottom" },
-									{ "value": "left", "label": "Left" },
-									{ "value": "hide_label", "label": "Hide Label" }
-								],
-								"admin_field_label": "",
-								"help_message": "",
-								"error_message": "",
-								"visible": false,
-								"validation_rules": {
-									"required": {
-										"value": false,
-										"message": "This field is required",
-										"global_message": "This field is required",
-										"global": true
-									}
-								},
-								"country_list": {
-									"active_list": "all",
-									"visible_list": [],
-									"hidden_list": []
-								},
-								"conditional_logics": []
-							},
-							"options": { "US": "US of America", "UK": "United Kingdom" },
-							"editor_options": {
-								"title": "Country List",
-								"element": "country-list",
-								"icon_class": "icon-text-width",
-								"template": "selectCountry"
-							}
 						}
 					},
 					"editor_options": {
@@ -1725,55 +1675,6 @@
 								]
 							},
 							"editor_options": { "template": "inputText" }
-						},
-						"country": {
-							"element": "select_country",
-							"attributes": {
-								"name": "country_8_6",
-								"value": "",
-								"id": "",
-								"class": "",
-								"placeholder": "Country",
-								"required": false
-							},
-							"settings": {
-								"container_class": "",
-								"label": "Country",
-								"admin_field_label": "",
-								"help_message": "",
-								"error_message": "",
-								"visible": true,
-								"validation_rules": {
-									"required": {
-										"value": true,
-										"message": "This field is required",
-										"global": false,
-										"global_message": "This field is required"
-									}
-								},
-								"country_list": {
-									"active_list": "all",
-									"visible_list": [],
-									"hidden_list": []
-								},
-								"conditional_logics": [],
-								"label_placement": "",
-								"label_placement_options": [
-									{ "value": "", "label": "Default" },
-									{ "value": "top", "label": "Top" },
-									{ "value": "right", "label": "Right" },
-									{ "value": "bottom", "label": "Bottom" },
-									{ "value": "left", "label": "Left" },
-									{ "value": "hide_label", "label": "Hidden" }
-								]
-							},
-							"options": { "US": "US of America", "UK": "United Kingdom" },
-							"editor_options": {
-								"title": "Country List",
-								"element": "country-list",
-								"icon_class": "icon-text-width",
-								"template": "selectCountry"
-							}
 						}
 					},
 					"editor_options": {

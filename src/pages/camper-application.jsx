@@ -145,6 +145,12 @@ export default function CamperApplicationForm() {
 		}
 	};
 
+	const residesWithParentGuardian = values["input_radio"] === "yes";
+	const sendMailToParentGuardian = values["input_radio_7"] === "Parent/Guardian";
+	const shouldCollectParentGuardianInfo =
+		residesWithParentGuardian ||
+		(values["input_radio"] === "no" && sendMailToParentGuardian);
+
 	return (
 		<div id="cs-camper-application-form">
 			<h1 className="cs-form-title">Camper Application - 2025</h1>
@@ -328,46 +334,36 @@ export default function CamperApplicationForm() {
 						<div className="cs-field cs-name-group">
 							<div className="cs-name-group-label">Name</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="first_name">
+								<label className="cs-label" htmlFor="resides_first_name">
 									First Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="first_name"
-									name="first_name"
-									value={values["first_name"] || ""}
+									id="resides_first_name"
+									name="resides_first_name"
+									value={values["resides_first_name"] || ""}
 									required
-									onChange={(e) => handleChange("first_name", e.target.value)}
+									onChange={(e) =>
+										handleChange("resides_first_name", e.target.value)
+									}
 									placeholder="First Name"
 								/>
 							</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="middle_name">
-									Middle Name
-								</label>
-								<input
-									className="cs-input"
-									type="text"
-									id="middle_name"
-									name="middle_name"
-									value={values["middle_name"] || ""}
-									onChange={(e) => handleChange("middle_name", e.target.value)}
-									placeholder="Middle Name"
-								/>
-							</div>
-							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="last_name">
+								<label className="cs-label" htmlFor="resides_last_name">
 									Last Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="last_name"
+									id="resides_last_name"
 									required
-									name="last_name"
-									value={values["last_name"] || ""}
-									onChange={(e) => handleChange("last_name", e.target.value)}
+									name="resides_last_name"
+									value={values["resides_last_name"] || ""}
+									onChange={(e) =>
+										handleChange("resides_last_name", e.target.value)
+									}
 									placeholder="Last Name"
 								/>
 							</div>
@@ -573,7 +569,7 @@ export default function CamperApplicationForm() {
 						</fieldset>
 					</div>
 				)}
-				{values["input_radio"] === "yes" && (
+				{shouldCollectParentGuardianInfo && (
 					<div className="cs-field-wrapper">
 						<div className="cs-field cs-name-wrapper">
 							<div className="cs-field cs-name-group">
@@ -618,7 +614,7 @@ export default function CamperApplicationForm() {
 						</div>
 					</div>
 				)}
-				{values["input_radio"] === "yes" && (
+				{shouldCollectParentGuardianInfo && (
 					<div className="cs-field-wrapper">
 						<div className="cs-field cs-name-wrapper">
 							<div className="cs-field cs-name-group">
@@ -658,7 +654,7 @@ export default function CamperApplicationForm() {
 						</div>
 					</div>
 				)}
-				{values["input_radio"] === "yes" && (
+				{shouldCollectParentGuardianInfo && (
 					<div className="cs-field-wrapper">
 						<div className="cs-field cs-address-wrapper">
 							<div className="cs-field cs-address-group">
@@ -1267,32 +1263,36 @@ export default function CamperApplicationForm() {
 						<div className="cs-field cs-name-group">
 							<div className="cs-name-group-label">Name</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="first_name">
+								<label className="cs-label" htmlFor="case_manager_first_name">
 									First Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="first_name"
-									name="first_name"
+									id="case_manager_first_name"
+									name="case_manager_first_name"
 									required
-									value={values["first_name"] || ""}
-									onChange={(e) => handleChange("first_name", e.target.value)}
+									value={values["case_manager_first_name"] || ""}
+									onChange={(e) =>
+										handleChange("case_manager_first_name", e.target.value)
+									}
 									placeholder="First Name"
 								/>
 							</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="last_name">
+								<label className="cs-label" htmlFor="case_manager_last_name">
 									Last Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="last_name"
+									id="case_manager_last_name"
 									required
-									name="last_name"
-									value={values["last_name"] || ""}
-									onChange={(e) => handleChange("last_name", e.target.value)}
+									name="case_manager_last_name"
+									value={values["case_manager_last_name"] || ""}
+									onChange={(e) =>
+										handleChange("case_manager_last_name", e.target.value)
+									}
 									placeholder="Last Name"
 								/>
 							</div>
@@ -5899,32 +5899,36 @@ export default function CamperApplicationForm() {
 						<div className="cs-field cs-name-group">
 							<div className="cs-name-group-label">Name</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="first_name">
+								<label className="cs-label" htmlFor="submitter_first_name">
 									First Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="first_name"
+									id="submitter_first_name"
 									required
-									name="first_name"
-									value={values["first_name"] || ""}
-									onChange={(e) => handleChange("first_name", e.target.value)}
+									name="submitter_first_name"
+									value={values["submitter_first_name"] || ""}
+									onChange={(e) =>
+										handleChange("submitter_first_name", e.target.value)
+									}
 									placeholder="First Name"
 								/>
 							</div>
 							<div className="cs-name-field">
-								<label className="cs-label" htmlFor="last_name">
+								<label className="cs-label" htmlFor="submitter_last_name">
 									Last Name *
 								</label>
 								<input
 									className="cs-input"
 									type="text"
-									id="last_name"
+									id="submitter_last_name"
 									required
-									name="last_name"
-									value={values["last_name"] || ""}
-									onChange={(e) => handleChange("last_name", e.target.value)}
+									name="submitter_last_name"
+									value={values["submitter_last_name"] || ""}
+									onChange={(e) =>
+										handleChange("submitter_last_name", e.target.value)
+									}
 									placeholder="Last Name"
 								/>
 							</div>

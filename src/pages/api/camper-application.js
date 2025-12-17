@@ -18,31 +18,16 @@ const LABELS = {
 	custom_html_2:
 		"If camper does not reside with parent/guardian please list contact information for who camper resides with.",
 	names_2: "Name",
-	first_name: "First Name",
-	middle_name: "Middle Name",
-	last_name: "Last Name",
+	resides_first_name: "Residence Contact First Name",
+	resides_middle_name: "Residence Contact Middle Name",
+	resides_last_name: "Residence Contact Last Name",
+	input_text_18: "Relationship to Camper",
 	first_name_pg1: "Parent/Guardian #1 First Name",
 	middle_name_pg1: "Parent/Guardian #1 Middle Name",
 	last_name_pg1: "Parent/Guardian #1 Last Name",
 	first_name_pg2: "Parent/Guardian #2 First Name",
 	middle_name_pg2: "Parent/Guardian #2 Middle Name",
 	last_name_pg2: "Parent/Guardian #2 Last Name",
-	input_text_9: "Group home or facility name if applicable",
-	address_1: "Mailing Address",
-	address_line_1: "Address Line 1",
-	address_line_2: "Address Line 2",
-	city: "City",
-	state: "State",
-	zip: "Zip Code",
-	country: "Country",
-	input_text_18: "Relationship to Camper",
-	input_text_11: "Phone Number",
-	input_text_10: "Email Address",
-	description_22: "Please provide any additional information",
-	input_radio_7:
-		"Should all camp correspondence be sent to this address or parent/guardian?",
-	"input_radio_7::Address above": "Address above",
-	"input_radio_7::Parent/Guardian": "Parent/Guardian",
 	names: "First and Last Name(s) for Parent/Guardian(s)",
 	names_1: "First and Last Name(s) for Parent/Guardian(s) #2",
 	campers_address_8: "Parent/Guardian's Mailing Address",
@@ -51,7 +36,20 @@ const LABELS = {
 	city_8_3: "City",
 	state_province_8_4: "State / Province",
 	zip_postal_code_8_5: "ZIP / Postal Code",
-	country_8_6: "Country",
+	input_text_9: "Group home or facility name if applicable",
+	address_1: "Mailing Address",
+	address_line_1: "Address Line 1",
+	address_line_2: "Address Line 2",
+	city: "City",
+	state: "State",
+	zip: "Zip Code",
+	input_text_11: "Phone Number",
+	input_text_10: "Email Address",
+	description_22: "Please provide any additional information",
+	input_radio_7:
+		"Should all camp correspondence be sent to this address or parent/guardian?",
+	"input_radio_7::Address above": "Address above",
+	"input_radio_7::Parent/Guardian": "Parent/Guardian",
 	input_radio_1:
 		"Camper’s T-shirt size (all campers will receive a shirt as part of registration)",
 	"input_radio_1::Adult Small": "Adult Small",
@@ -88,12 +86,14 @@ const LABELS = {
 	names_5: "Name",
 	payer_first_name: "Payer First Name",
 	payer_last_name: "Payer Last Name",
-	input_text_15: "Email Address",
+	input_text_15: "Payer Email Address",
 	input_text_13: "Phone number",
 	custom_html_6:
 		"Please provide your Case Manager's information below. Note: Your Case Manager’s e-mail address is required for securing your camper’s pre-authorizations. Applications cannot be processed without the Case Manager’s valid email address.",
 	names_4: "Name",
-	input_text_12: "Email Address",
+	case_manager_first_name: "Case Manager First Name",
+	case_manager_last_name: "Case Manager Last Name",
+	input_text_12: "Case Manager Email Address",
 	input_text_16: "Phone number",
 	contact_1_name_20: "Emergency Contact Name",
 	contact_1_relationship_21: "Emergency Contact Relationship",
@@ -417,8 +417,23 @@ const LABELS = {
 	"input_radio_8::No": "No",
 	checkbox_11: "I  agree to the Consent Form.",
 	signature: "Signature",
+	submitter_first_name: "Submitter First Name",
+	submitter_last_name: "Submitter Last Name",
 	data_collection_consent_197: "Data Collection Consent",
-	names_3: "Name",
+};
+
+const normalizeChoiceValue = (value) => {
+	if (typeof value !== "string") return "";
+	const lower = value.toLowerCase();
+	const parts = lower.split("::");
+	return parts[parts.length - 1];
+};
+
+const isChoiceMatch = (value, ...candidates) => {
+	const normalized = normalizeChoiceValue(value);
+	return candidates.some(
+		(candidate) => normalized === normalizeChoiceValue(candidate)
+	);
 };
 
 const escapeHtml = (value = "") =>
@@ -488,20 +503,35 @@ const NAME_GROUPS = [
 		preferPrimary: true,
 	},
 	{
-		label: "Provided Name",
-		keys: ["first_name", "middle_name", "last_name"],
+		label: "Residence Contact Name",
+		keys: ["resides_first_name", "resides_middle_name", "resides_last_name"],
+		shouldInclude: (values) => isChoiceMatch(values?.input_radio, "no"),
 	},
 	{
 		label: "Parent/Guardian #1 Name",
 		keys: ["first_name_pg1", "middle_name_pg1", "last_name_pg1"],
+		shouldInclude: (values) => isChoiceMatch(values?.input_radio, "yes"),
 	},
 	{
 		label: "Parent/Guardian #2 Name",
 		keys: ["first_name_pg2", "middle_name_pg2", "last_name_pg2"],
+		shouldInclude: (values) => isChoiceMatch(values?.input_radio, "yes"),
 	},
 	{
 		label: "Payer Name",
 		keys: ["payer_first_name", "payer_last_name"],
+		shouldInclude: (values) =>
+			isChoiceMatch(values?.input_radio_5, "Private Pay"),
+	},
+	{
+		label: "Case Manager Name",
+		keys: ["case_manager_first_name", "case_manager_last_name"],
+		shouldInclude: (values) =>
+			isChoiceMatch(values?.input_radio_5, "Respite Benefits – DSHS/DDA"),
+	},
+	{
+		label: "Form Submitter Name",
+		keys: ["submitter_first_name", "submitter_last_name"],
 	},
 ];
 
@@ -517,6 +547,7 @@ const ADDRESS_GROUPS = [
 			"country",
 		],
 		fallbackKey: "address_1",
+		shouldInclude: (values) => isChoiceMatch(values?.input_radio, "no"),
 	},
 	{
 		label: "Parent/Guardian Mailing Address",
@@ -526,7 +557,6 @@ const ADDRESS_GROUPS = [
 			"city_8_3",
 			"state_province_8_4",
 			"zip_postal_code_8_5",
-			"country_8_6",
 		],
 		fallbackKey: "campers_address_8",
 	},
@@ -537,6 +567,21 @@ const CATEGORY_STYLES = {
 	behavior: { base: "#ffffff", alt: "#e8f7ef" },
 	dietary: { base: "#ffffff", alt: "#fff8d9" },
 };
+
+const CONDITIONAL_FIELD_PREDICATES = new Map([
+	["input_text_18", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["input_text_9", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["input_text_11", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["input_text_10", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["description_22", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["address_line_1", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["address_line_2", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["city", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["state", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["zip", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["country", (values) => isChoiceMatch(values?.input_radio, "no")],
+	["address_1", (values) => isChoiceMatch(values?.input_radio, "no")],
+]);
 
 const BEHAVIOR_KEYS = new Set([
 	"mobility_36",
@@ -620,6 +665,8 @@ const BEHAVIOR_KEYS = new Set([
 	"description_72",
 	"description_21",
 	"description_4",
+	"list_all_foods_your_camper_cannot_eat_due_to_severe_intolerance_and_or_allergic_reactions_105",
+	"input_radio_9",
 ]);
 
 const DIETARY_KEYS = new Set([
@@ -639,7 +686,10 @@ const getCategoryForKey = (key, label = "") => {
 	if (DIETARY_KEYS.has(key) || /dietary|allerg/i.test(label)) {
 		return "dietary";
 	}
-	if (BEHAVIOR_KEYS.has(key) || /behavior|mobility|activity|care|communication/i.test(label)) {
+	if (
+		BEHAVIOR_KEYS.has(key) ||
+		/behavior|mobility|activity|care|communication/i.test(label)
+	) {
 		return "behavior";
 	}
 	return "default";
@@ -811,10 +861,21 @@ export default async function handler(req, res) {
 		combinedEntryMap.set(label, normalized);
 	};
 
-	Object.entries(values).forEach(([key, value]) => {
+	const processedKeysList = new Set();
+
+	const processKey = (key) => {
+		if (processedKeysList.has(key)) return;
+		if (!(key in values)) return;
+		const value = values[key];
+
 		const nameGroup = nameGroupLookup.get(key);
 		if (nameGroup) {
-				if (!processedNameGroups.has(nameGroup)) {
+			if (!processedNameGroups.has(nameGroup)) {
+				const shouldInclude =
+					typeof nameGroup.shouldInclude === "function"
+						? nameGroup.shouldInclude(values)
+						: true;
+				if (shouldInclude) {
 					const pretty = buildNameEntry(values, nameGroup);
 					if (pretty) {
 						addCombinedEntry(
@@ -823,15 +884,22 @@ export default async function handler(req, res) {
 							nameGroup.category ?? "default"
 						);
 					}
+				}
 				nameGroup.keys.forEach((nameKey) => suppressedKeys.add(nameKey));
 				processedNameGroups.add(nameGroup);
 			}
+			processedKeysList.add(key);
 			return;
 		}
 
 		const addressGroup = addressGroupLookup.get(key);
 		if (addressGroup) {
-				if (!processedAddressGroups.has(addressGroup)) {
+			if (!processedAddressGroups.has(addressGroup)) {
+				const shouldInclude =
+					typeof addressGroup.shouldInclude === "function"
+						? addressGroup.shouldInclude(values)
+						: true;
+				if (shouldInclude) {
 					const pretty = buildAddressEntry(values, addressGroup);
 					if (pretty) {
 						addCombinedEntry(
@@ -840,20 +908,36 @@ export default async function handler(req, res) {
 							addressGroup.category ?? "default"
 						);
 					}
+				}
 				addressGroup.keys.forEach((addrKey) => suppressedKeys.add(addrKey));
 				if (addressGroup.fallbackKey) {
 					suppressedKeys.add(addressGroup.fallbackKey);
 				}
 				processedAddressGroups.add(addressGroup);
 			}
+			processedKeysList.add(key);
 			return;
 		}
 
 		if (suppressedKeys.has(key)) return;
+		const conditionalPredicate = CONDITIONAL_FIELD_PREDICATES.get(key);
+		if (conditionalPredicate && !conditionalPredicate(values)) {
+			suppressedKeys.add(key);
+			return;
+		}
 		const label = LABELS[key] ?? key; // fallback to key if missing
 		const pretty = formatValue(key, value);
 		const category = getCategoryForKey(key, label);
 		labeledEntries.push({ label, pretty, category });
+		processedKeysList.add(key);
+	};
+
+	Object.keys(LABELS).forEach((key) => {
+		processKey(key);
+	});
+
+	Object.keys(values).forEach((key) => {
+		processKey(key);
 	});
 
 	const emailText = [
