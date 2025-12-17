@@ -532,6 +532,119 @@ const ADDRESS_GROUPS = [
 	},
 ];
 
+const CATEGORY_STYLES = {
+	default: { base: "#ffffff", alt: "#e8f2fb" },
+	behavior: { base: "#ffffff", alt: "#e8f7ef" },
+	dietary: { base: "#ffffff", alt: "#fff8d9" },
+};
+
+const BEHAVIOR_KEYS = new Set([
+	"mobility_36",
+	"description_10",
+	"description_23",
+	"if_your_camper_uses_a_wheelchair_describe_transfer_procedure_and_level_of_assistance_required_if_not_applicable_please_write_n_a_38",
+	"if_your_camper_uses_a_wheelchair_describe_transfer_procedure_and_level_of_assistance_required_if_not_applicable_please_write_n_a_39",
+	"if_your_camper_uses_a_wheelchair_describe_transfer_procedure_and_level_of_assistance_required_if_not_applicable_please_write_n_a_40",
+	"describe_activity_participation_42",
+	"description_11",
+	"description_26",
+	"description_27",
+	"description_25",
+	"description_24",
+	"what_are_some_favorite_activities_45",
+	"activities_your_camper_does_not_like_46",
+	"checkbox_10",
+	"checkbox_1",
+	"description_12",
+	"description_29",
+	"description_28",
+	"checkbox_2",
+	"description_14",
+	"description_13",
+	"description_30",
+	"checkbox_3",
+	"description_15",
+	"description_33",
+	"description_32",
+	"description_31",
+	"input_text_2",
+	"input_text_3",
+	"checkbox_4",
+	"description_16",
+	"description_35",
+	"description_73",
+	"description_36",
+	"checkbox_5",
+	"description_17",
+	"description_40",
+	"description_39",
+	"description_38",
+	"description_37",
+	"input_text_4",
+	"input_text_19",
+	"input_text_5",
+	"checkbox_6",
+	"description_18",
+	"description_47",
+	"description_46",
+	"description_45",
+	"description_44",
+	"description_43",
+	"description_42",
+	"description_41",
+	"input_text_6",
+	"checkbox_7",
+	"description_19",
+	"description_54",
+	"description_53",
+	"description_52",
+	"description_51",
+	"description_50",
+	"description_71",
+	"description_2",
+	"description_1",
+	"input_radio_11",
+	"description_74",
+	"input_text_7",
+	"input_text_8",
+	"checkbox_8",
+	"description_20",
+	"description_63",
+	"description_62",
+	"description_61",
+	"description_60",
+	"description_59",
+	"description_58",
+	"description_57",
+	"description_56",
+	"description_72",
+	"description_21",
+	"description_4",
+]);
+
+const DIETARY_KEYS = new Set([
+	"description_5",
+	"checkbox_9",
+	"description_6",
+	"description_66",
+	"description_65",
+	"description_68",
+	"description_67",
+	"description_69",
+	"description_70",
+	"description_64",
+]);
+
+const getCategoryForKey = (key, label = "") => {
+	if (DIETARY_KEYS.has(key) || /dietary|allerg/i.test(label)) {
+		return "dietary";
+	}
+	if (BEHAVIOR_KEYS.has(key) || /behavior|mobility|activity|care|communication/i.test(label)) {
+		return "behavior";
+	}
+	return "default";
+};
+
 const buildNameEntry = (values, group) => {
 	const { keys, preferPrimary } = group;
 	if (!keys || keys.length === 0) return "";
@@ -606,8 +719,13 @@ const buildPdf = (entries, submittedAt, camperName = "") =>
 		const labelWidth = Math.floor(usableWidth * 0.32);
 		const valueWidth = usableWidth - labelWidth;
 
-		entries.forEach(({ label, pretty }, index) => {
+		const categoryCounters = {};
+		entries.forEach(({ label, pretty, category = "default" }) => {
 			const display = pretty || "—";
+			const colors = CATEGORY_STYLES[category] ?? CATEGORY_STYLES.default;
+			const count = (categoryCounters[category] =
+				(categoryCounters[category] ?? 0) + 1);
+			const background = count % 2 === 0 ? colors.alt : colors.base;
 
 			doc.font("Helvetica-Bold").fontSize(12);
 			const labelHeight = doc.heightOfString(label, {
@@ -628,8 +746,6 @@ const buildPdf = (entries, submittedAt, camperName = "") =>
 			}
 
 			const y = doc.y;
-			const background = index % 2 === 0 ? "#ffffff" : "#e8f2fb";
-
 			doc.save();
 			doc.rect(marginLeft, y - 4, usableWidth, rowHeight).fill(background);
 			doc.restore();
@@ -688,21 +804,25 @@ export default async function handler(req, res) {
 		}
 	});
 
-	const addCombinedEntry = (label, pretty) => {
+	const addCombinedEntry = (label, pretty, category = "default") => {
 		const normalized = typeof pretty === "string" ? pretty.trim() : "";
 		if (!normalized) return;
-		labeledEntries.push({ label, pretty: normalized });
+		labeledEntries.push({ label, pretty: normalized, category });
 		combinedEntryMap.set(label, normalized);
 	};
 
 	Object.entries(values).forEach(([key, value]) => {
 		const nameGroup = nameGroupLookup.get(key);
 		if (nameGroup) {
-			if (!processedNameGroups.has(nameGroup)) {
-				const pretty = buildNameEntry(values, nameGroup);
-				if (pretty) {
-					addCombinedEntry(nameGroup.label, pretty);
-				}
+				if (!processedNameGroups.has(nameGroup)) {
+					const pretty = buildNameEntry(values, nameGroup);
+					if (pretty) {
+						addCombinedEntry(
+							nameGroup.label,
+							pretty,
+							nameGroup.category ?? "default"
+						);
+					}
 				nameGroup.keys.forEach((nameKey) => suppressedKeys.add(nameKey));
 				processedNameGroups.add(nameGroup);
 			}
@@ -711,11 +831,15 @@ export default async function handler(req, res) {
 
 		const addressGroup = addressGroupLookup.get(key);
 		if (addressGroup) {
-			if (!processedAddressGroups.has(addressGroup)) {
-				const pretty = buildAddressEntry(values, addressGroup);
-				if (pretty) {
-					addCombinedEntry(addressGroup.label, pretty);
-				}
+				if (!processedAddressGroups.has(addressGroup)) {
+					const pretty = buildAddressEntry(values, addressGroup);
+					if (pretty) {
+						addCombinedEntry(
+							addressGroup.label,
+							pretty,
+							addressGroup.category ?? "default"
+						);
+					}
 				addressGroup.keys.forEach((addrKey) => suppressedKeys.add(addrKey));
 				if (addressGroup.fallbackKey) {
 					suppressedKeys.add(addressGroup.fallbackKey);
@@ -728,7 +852,8 @@ export default async function handler(req, res) {
 		if (suppressedKeys.has(key)) return;
 		const label = LABELS[key] ?? key; // fallback to key if missing
 		const pretty = formatValue(key, value);
-		labeledEntries.push({ label, pretty });
+		const category = getCategoryForKey(key, label);
+		labeledEntries.push({ label, pretty, category });
 	});
 
 	const emailText = [
@@ -738,10 +863,14 @@ export default async function handler(req, res) {
 		...labeledEntries.map(({ label, pretty }) => `${label}: ${pretty}`),
 	].join("\n");
 
+	const categoryCounters = {};
 	const htmlRows = labeledEntries
-		.map(({ label, pretty }, index) => {
-			const background = index % 2 === 0 ? "#ffffff" : "#e8f2fb";
+		.map(({ label, pretty, category = "default" }) => {
 			const safeValue = escapeHtml(pretty).replace(/\n/g, "<br />");
+			const colors = CATEGORY_STYLES[category] ?? CATEGORY_STYLES.default;
+			const count = (categoryCounters[category] =
+				(categoryCounters[category] ?? 0) + 1);
+			const background = count % 2 === 0 ? colors.alt : colors.base;
 			return `
 				<tr style="background:${background};">
 					<td style="padding:12px;border:1px solid #d0d7de;font-weight:600;width:30%;vertical-align:top;">
