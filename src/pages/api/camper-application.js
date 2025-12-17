@@ -426,7 +426,32 @@ const escapeHtml = (value = "") =>
 		.replace(/"/g, "&quot;")
 		.replace(/'/g, "&#39;");
 
-const formatValue = (value) => {
+const formatDate = (raw = "") => {
+	const digits = raw.replace(/\D/g, "").slice(0, 8);
+	if (digits.length === 8) {
+		return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`;
+	}
+	return raw;
+};
+
+const formatPhone = (raw = "") => {
+	const digits = raw.replace(/\D/g, "").slice(0, 10);
+	if (digits.length === 10) {
+		return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+	}
+	return raw;
+};
+
+const DATE_FIELDS = new Set(["input_mask"]);
+const PHONE_FIELDS = new Set([
+	"input_text_11",
+	"input_text_13",
+	"input_text_16",
+	"contact_1_cell_phone_23",
+	"contact_2_cell_phone_27",
+]);
+
+const formatValue = (key, value) => {
 	if (Array.isArray(value)) {
 		return value
 			.map((entry) => (LABELS[entry] ? LABELS[entry] : entry))
@@ -438,6 +463,18 @@ const formatValue = (value) => {
 	}
 	if (value === true) return "Yes";
 	if (value === false) return "No";
+
+	if (typeof value === "string") {
+		if (DATE_FIELDS.has(key)) {
+			return formatDate(value);
+		}
+
+		const normalizedKey = key.toLowerCase();
+		if (PHONE_FIELDS.has(key) || normalizedKey.includes("phone")) {
+			return formatPhone(value);
+		}
+	}
+
 	return value ?? "";
 };
 
@@ -529,10 +566,29 @@ export default async function handler(req, res) {
 			: undefined;
 
 	// 2. Convert raw values to objects we can use for text & HTML
-	const labeledEntries = Object.entries(values).map(([key, value]) => {
+	const labeledEntries = [];
+	const nameOverrides = new Set(["campers_name_1", "first_1_3", "middle_1_4", "last_1_6"]);
+	const combinedFullName = (() => {
+		const providedFull = formatValue("campers_name_1", values.campers_name_1);
+		if (providedFull) return providedFull;
+		const first = formatValue("first_1_3", values.first_1_3);
+		const middle = formatValue("middle_1_4", values.middle_1_4);
+		const last = formatValue("last_1_6", values.last_1_6);
+		return [first, middle, last].filter(Boolean).join(" ").trim();
+	})();
+
+	if (combinedFullName) {
+		labeledEntries.push({
+			label: "Camper Name",
+			pretty: combinedFullName,
+		});
+	}
+
+	Object.entries(values).forEach(([key, value]) => {
+		if (nameOverrides.has(key)) return;
 		const label = LABELS[key] ?? key; // fallback to key if missing
-		const pretty = formatValue(value);
-		return { label, pretty };
+		const pretty = formatValue(key, value);
+		labeledEntries.push({ label, pretty });
 	});
 
 	const emailText = [
@@ -598,12 +654,10 @@ export default async function handler(req, res) {
 	try {
 		const pdfBuffer = await buildPdf(labeledEntries, submittedAt);
 		const camperName =
-			formatValue(
-				values.campers_name_1 ??
-					values.first_1_3 ??
-					values.first_name ??
-					values.input_text_17
-			) || "Camper";
+			combinedFullName ||
+			formatValue("campers_name_1", values.campers_name_1) ||
+			formatValue("input_text_17", values.input_text_17) ||
+			"Camper";
 		await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,
