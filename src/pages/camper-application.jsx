@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import PrivacyPolicy from "../components/legalese/privacy-policy";
 export default function CamperApplicationForm() {
 	const [values, setValues] = useState({});
 	const [submitting, setSubmitting] = useState(false);
+	const router = useRouter();
 
 	const handleChange = (name, value) => {
 		setValues((prev) => ({ ...prev, [name]: value }));
@@ -136,7 +138,8 @@ export default function CamperApplicationForm() {
 
 			if (!res.ok) throw new Error(await res.text());
 
-			alert("Application submitted successfully!");
+			// alert("Application submitted successfully!");
+			router.push("/camper-application-thank-you");
 		} catch (err) {
 			console.error(err);
 			alert("Error submitting: " + err.message);
