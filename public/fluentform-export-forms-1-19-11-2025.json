@@ -6277,7 +6277,7 @@
 					},
 					"settings": {
 						"container_class": "",
-						"label": "Does your camper have a history of physical or verbal aggression? If so, please provide triggers/circumstances and re-direction/de-escalation techniques used to calm your camper. ",
+						"label": "Does your camper have a history of physical or verbal aggression?",
 						"admin_field_label": "",
 						"label_placement": "",
 						"help_message": "",

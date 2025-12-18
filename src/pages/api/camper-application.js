@@ -318,7 +318,7 @@ const LABELS = {
 	description_2:
 		'Please list specific behaviors and strategies related to "Exhibits Obsessive Compulsive Behaviors."',
 	description_1:
-		"Does your camper have a history of physical or verbal aggression? If so, please provide triggers/circumstances and re-direction/de-escalation techniques used to calm your camper. ",
+		"Does your camper have a history of physical or verbal aggression?",
 	input_radio_11: "Has your camper been charged or convicted of a crime?",
 	"input_radio_11::Yes": "Yes",
 	"input_radio_11::No": "No",
@@ -380,10 +380,11 @@ const LABELS = {
 		"Please list any other devices or equipment your camper has and what level of assistance is needed.",
 	description_4:
 		"Please list ALL current medications with DOSAGE & TIME medication is administered (Morning, Mid-Day, Evening, As Needed)",
+	medication_sheet_upload: "Medication Sheet Upload",
 	custom_html_11:
 		"Our kitchen staff must accommodate a wide range of medically required dietary restrictions and food allergies. We must distinguish between essential dietary restrictions and personal preference. We cannot accommodate personal preference. Please only list restrictions that are medically diagnosed/prescribed and not personal preference. The Health Exam Form must list these restrictions and/or allergies. We offer a variety of options at each meal for those with a limited selection of foods they will eat. Please reach out to acd@lionscamphorizon.org with additional questions or concerns regarding dietary needs.",
 	description_5:
-		"Has the applicant been diagnosed by a physician with a dietary condition such as Celiac Disease, PKU, Diabetes, food allergies, or any other condition? If yes, please list the condition and give a detailed description of dietary restrictions and reactions. Any dietary conditions or restrictions must be listed on the Health Exam Form by the physician.",
+		"Has the applicant been diagnosed by a physician with a dietary condition such as Celiac Disease, PKU, Diabetes, food allergies, or any other condition?",
 	checkbox_9:
 		"Does the applicant have special dietary requirements ordered by his/her Doctor or Nutritionist?  (Select all that apply)",
 	"checkbox_9::None": "None",
@@ -458,6 +459,22 @@ const formatPhone = (raw = "") => {
 	return raw;
 };
 
+const buildFileAttachment = (upload, fallbackName) => {
+	if (!upload || typeof upload !== "object") return null;
+	const dataUrl = typeof upload.dataUrl === "string" ? upload.dataUrl : "";
+	if (!dataUrl.startsWith("data:")) return null;
+	const matches = dataUrl.match(/^data:(.*?);base64,(.*)$/);
+	if (!matches) return null;
+	const [, mimeType, base64Data] = matches;
+	if (!base64Data) return null;
+
+	return {
+		filename: upload.name || fallbackName,
+		content: Buffer.from(base64Data, "base64"),
+		contentType: mimeType || upload.type || "application/octet-stream",
+	};
+};
+
 const DATE_FIELDS = new Set(["input_mask"]);
 const PHONE_FIELDS = new Set([
 	"input_text_11",
@@ -479,6 +496,16 @@ const formatValue = (key, value) => {
 	}
 	if (value === true) return "Yes";
 	if (value === false) return "No";
+	if (value && typeof value === "object") {
+		if ("dataUrl" in value && value.name) {
+			const sizeKb =
+				typeof value.size === "number"
+					? `${Math.max(1, Math.round(value.size / 1024))} KB`
+					: null;
+			return sizeKb ? `${value.name} (${sizeKb})` : value.name;
+		}
+		return JSON.stringify(value);
+	}
 
 	if (typeof value === "string") {
 		if (DATE_FIELDS.has(key)) {
@@ -1008,6 +1035,19 @@ export default async function handler(req, res) {
 			formatValue("input_text_17", values.input_text_17) ||
 			"Camper";
 		const pdfBuffer = await buildPdf(labeledEntries, submittedAt, camperName);
+		const attachments = [
+			{
+				filename: "camper-application.pdf",
+				content: pdfBuffer,
+			},
+		];
+		const medicationAttachment = buildFileAttachment(
+			values.medication_sheet_upload,
+			"medication-sheet"
+		);
+		if (medicationAttachment) {
+			attachments.push(medicationAttachment);
+		}
 		await transporter.sendMail({
 			from: process.env.PRIVATEEMAIL_USER ?? process.env.PRIVATEEMAIL_USER,
 			to: process.env.NOTIFY_EMAILS,
@@ -1015,12 +1055,7 @@ export default async function handler(req, res) {
 			subject: `Camper Application from ${camperName}`,
 			text: emailText,
 			html: htmlEmail,
-			attachments: [
-				{
-					filename: "camper-application.pdf",
-					content: pdfBuffer,
-				},
-			],
+			attachments,
 		});
 
 		return res.status(200).json({ ok: true });

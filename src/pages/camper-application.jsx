@@ -22,6 +22,31 @@ export default function CamperApplicationForm() {
 		});
 	};
 
+	const handleFileChange = (name, file) => {
+		if (!file) {
+			setValues((prev) => {
+				const nextValues = { ...prev };
+				delete nextValues[name];
+				return nextValues;
+			});
+			return;
+		}
+
+		const reader = new FileReader();
+		reader.onload = () => {
+			setValues((prev) => ({
+				...prev,
+				[name]: {
+					name: file.name,
+					size: file.size,
+					type: file.type,
+					dataUrl: reader.result,
+				},
+			}));
+		};
+		reader.readAsDataURL(file);
+	};
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setSubmitting(true);
@@ -5299,6 +5324,28 @@ export default function CamperApplicationForm() {
 							value={values["description_4"] || ""}
 							onChange={(e) => handleChange("description_4", e.target.value)}
 						/>
+					</div>
+				</div>
+				<div className="cs-field-wrapper">
+					<div className="cs-field">
+						<label className="cs-label" htmlFor="medication_sheet_upload">
+							Upload Medication Sheet (optional)
+						</label>
+						<input
+							className="cs-input"
+							type="file"
+							id="medication_sheet_upload"
+							name="medication_sheet_upload"
+							accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+							onChange={(e) =>
+								handleFileChange("medication_sheet_upload", e.target.files?.[0])
+							}
+						/>
+						{values["medication_sheet_upload"]?.name && (
+							<p>
+								Selected file: {values["medication_sheet_upload"]?.name}
+							</p>
+						)}
 					</div>
 				</div>
 				<div className="cs-field-wrapper">
