@@ -1,6 +1,14 @@
 import nodemailer from "nodemailer";
 import PDFDocument from "pdfkit";
 
+export const config = {
+	api: {
+		bodyParser: {
+			sizeLimit: "16mb",
+		},
+	},
+};
+
 const LABELS = {
 	campers_name_1: "Name",
 	first_1_3: "First",

@@ -46,7 +46,7 @@ export { rentalApplictaionLink };
 
 const now = new Date();
 const year = now.getFullYear();
-const openDate = new Date(`${year}-01-15T00:00:00`);
+const openDate = new Date(`${year}-01-05T00:00:00`);
 const closeDate = new Date(`${year}-07-15T23:59:59`);
 const isOpen = now >= openDate && now <= closeDate;
 export { isOpen };

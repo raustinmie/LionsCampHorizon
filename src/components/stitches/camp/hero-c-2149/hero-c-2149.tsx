@@ -10,7 +10,7 @@ export default function HeroC2149() {
 	const isOpen = now >= openDate && now <= closeDate;
 
 	const buttonHref = isOpen ? "/camper-application" : "/contact";
-	const buttonText = isOpen ? "Apply Now" : "Registration opens January 15!";
+	const buttonText = isOpen ? "Apply Now" : "Registration opens January 5!";
 
 	return (
 		<section id="hero-c-2149">
@@ -51,7 +51,7 @@ export default function HeroC2149() {
 					abilities shine.
 				</p>
 				{!isOpen ? (
-					<div className="cs-fake-button">Registration opens January 15!</div>
+					<div className="cs-fake-button">Registration opens January 5!</div>
 				) : (
 					<Link href="/camper-application" className="cs-button-solid">
 						Apply Now

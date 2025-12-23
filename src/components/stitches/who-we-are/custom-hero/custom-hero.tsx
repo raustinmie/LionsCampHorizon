@@ -10,7 +10,7 @@ export default function CustomHero() {
 	const isOpen = now >= openDate && now <= closeDate;
 
 	const buttonHref = isOpen ? "/camper-application" : "/contact";
-	const buttonText = isOpen ? "Apply Now" : "Registration opens January 15!";
+	const buttonText = isOpen ? "Apply Now" : "Registration opens January 5!";
 
 	return (
 		<section id="custom-hero">
