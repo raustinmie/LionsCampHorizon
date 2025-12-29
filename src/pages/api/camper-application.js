@@ -179,12 +179,12 @@ const LABELS = {
 	description_28:
 		'Please provide more details about "Sensitive to loud noises." Please specify if they use headphones or earplugs. Include any additional details.',
 	checkbox_2: "Hygiene and personal care (select all that apply)",
-	"checkbox_2::Uses toilet independently ": "Uses toilet independently ",
-	"checkbox_2::Uses a toilet on a schedule  ": "Uses a toilet on a schedule  ",
-	"checkbox_2::Requires assistance using the toilet ":
-		"Requires assistance using the toilet ",
-	"checkbox_2::Does not use toilet at all; uses incontinence briefs ":
-		"Does not use toilet at all; uses incontinence briefs ",
+	"checkbox_2::Uses toilet independently": "Uses toilet independently",
+	"checkbox_2::Uses a toilet on a schedule": "Uses a toilet on a schedule",
+	"checkbox_2::Requires assistance using the toilet":
+		"Requires assistance using the toilet",
+	"checkbox_2::Does not use toilet at all; uses incontinence briefs":
+		"Does not use toilet at all; uses incontinence briefs",
 	"checkbox_2::Requires being woken at night to use the toilet":
 		"Requires being woken at night to use the toilet",
 	description_14: "Please provide schedule/usual times.",

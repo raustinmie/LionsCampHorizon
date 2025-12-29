@@ -4064,23 +4064,23 @@
 						"help_message": "",
 						"advanced_options": [
 							{
-								"label": "Uses toilet independently ",
-								"value": "Uses toilet independently ",
+								"label": "Uses toilet independently",
+								"value": "Uses toilet independently",
 								"id": 1734114610497
 							},
 							{
-								"label": "Uses a toilet on a schedule  ",
-								"value": "Uses a toilet on a schedule  ",
+								"label": "Uses a toilet on a schedule",
+								"value": "Uses a toilet on a schedule",
 								"id": 0
 							},
 							{
-								"label": "Requires assistance using the toilet ",
-								"value": "Requires assistance using the toilet ",
+								"label": "Requires assistance using the toilet",
+								"value": "Requires assistance using the toilet",
 								"id": 2
 							},
 							{
-								"label": "Does not use toilet at all; uses incontinence briefs ",
-								"value": "Does not use toilet at all; uses incontinence briefs ",
+								"label": "Does not use toilet at all; uses incontinence briefs",
+								"value": "Does not use toilet at all; uses incontinence briefs",
 								"id": 3
 							},
 							{
@@ -4144,7 +4144,7 @@
 							"conditions": [
 								{
 									"field": "checkbox_2",
-									"value": "Uses a toilet on a schedule  ",
+									"value": "Uses a toilet on a schedule",
 									"operator": "="
 								},
 								{
@@ -4195,7 +4195,7 @@
 							"conditions": [
 								{
 									"field": "checkbox_2",
-									"value": "Requires assistance using the toilet ",
+									"value": "Requires assistance using the toilet",
 									"operator": "="
 								}
 							]
@@ -4241,7 +4241,7 @@
 							"conditions": [
 								{
 									"field": "checkbox_2",
-									"value": "Does not use toilet at all; uses incontinence briefs ",
+									"value": "Does not use toilet at all; uses incontinence briefs",
 									"operator": "="
 								}
 							]

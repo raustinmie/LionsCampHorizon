@@ -2558,37 +2558,35 @@ export default function CamperApplicationForm() {
 									id="checkbox_2_0"
 									type="checkbox"
 									name="checkbox_2"
-									value="Uses toilet independently "
+									value="Uses toilet independently"
 									checked={
 										Array.isArray(values["checkbox_2"]) &&
-										values["checkbox_2"].includes("Uses toilet independently ")
+										values["checkbox_2"].includes("Uses toilet independently")
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox_2",
-											"Uses toilet independently ",
+											"Uses toilet independently",
 											e.target.checked
 										)
 									}
 								/>
-								<label htmlFor="checkbox_2_0">Uses toilet independently </label>
+								<label htmlFor="checkbox_2_0">Uses toilet independently</label>
 							</div>
 							<div className="cs-checkbox-item">
 								<input
 									id="checkbox_2_1"
 									type="checkbox"
 									name="checkbox_2"
-									value="Uses a toilet on a schedule  "
+									value="Uses a toilet on a schedule"
 									checked={
 										Array.isArray(values["checkbox_2"]) &&
-										values["checkbox_2"].includes(
-											"Uses a toilet on a schedule  "
-										)
+										values["checkbox_2"].includes("Uses a toilet on a schedule")
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox_2",
-											"Uses a toilet on a schedule  ",
+											"Uses a toilet on a schedule",
 											e.target.checked
 										)
 									}
@@ -2602,17 +2600,17 @@ export default function CamperApplicationForm() {
 									id="checkbox_2_2"
 									type="checkbox"
 									name="checkbox_2"
-									value="Requires assistance using the toilet "
+									value="Requires assistance using the toilet"
 									checked={
 										Array.isArray(values["checkbox_2"]) &&
 										values["checkbox_2"].includes(
-											"Requires assistance using the toilet "
+											"Requires assistance using the toilet"
 										)
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox_2",
-											"Requires assistance using the toilet ",
+											"Requires assistance using the toilet",
 											e.target.checked
 										)
 									}
@@ -2626,23 +2624,23 @@ export default function CamperApplicationForm() {
 									id="checkbox_2_3"
 									type="checkbox"
 									name="checkbox_2"
-									value="Does not use toilet at all; uses incontinence briefs "
+									value="Does not use toilet at all; uses incontinence briefs"
 									checked={
 										Array.isArray(values["checkbox_2"]) &&
 										values["checkbox_2"].includes(
-											"Does not use toilet at all; uses incontinence briefs "
+											"Does not use toilet at all; uses incontinence briefs"
 										)
 									}
 									onChange={(e) =>
 										handleCheckboxChange(
 											"checkbox_2",
-											"Does not use toilet at all; uses incontinence briefs ",
+											"Does not use toilet at all; uses incontinence briefs",
 											e.target.checked
 										)
 									}
 								/>
 								<label htmlFor="checkbox_2_3">
-									Does not use toilet at all; uses incontinence briefs{" "}
+									Does not use toilet at all; uses incontinence briefs
 								</label>
 							</div>
 							<div className="cs-checkbox-item">
@@ -2672,32 +2670,30 @@ export default function CamperApplicationForm() {
 						</fieldset>
 					</div>
 				</div>
-				{(Array.isArray(values["checkbox_2"]) &&
-					values["checkbox_2"].includes("Uses a toilet on a schedule  ")) ||
+				{((Array.isArray(values["checkbox_2"]) &&
+					values["checkbox_2"].includes("Uses a toilet on a schedule")) ||
 					(Array.isArray(values["checkbox_2"]) &&
 						values["checkbox_2"].includes(
 							"Requires being woken at night to use the toilet"
-						) && (
-							<div className="cs-field cs-textarea">
-								<label className="cs-label" htmlFor="description_14">
-									Please provide schedule/usual times. *
-								</label>
-								<textarea
-									className="cs-textarea"
-									id="description_14"
-									name="description_14"
-									required
-									rows={3}
-									value={values["description_14"] || ""}
-									onChange={(e) =>
-										handleChange("description_14", e.target.value)
-									}
-								/>
-							</div>
-						))}
+						))) && (
+					<div className="cs-field cs-textarea">
+						<label className="cs-label" htmlFor="description_14">
+							Please provide schedule/usual times. *
+						</label>
+						<textarea
+							className="cs-textarea"
+							id="description_14"
+							name="description_14"
+							required
+							rows={3}
+							value={values["description_14"] || ""}
+							onChange={(e) => handleChange("description_14", e.target.value)}
+						/>
+					</div>
+				)}
 				{Array.isArray(values["checkbox_2"]) &&
 					values["checkbox_2"].includes(
-						"Requires assistance using the toilet "
+						"Requires assistance using the toilet"
 					) && (
 						<div className="cs-field cs-textarea">
 							<label className="cs-label" htmlFor="description_13">
@@ -2717,7 +2713,7 @@ export default function CamperApplicationForm() {
 					)}
 				{Array.isArray(values["checkbox_2"]) &&
 					values["checkbox_2"].includes(
-						"Does not use toilet at all; uses incontinence briefs "
+						"Does not use toilet at all; uses incontinence briefs"
 					) && (
 						<div className="cs-field cs-textarea">
 							<label className="cs-label" htmlFor="description_30">
@@ -5342,9 +5338,7 @@ export default function CamperApplicationForm() {
 							}
 						/>
 						{values["medication_sheet_upload"]?.name && (
-							<p>
-								Selected file: {values["medication_sheet_upload"]?.name}
-							</p>
+							<p>Selected file: {values["medication_sheet_upload"]?.name}</p>
 						)}
 					</div>
 				</div>
