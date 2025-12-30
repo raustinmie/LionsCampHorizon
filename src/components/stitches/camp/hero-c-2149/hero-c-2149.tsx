@@ -1,17 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { isOpen } from "../../../../constants";
 
 export default function HeroC2149() {
-	const now = new Date();
-	const year = now.getFullYear();
-	const openDate = new Date(`${year}-01-15T00:00:00`);
-	const closeDate = new Date(`${year}-07-15T23:59:59`);
-	const isOpen = now >= openDate && now <= closeDate;
-
-	const buttonHref = isOpen ? "/camper-application" : "/contact";
-	const buttonText = isOpen ? "Apply Now" : "Registration opens January 5!";
-
 	return (
 		<section id="hero-c-2149">
 			<div className="cs-container">

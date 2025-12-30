@@ -6,6 +6,7 @@ import Link from "next/link";
 import {
 	facebookUrl,
 	instagramUrl,
+	isOpen,
 	primaryEmail,
 	primaryPhone,
 	staffApplicationLink,
@@ -93,11 +94,13 @@ export default function Footer1391() {
 						<li className="cs-li">
 							<span className="cs-header">Quick Links</span>
 						</li>
-						<li className="cs-li">
-							<Link href="/camper-application" className="cs-link">
-								Camper Application
-							</Link>
-						</li>
+						{isOpen && (
+							<li className="cs-li">
+								<Link href="/camper-application" className="cs-link">
+									Camper Application
+								</Link>
+							</li>
+						)}
 						<li className="cs-li">
 							<Link href="/physical-examination-form.pdf" className="cs-link">
 								LCH Physical Exam Form{" "}

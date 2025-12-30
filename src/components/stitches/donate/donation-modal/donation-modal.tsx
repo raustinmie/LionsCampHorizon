@@ -3,26 +3,29 @@
 import { useEffect, useState } from "react";
 
 interface DonationModalProps {
-	isOpen: boolean;
+	isModalOpen: boolean;
 	onClose: () => void;
 }
 
-export default function DonationModal({ isOpen, onClose }: DonationModalProps) {
+export default function DonationModal({
+	isModalOpen,
+	onClose,
+}: DonationModalProps) {
 	const [amount, setAmount] = useState("");
 	const [designation, setDesignation] = useState("");
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<string | null>(null);
 
 	useEffect(() => {
-		if (!isOpen) {
+		if (!isModalOpen) {
 			setAmount("");
 			setDesignation("");
 			setLoading(false);
 			setError(null);
 		}
-	}, [isOpen]);
+	}, [isModalOpen]);
 
-	if (!isOpen) return null;
+	if (!isModalOpen) return null;
 
 	const handleSubmit = async (event: React.FormEvent) => {
 		event.preventDefault();

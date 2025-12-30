@@ -73,7 +73,10 @@ export default function Donate() {
 					</div>
 				}
 			/>
-			<DonationModal isOpen={isDonateModalOpen} onClose={closeDonateModal} />
+			<DonationModal
+				isModalOpen={isDonateModalOpen}
+				onClose={closeDonateModal}
+			/>
 		</div>
 	);
 }
